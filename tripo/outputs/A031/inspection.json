@@ -1,0 +1,175 @@
+{
+  "source": "tripo\\outputs\\A031\\tripo-original.glb",
+  "meshes": [
+    {
+      "name": "tripo_node_c687b8cc-8910-42dc-ab2d-e676517b0075",
+      "vertices": 104734,
+      "faces": 191406,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_analysis": [
+        {
+          "name": "UVMap",
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "triangles_with_near_zero_uv_area": 121,
+          "triangles": 191406
+        }
+      ],
+      "nonmanifold_edges": 17648,
+      "dimensions_m_unscaled": [
+        0.8388671875,
+        0.29669189453125,
+        1.0
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_material_c687b8cc-8910-42dc-ab2d-e676517b0075",
+      "channels": {
+        "Base Color": [
+          {
+            "node": "Image Texture",
+            "type": "TEX_IMAGE",
+            "output": "Color"
+          }
+        ],
+        "Roughness": [
+          {
+            "node": "Separate Color",
+            "type": "SEPARATE_COLOR",
+            "output": "Green"
+          }
+        ],
+        "Metallic": [
+          {
+            "node": "Separate Color",
+            "type": "SEPARATE_COLOR",
+            "output": "Blue"
+          }
+        ],
+        "Normal": [
+          {
+            "node": "Normal Map",
+            "type": "NORMAL_MAP",
+            "output": "Normal"
+          }
+        ]
+      },
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "apron_3d_model_basecolor.jpg",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "sRGB",
+          "packed": true,
+          "sample_rgb_min": [
+            0.12941177189350128,
+            0.11372549831867218,
+            0.08235294371843338
+          ],
+          "sample_rgb_max": [
+            0.8392157554626465,
+            0.7686275243759155,
+            0.6745098233222961
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "apron_3d_model_rm.jpg",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color",
+          "packed": true,
+          "sample_rgb_min": [
+            0.7568628191947937,
+            0.2980392277240753,
+            0.0
+          ],
+          "sample_rgb_max": [
+            1.0,
+            1.0,
+            0.2823529541492462
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "apron_3d_model_normal.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color",
+          "packed": true,
+          "sample_rgb_min": [
+            0.2352941334247589,
+            0.0470588281750679,
+            0.6901960968971252
+          ],
+          "sample_rgb_max": [
+            0.8823530077934265,
+            0.9058824181556702,
+            1.0
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "Principled BSDF",
+          "output": "BSDF",
+          "to": "Material Output",
+          "input": "Surface"
+        },
+        {
+          "from": "Image Texture",
+          "output": "Color",
+          "to": "Principled BSDF",
+          "input": "Base Color"
+        },
+        {
+          "from": "Separate Color",
+          "output": "Blue",
+          "to": "Principled BSDF",
+          "input": "Metallic"
+        },
+        {
+          "from": "Separate Color",
+          "output": "Green",
+          "to": "Principled BSDF",
+          "input": "Roughness"
+        },
+        {
+          "from": "Image Texture.001",
+          "output": "Color",
+          "to": "Separate Color",
+          "input": "Color"
+        },
+        {
+          "from": "Normal Map",
+          "output": "Normal",
+          "to": "Principled BSDF",
+          "input": "Normal"
+        },
+        {
+          "from": "Image Texture.002",
+          "output": "Color",
+          "to": "Normal Map",
+          "input": "Color"
+        }
+      ]
+    }
+  ]
+}
