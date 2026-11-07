@@ -1,0 +1,95 @@
+Browser tab: 1, Title: "3D 动画制作器——AI 一键绑定与动画", URL: "https://studio.tripo3d.ai/zh/workspace/rigging/6029da2a-5139-4815-8246-85a0c57f3123".
+1 AXWebArea 3D 动画制作器——AI 一键绑定与动画, URL: studio.tripo3d.ai/zh/workspace/rigging/6029da2a-5139-4815-8246-85a0c57f3123
+	2 container
+		3 container
+			4 container
+				5 link studio.tripo3d.ai/zh
+				6 button 3D 工作台
+					7 link Description: 3D 工作台, Value: studio.tripo3d.ai/zh/workspace/generate
+				8 link Description: 首页, Value: studio.tripo3d.ai/zh
+				9 link Description: 资产, Value: studio.tripo3d.ai/zh/assets
+				10 link Description: 创作者中心, Value: studio.tripo3d.ai/creator-hub/mission-tripossible/
+				11 link Description: Event, Value: studio.tripo3d.ai/zh/event
+				12 button 资源
+					13 text 资源
+				14 button 创作者等级与奖励
+				15 pop up button (collapsed) ID: reka-popover-trigger-v-0-0-2, Secondary Actions: Expand
+					69 image
+				17 link Description: Help Center, Value: tripo3d.ai/zh/help
+				18 pop up button (collapsed) 3, ID: reka-popover-trigger-v-0-0-4, Secondary Actions: Expand
+					19 text 3
+				20 link studio.tripo3d.ai/zh/referral
+				21 text 4800
+				22 button 升级
+					23 container
+						24 text 升级
+						25 image loading
+				26 pop up button (collapsed) DCC Bridge, ID: reka-popover-trigger-v-0-0-6, Secondary Actions: Expand
+					27 text DCC Bridge
+			82 container
+				83 link Description: 图片, Value: studio.tripo3d.ai/zh/workspace/generate-image/6029da2a-5139-4815-8246-85a0c57f3123
+				84 link Description: 模型, Value: studio.tripo3d.ai/zh/workspace/generate/6029da2a-5139-4815-8246-85a0c57f3123
+				85 link Description: 部件拆分, Value: studio.tripo3d.ai/zh/workspace/segmentation/6029da2a-5139-4815-8246-85a0c57f3123
+				86 link Description: 部件补全, Value: studio.tripo3d.ai/zh/workspace/fill-parts/6029da2a-5139-4815-8246-85a0c57f3123
+				87 link Description: 重拓扑, Value: studio.tripo3d.ai/zh/workspace/retopology/6029da2a-5139-4815-8246-85a0c57f3123
+				88 link Description: 智能 UV, Value: studio.tripo3d.ai/zh/workspace/smart-uv/6029da2a-5139-4815-8246-85a0c57f3123
+				89 link Description: 纹理生成, Value: studio.tripo3d.ai/zh/workspace/texture/6029da2a-5139-4815-8246-85a0c57f3123
+				90 link Description: 编辑, Value: studio.tripo3d.ai/zh/workspace/texture-edit/6029da2a-5139-4815-8246-85a0c57f3123
+				91 link Description: 纹理放大, Value: studio.tripo3d.ai/zh/workspace/texture-upscale/6029da2a-5139-4815-8246-85a0c57f3123
+				92 link Description: PBR, Value: studio.tripo3d.ai/zh/workspace/texture-pbr/6029da2a-5139-4815-8246-85a0c57f3123
+				93 link Description: 绑定, Value: studio.tripo3d.ai/zh/workspace/rigging/6029da2a-5139-4815-8246-85a0c57f3123
+				94 link Description: 动画, Value: studio.tripo3d.ai/zh/workspace/animate/6029da2a-5139-4815-8246-85a0c57f3123
+			95 pop up button (collapsed) Description: 扫码下载 Tripo App, Secondary Actions: Expand
+			96 heading 3D 绑定, Value: 2
+				97 text 3D 绑定
+			98 text 绑定类型
+			99 绑定类型
+				100 radio button 人形 人形, Value: 1
+					101 image 人形
+					102 text 人形
+				103 radio button 其他 其他, Value: 0
+					104 image 其他
+					105 text 其他
+			106 button 使用 T 姿势或 A 姿势可获得更好的效果。
+			107 container
+				108 text 骨骼预设
+				109 pop up button (collapsed) Mixamo, Secondary Actions: Expand
+			110 button (disabled) 自动绑定 20
+				111 container
+					112 text 自动绑定 20
+			113 container
+				114 pop up button (collapsed) ID: reka-popover-trigger-v-0-1-34, Secondary Actions: Expand
+					115 button
+				116 button
+				117 checkbox 0
+			118 container
+				119 tab group
+					120 tab (selected, settable, boolean) 资产, ID: reka-tabs-v-0-1-149-trigger-assets, Value: 1
+资产
+					121 tab (selectable, settable, boolean) 属性, ID: reka-tabs-v-0-1-149-trigger-property, Value: 0
+属性
+				122 container Description: 资产, ID: reka-tabs-v-0-1-149-content-assets
+					123 tab group
+						124 tab (selected, settable, boolean) Value: 1, ID: reka-tabs-v-0-1-154-trigger-mine
+						125 tab (selectable, settable, boolean) Value: 0, ID: reka-tabs-v-0-1-154-trigger-collected
+					126 button
+					127 container
+						128 container
+							129 text 上传 3D 模型 OBJ、FBX、STL、GLB
+大小 ≤150MB
+							130 button 选择文件
+						131 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/rigging/6029da2a-5139-4815-8246-85a0c57f3123
+						132 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/rigging/36b888ba-a025-42da-a024-82564617d49d
+						133 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/rigging/6e52fd59-3268-40ff-876f-b9582e1e3afb
+						134 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/rigging/36c7e0d4-9de0-4fea-b7bc-6b9ab1217d52
+			75 container
+				76 button 智能网格 P2.0：四边面+编辑
+				77 button New 智能网格 P2.0：四边面+编辑 免费试用
+					78 text New
+					79 text 智能网格 P2.0：四边面+编辑
+					80 text 免费试用
+				81 button 关闭
+		67 container Notifications alt+T
+			68 content list
+
+The focused UI element is 1 AXWebArea 3D 动画制作器——AI 一键绑定与动画, URL: studio.tripo3d.ai/zh/workspace/rigging/6029da2a-5139-4815-8246-85a0c57f3123

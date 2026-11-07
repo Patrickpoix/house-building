@@ -1,0 +1,127 @@
+Browser tab: 1, Title: "3D 分割工具 - 快速、准确、可扩展的 3D 分割，AI 驱动", URL: "https://studio.tripo3d.ai/zh/workspace/segmentation/6029da2a-5139-4815-8246-85a0c57f3123".
+1 AXWebArea 3D 分割工具 - 快速、准确、可扩展的 3D 分割，AI 驱动, URL: studio.tripo3d.ai/zh/workspace/segmentation/6029da2a-5139-4815-8246-85a0c57f3123
+	2 container
+		3 container
+			4 container
+				5 link studio.tripo3d.ai/zh
+				6 button 3D 工作台
+					7 link Description: 3D 工作台, Value: studio.tripo3d.ai/zh/workspace/generate
+				8 link Description: 首页, Value: studio.tripo3d.ai/zh
+				9 link Description: 资产, Value: studio.tripo3d.ai/zh/assets
+				10 link Description: 创作者中心, Value: studio.tripo3d.ai/creator-hub/mission-tripossible/
+				11 link Description: Event, Value: studio.tripo3d.ai/zh/event
+				12 button 资源
+					13 text 资源
+				14 button 创作者等级与奖励
+				15 pop up button (collapsed) ID: reka-popover-trigger-v-0-0-2, Secondary Actions: Expand
+					69 image
+				17 link Description: Help Center, Value: tripo3d.ai/zh/help
+				18 pop up button (collapsed) 3, ID: reka-popover-trigger-v-0-0-4, Secondary Actions: Expand
+					19 text 3
+				20 link studio.tripo3d.ai/zh/referral
+				21 text 4800
+				22 button 升级
+					23 container
+						24 text 升级
+						25 image loading
+				26 pop up button (collapsed) DCC Bridge, ID: reka-popover-trigger-v-0-0-6, Secondary Actions: Expand
+					27 text DCC Bridge
+			82 container
+				83 link Description: 图片, Value: studio.tripo3d.ai/zh/workspace/generate-image/6029da2a-5139-4815-8246-85a0c57f3123
+				84 link Description: 模型, Value: studio.tripo3d.ai/zh/workspace/generate/6029da2a-5139-4815-8246-85a0c57f3123
+				85 link Description: 部件拆分, Value: studio.tripo3d.ai/zh/workspace/segmentation/6029da2a-5139-4815-8246-85a0c57f3123
+				86 link Description: 部件补全, Value: studio.tripo3d.ai/zh/workspace/fill-parts/6029da2a-5139-4815-8246-85a0c57f3123
+				87 link Description: 重拓扑, Value: studio.tripo3d.ai/zh/workspace/retopology/6029da2a-5139-4815-8246-85a0c57f3123
+				88 link Description: 智能 UV, Value: studio.tripo3d.ai/zh/workspace/smart-uv/6029da2a-5139-4815-8246-85a0c57f3123
+				89 link Description: 纹理生成, Value: studio.tripo3d.ai/zh/workspace/texture/6029da2a-5139-4815-8246-85a0c57f3123
+				90 link Description: 编辑, Value: studio.tripo3d.ai/zh/workspace/texture-edit/6029da2a-5139-4815-8246-85a0c57f3123
+				91 link Description: 纹理放大, Value: studio.tripo3d.ai/zh/workspace/texture-upscale/6029da2a-5139-4815-8246-85a0c57f3123
+				92 link Description: PBR, Value: studio.tripo3d.ai/zh/workspace/texture-pbr/6029da2a-5139-4815-8246-85a0c57f3123
+				93 link Description: 绑定, Value: studio.tripo3d.ai/zh/workspace/rigging/6029da2a-5139-4815-8246-85a0c57f3123
+				94 link Description: 动画, Value: studio.tripo3d.ai/zh/workspace/animate/6029da2a-5139-4815-8246-85a0c57f3123
+			95 pop up button (collapsed) Description: 扫码下载 Tripo App, Secondary Actions: Expand
+			96 heading 智能拆分, Value: 2
+				97 text 智能拆分
+			98 text 拆分精度
+			99 button segment detail level 粗略 3-6个部件
+				100 image segment detail level
+				101 text 粗略
+				102 text 3-6个部件
+			103 button segment detail level 标准 6-15个部件
+				104 image segment detail level
+				105 text 标准
+				106 text 6-15个部件
+			107 button segment detail level 精细 15+个部件
+				108 image segment detail level
+				109 text 精细
+				110 text 15+个部件
+			111 container
+				112 text 新功能试用 x1
+				113 button 开始拆分 40 0
+					114 container
+						115 text 开始拆分 40 0
+			116 container
+				138 button
+				139 button 3D 打印 New
+					140 text 3D 打印
+					141 text New
+				142 button 分享
+				143 button 导出
+					144 text 导出
+				145 button reference
+					146 image reference
+				147 checkbox 0
+					148 image
+				149 checkbox 1
+					150 image
+				151 checkbox 0
+					152 image
+				153 checkbox 0
+					154 image
+				155 checkbox 0
+					156 image
+				157 checkbox 0
+					158 image
+				159 checkbox 0
+					160 image
+				161 text 拓扑
+				162 text Triangle
+				163 text 面
+				164 text 1844823 / 1844823
+				165 text 顶点
+				166 text 1018476 / 1018476
+				117 pop up button (collapsed) ID: reka-popover-trigger-v-0-1-34, Secondary Actions: Expand
+					118 button
+				119 button
+				120 checkbox 0
+			121 container
+				122 tab group
+					123 tab (selected, settable, boolean) 资产, ID: reka-tabs-v-0-1-183-trigger-assets, Value: 1
+资产
+					124 tab (selectable, settable, boolean) 属性, ID: reka-tabs-v-0-1-183-trigger-property, Value: 0
+属性
+				125 container Description: 资产, ID: reka-tabs-v-0-1-183-content-assets
+					126 tab group
+						127 tab (selected, settable, boolean) Value: 1, ID: reka-tabs-v-0-1-188-trigger-mine
+						128 tab (selectable, settable, boolean) Value: 0, ID: reka-tabs-v-0-1-188-trigger-collected
+					129 button
+					130 container
+						131 container
+							132 text 上传 3D 模型 OBJ、FBX、STL、GLB
+大小 ≤150MB
+							133 button 选择文件
+						134 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/segmentation/6029da2a-5139-4815-8246-85a0c57f3123
+						135 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/segmentation/36b888ba-a025-42da-a024-82564617d49d
+						136 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/segmentation/6e52fd59-3268-40ff-876f-b9582e1e3afb
+						137 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/segmentation/36c7e0d4-9de0-4fea-b7bc-6b9ab1217d52
+			75 container
+				76 button 智能网格 P2.0：四边面+编辑
+				77 button New 智能网格 P2.0：四边面+编辑 免费试用
+					78 text New
+					79 text 智能网格 P2.0：四边面+编辑
+					80 text 免费试用
+				81 button 关闭
+		67 container Notifications alt+T
+			68 content list
+
+The focused UI element is 1 AXWebArea 3D 分割工具 - 快速、准确、可扩展的 3D 分割，AI 驱动, URL: studio.tripo3d.ai/zh/workspace/segmentation/6029da2a-5139-4815-8246-85a0c57f3123

@@ -1,0 +1,100 @@
+Browser tab: 1, Title: "AI图片生成器：3D建模专用图片生成工具 | Tripo AI", URL: "https://studio.tripo3d.ai/zh/workspace/generate-image/6029da2a-5139-4815-8246-85a0c57f3123".
+1 AXWebArea AI图片生成器：3D建模专用图片生成工具 | Tripo AI, URL: studio.tripo3d.ai/zh/workspace/generate-image/6029da2a-5139-4815-8246-85a0c57f3123
+	2 container
+		3 container
+			4 container
+				5 link studio.tripo3d.ai/zh
+				6 button 3D 工作台
+					7 link Description: 3D 工作台, Value: studio.tripo3d.ai/zh/workspace/generate
+				8 link Description: 首页, Value: studio.tripo3d.ai/zh
+				9 link Description: 资产, Value: studio.tripo3d.ai/zh/assets
+				10 link Description: 创作者中心, Value: studio.tripo3d.ai/creator-hub/mission-tripossible/
+				11 link Description: Event, Value: studio.tripo3d.ai/zh/event
+				12 button 资源
+					13 text 资源
+				14 button 创作者等级与奖励
+				15 pop up button (collapsed) ID: reka-popover-trigger-v-0-0-2, Secondary Actions: Expand
+					69 image
+				17 link Description: Help Center, Value: tripo3d.ai/zh/help
+				18 pop up button (collapsed) 3, ID: reka-popover-trigger-v-0-0-4, Secondary Actions: Expand
+					19 text 3
+				20 link studio.tripo3d.ai/zh/referral
+				21 text 4800
+				22 button 升级
+					23 container
+						24 text 升级
+						25 image loading
+				26 pop up button (collapsed) DCC Bridge, ID: reka-popover-trigger-v-0-0-6, Secondary Actions: Expand
+					27 text DCC Bridge
+					130 container
+			82 container
+				83 link Description: 图片, Value: studio.tripo3d.ai/zh/workspace/generate-image/6029da2a-5139-4815-8246-85a0c57f3123
+				84 link Description: 模型, Value: studio.tripo3d.ai/zh/workspace/generate/6029da2a-5139-4815-8246-85a0c57f3123
+				85 link Description: 部件拆分, Value: studio.tripo3d.ai/zh/workspace/segmentation/6029da2a-5139-4815-8246-85a0c57f3123
+				86 link Description: 部件补全, Value: studio.tripo3d.ai/zh/workspace/fill-parts/6029da2a-5139-4815-8246-85a0c57f3123
+				87 link Description: 重拓扑, Value: studio.tripo3d.ai/zh/workspace/retopology/6029da2a-5139-4815-8246-85a0c57f3123
+				88 link Description: 智能 UV, Value: studio.tripo3d.ai/zh/workspace/smart-uv/6029da2a-5139-4815-8246-85a0c57f3123
+				89 link Description: 纹理生成, Value: studio.tripo3d.ai/zh/workspace/texture/6029da2a-5139-4815-8246-85a0c57f3123
+				90 link Description: 编辑, Value: studio.tripo3d.ai/zh/workspace/texture-edit/6029da2a-5139-4815-8246-85a0c57f3123
+				91 link Description: 纹理放大, Value: studio.tripo3d.ai/zh/workspace/texture-upscale/6029da2a-5139-4815-8246-85a0c57f3123
+				92 link Description: PBR, Value: studio.tripo3d.ai/zh/workspace/texture-pbr/6029da2a-5139-4815-8246-85a0c57f3123
+				93 link Description: 绑定, Value: studio.tripo3d.ai/zh/workspace/rigging/6029da2a-5139-4815-8246-85a0c57f3123
+				94 link Description: 动画, Value: studio.tripo3d.ai/zh/workspace/animate/6029da2a-5139-4815-8246-85a0c57f3123
+			95 pop up button (collapsed) Description: 扫码下载 Tripo App, Secondary Actions: Expand
+			96 heading 生成图片, Value: 2
+				97 text 生成图片
+			98 container
+				99 text entry area (settable)
+				100 container
+					101 button 选择文件
+				102 text 0/10000
+				131 button 3D风格化 3D风格化
+					132 checkbox 3D风格化 3D风格化, Value: 0
+						133 image 3D风格化
+						134 text 3D风格化
+				135 button 照片转手办 照片转手办
+					136 checkbox 照片转手办 照片转手办, Value: 0
+						137 image 照片转手办
+						138 text 照片转手办
+				139 button 3D打印白模 3D打印白模
+					140 checkbox 3D打印白模 3D打印白模, Value: 0
+						141 image 3D打印白模
+						142 text 3D打印白模
+				103 pop up button (collapsed) 更多模板, ID: reka-popover-trigger-v-0-1-325, Secondary Actions: Expand
+					104 text 更多模板
+				105 text 生成模型 升级即可每月获得更多免费图像生成，额外生成最多节省 80% 积分  升级
+				106 combo box (collapsed) Value: Nano Banana, Secondary Actions: Expand
+					107 image
+					108 text Nano Banana
+				109 text 图片比例
+				110 checkbox 1:1, Value: 1
+				111 checkbox 16:9, Value: 0
+				112 checkbox 9:16, Value: 0
+				113 checkbox 4:3, Value: 0
+				114 checkbox 3:4, Value: 0
+				115 text 图片数量
+				116 checkbox 1, Value: 0
+				117 checkbox 2, Value: 0
+				118 checkbox 3, Value: 0
+				119 checkbox 4, Value: 1
+				120 text 4K 分辨率
+				121 switch 0
+			122 text 0 40
+			123 container
+				124 button (disabled) 生成图片
+					125 text 生成图片
+				126 text Free 0/100
+			127 heading 创作你的第一张图片！, Value: 1
+				128 text 创作你的第一张图片！
+			129 text 使用最好的生图模型，创造适用于3D工作流的图像
+			75 container
+				76 button 智能网格 P2.0：四边面+编辑
+				77 button New 智能网格 P2.0：四边面+编辑 免费试用
+					78 text New
+					79 text 智能网格 P2.0：四边面+编辑
+					80 text 免费试用
+				81 button 关闭
+		67 container Notifications alt+T
+			68 content list
+
+The focused UI element is 1 AXWebArea AI图片生成器：3D建模专用图片生成工具 | Tripo AI, URL: studio.tripo3d.ai/zh/workspace/generate-image/6029da2a-5139-4815-8246-85a0c57f3123

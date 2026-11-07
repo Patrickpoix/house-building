@@ -1,0 +1,103 @@
+{
+  "source": "1-01eae396a858b79f01037003a18ab546b1_4610.mp4-sign-8a7a114de9ed09d4095bfb766c733aad-t-6af2b0bavideo.mp4",
+  "project_source": "references/source-video/original-reference.mp4",
+  "fps": 30.0,
+  "frame_count": 2595,
+  "frames": [
+    {
+      "frame": 120,
+      "seconds": 4.0,
+      "file": "frame_0120.png"
+    },
+    {
+      "frame": 300,
+      "seconds": 10.0,
+      "file": "frame_0300.png"
+    },
+    {
+      "frame": 420,
+      "seconds": 14.0,
+      "file": "frame_0420.png"
+    },
+    {
+      "frame": 660,
+      "seconds": 22.0,
+      "file": "frame_0660.png"
+    },
+    {
+      "frame": 720,
+      "seconds": 24.0,
+      "file": "frame_0720.png"
+    },
+    {
+      "frame": 1230,
+      "seconds": 41.0,
+      "file": "frame_1230.png"
+    },
+    {
+      "frame": 1268,
+      "seconds": 42.267,
+      "file": "frame_1268.png"
+    },
+    {
+      "frame": 1275,
+      "seconds": 42.5,
+      "file": "frame_1275.png"
+    },
+    {
+      "frame": 1290,
+      "seconds": 43.0,
+      "file": "frame_1290.png"
+    },
+    {
+      "frame": 1320,
+      "seconds": 44.0,
+      "file": "frame_1320.png"
+    },
+    {
+      "frame": 1335,
+      "seconds": 44.5,
+      "file": "frame_1335.png"
+    },
+    {
+      "frame": 1365,
+      "seconds": 45.5,
+      "file": "frame_1365.png"
+    },
+    {
+      "frame": 1380,
+      "seconds": 46.0,
+      "file": "frame_1380.png"
+    },
+    {
+      "frame": 1410,
+      "seconds": 47.0,
+      "file": "frame_1410.png"
+    },
+    {
+      "frame": 1440,
+      "seconds": 48.0,
+      "file": "frame_1440.png"
+    },
+    {
+      "frame": 2100,
+      "seconds": 70.0,
+      "file": "frame_2100.png"
+    },
+    {
+      "frame": 2280,
+      "seconds": 76.0,
+      "file": "frame_2280.png"
+    },
+    {
+      "frame": 2340,
+      "seconds": 78.0,
+      "file": "frame_2340.png"
+    },
+    {
+      "frame": 2460,
+      "seconds": 82.0,
+      "file": "frame_2460.png"
+    }
+  ]
+}

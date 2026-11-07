@@ -1,0 +1,112 @@
+Browser tab: 1, Title: "AI 3D模型生成器-3D模型制作-AI 3D建模素材库 | Tripo", URL: "https://studio.tripo3d.ai/zh?category=featured&model_type=all&page_type=1.2&recommended=recommended&use_case=all".
+1 AXWebArea AI 3D模型生成器-3D模型制作-AI 3D建模素材库 | Tripo, URL: studio.tripo3d.ai/zh?category=featured&model_type=all&page_type=1.2&recommended=recommended&use_case=all
+	2 container
+		199 container Notifications alt+T
+			200 content list
+		201 container
+			202 button
+			203 tab group
+				204 tab (selected, settable, boolean) 会员, Value: 1, ID: reka-tabs-v-2-trigger-membership
+				205 tab (selectable, settable, boolean) 获取更多福利, Value: 0, ID: reka-tabs-v-2-trigger-credits
+			206 container Description: 会员, ID: reka-tabs-v-2-content-membership
+				207 container
+					208 text 我的方案
+					209 pop up button (collapsed) ID: reka-popover-trigger-v-5, Secondary Actions: Expand
+					210 container
+						211 text 专业版  ( 3000 积分 )
+					212 text 到期 2026-12-06
+					213 button 升级
+						214 text 升级
+					215 text 我的积分
+					216 button
+					217 text 4800 300 到期 2026-11-08
+					218 button 购买
+						219 text 购买
+					220 text 使用记录
+					221 table
+						222 row
+							223 cell
+								224 text 日期与时间
+							225 cell
+								226 text 类型
+							227 cell
+								228 text 数额
+							229 cell
+								230 text 状态
+						235 row
+							236 cell
+								237 text 2026-11-07 01:21:42
+							238 cell
+								239 text 积分充值
+							240 cell
+								241 text +3000
+							242 cell
+								243 text 已实现
+						244 row
+							245 cell
+								246 text 2026-11-06 23:51:16
+							247 cell
+								248 text 积分充值
+							249 cell
+								250 text +300
+							251 cell
+								252 text 已实现
+						253 row
+							254 cell
+								255 text 2026-11-06 23:51:12
+							256 cell
+								257 text 积分充值
+							258 cell
+								259 text +300
+							260 cell
+								261 text 已实现
+						262 row
+							263 cell
+								264 text 2026-11-06 23:51:12
+							265 cell
+								266 text 积分充值
+							267 cell
+								268 text +300
+							269 cell
+								270 text 已实现
+						271 row
+							272 cell
+								273 text 2026-11-06 23:51:12
+							274 cell
+								275 text 积分充值
+							276 cell
+								277 text +300
+							278 cell
+								279 text 已实现
+						280 row
+							281 cell
+								282 text 2026-11-06 23:51:12
+							283 cell
+								284 text 积分充值
+							285 cell
+								286 text +300
+							287 cell
+								288 text 已实现
+						289 row
+							290 cell
+								291 text 2026-10-09 14:04:15
+							292 cell
+								293 text 积分充值
+							294 cell
+								295 text +300
+							296 cell
+								297 text 已实现
+						231 row
+							232 cell
+								233 text 第 1 页，共 1 页
+								234 button 1
+		298 container livex-chatbot-app
+			299 container
+				300 image
+				301 text field (settable)
+				302 button Cancel
+					303 image
+				304 text Search by
+				305 link Description: LiveX website (opens in a new tab), Value: livex.ai/
+
+The focused UI element is 202 button

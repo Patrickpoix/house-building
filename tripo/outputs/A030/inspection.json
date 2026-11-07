@@ -1,0 +1,175 @@
+{
+  "source": "tripo\\outputs\\A030\\tripo-original.glb",
+  "meshes": [
+    {
+      "name": "tripo_node_6cb4e3f5-a4bb-481e-b31e-e6375938eb82",
+      "vertices": 103620,
+      "faces": 194388,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_analysis": [
+        {
+          "name": "UVMap",
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "triangles_with_near_zero_uv_area": 120,
+          "triangles": 194388
+        }
+      ],
+      "nonmanifold_edges": 12632,
+      "dimensions_m_unscaled": [
+        0.68890380859375,
+        0.468658447265625,
+        1.0
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_material_6cb4e3f5-a4bb-481e-b31e-e6375938eb82",
+      "channels": {
+        "Base Color": [
+          {
+            "node": "Image Texture",
+            "type": "TEX_IMAGE",
+            "output": "Color"
+          }
+        ],
+        "Roughness": [
+          {
+            "node": "Separate Color",
+            "type": "SEPARATE_COLOR",
+            "output": "Green"
+          }
+        ],
+        "Metallic": [
+          {
+            "node": "Separate Color",
+            "type": "SEPARATE_COLOR",
+            "output": "Blue"
+          }
+        ],
+        "Normal": [
+          {
+            "node": "Normal Map",
+            "type": "NORMAL_MAP",
+            "output": "Normal"
+          }
+        ]
+      },
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "canvas_tote_bag_3d_model_basecolor.jpg",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "sRGB",
+          "packed": true,
+          "sample_rgb_min": [
+            0.03529411926865578,
+            0.019607843831181526,
+            0.0
+          ],
+          "sample_rgb_max": [
+            1.0,
+            0.9019608497619629,
+            0.7450980544090271
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "canvas_tote_bag_3d_model_rm.jpg",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color",
+          "packed": true,
+          "sample_rgb_min": [
+            0.729411780834198,
+            0.5764706134796143,
+            0.0
+          ],
+          "sample_rgb_max": [
+            1.0,
+            1.0,
+            0.5333333611488342
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "canvas_tote_bag_3d_model_normal.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color",
+          "packed": true,
+          "sample_rgb_min": [
+            0.05490196496248245,
+            0.05490196496248245,
+            0.6705882549285889
+          ],
+          "sample_rgb_max": [
+            0.8941177129745483,
+            0.9411765336990356,
+            1.0
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "Principled BSDF",
+          "output": "BSDF",
+          "to": "Material Output",
+          "input": "Surface"
+        },
+        {
+          "from": "Image Texture",
+          "output": "Color",
+          "to": "Principled BSDF",
+          "input": "Base Color"
+        },
+        {
+          "from": "Separate Color",
+          "output": "Blue",
+          "to": "Principled BSDF",
+          "input": "Metallic"
+        },
+        {
+          "from": "Separate Color",
+          "output": "Green",
+          "to": "Principled BSDF",
+          "input": "Roughness"
+        },
+        {
+          "from": "Image Texture.001",
+          "output": "Color",
+          "to": "Separate Color",
+          "input": "Color"
+        },
+        {
+          "from": "Normal Map",
+          "output": "Normal",
+          "to": "Principled BSDF",
+          "input": "Normal"
+        },
+        {
+          "from": "Image Texture.002",
+          "output": "Color",
+          "to": "Normal Map",
+          "input": "Color"
+        }
+      ]
+    }
+  ]
+}

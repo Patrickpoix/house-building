@@ -1,0 +1,185 @@
+Browser tab: 1, Title: "免费在线AI 3D模型生成器：图片生成3D模型 | Tripo AI", URL: "https://studio.tripo3d.ai/zh/workspace/generate/3a6e9316-ca04-4e63-af78-05fea3018059".
+1 AXWebArea 免费在线AI 3D模型生成器：图片生成3D模型 | Tripo AI, URL: studio.tripo3d.ai/zh/workspace/generate/3a6e9316-ca04-4e63-af78-05fea3018059
+	2 container
+		3 container
+			4 container
+				5 link studio.tripo3d.ai/zh
+				6 button 3D 工作台
+					7 link Description: 3D 工作台, Value: studio.tripo3d.ai/zh/workspace/generate
+				8 link Description: 首页, Value: studio.tripo3d.ai/zh
+				9 link Description: 资产, Value: studio.tripo3d.ai/zh/assets
+				10 link Description: 创作者中心, Value: studio.tripo3d.ai/creator-hub/mission-tripossible/
+				11 link Description: Event, Value: studio.tripo3d.ai/zh/event
+				12 button 资源
+					13 text 资源
+				14 button 创作者等级与奖励
+				15 pop up button (collapsed) ID: reka-popover-trigger-v-0-0-2, Secondary Actions: Expand
+					89 image
+				17 link Description: Help Center, Value: tripo3d.ai/zh/help
+				18 pop up button (collapsed) 3, ID: reka-popover-trigger-v-0-0-4, Secondary Actions: Expand
+					19 text 3
+				20 link studio.tripo3d.ai/zh/referral
+				124 text 4770
+				22 button 升级
+					23 container
+						24 text 升级
+						25 image loading
+				26 pop up button (collapsed) DCC Bridge, ID: reka-popover-trigger-v-0-0-6, Secondary Actions: Expand
+					27 text DCC Bridge
+			28 container
+				29 link Description: 图片, Value: studio.tripo3d.ai/zh/workspace/generate-image/3a6e9316-ca04-4e63-af78-05fea3018059
+				30 link Description: 模型, Value: studio.tripo3d.ai/zh/workspace/generate/3a6e9316-ca04-4e63-af78-05fea3018059
+				31 link Description: 部件拆分, Value: studio.tripo3d.ai/zh/workspace/segmentation/3a6e9316-ca04-4e63-af78-05fea3018059
+				32 link Description: 部件补全, Value: studio.tripo3d.ai/zh/workspace/fill-parts/3a6e9316-ca04-4e63-af78-05fea3018059
+				33 link Description: 重拓扑, Value: studio.tripo3d.ai/zh/workspace/retopology/3a6e9316-ca04-4e63-af78-05fea3018059
+				34 link Description: 智能 UV, Value: studio.tripo3d.ai/zh/workspace/smart-uv/3a6e9316-ca04-4e63-af78-05fea3018059
+				35 link Description: 纹理生成, Value: studio.tripo3d.ai/zh/workspace/texture/3a6e9316-ca04-4e63-af78-05fea3018059
+				36 link Description: 编辑, Value: studio.tripo3d.ai/zh/workspace/texture-edit/3a6e9316-ca04-4e63-af78-05fea3018059
+				37 link Description: 纹理放大, Value: studio.tripo3d.ai/zh/workspace/texture-upscale/3a6e9316-ca04-4e63-af78-05fea3018059
+				38 link Description: PBR, Value: studio.tripo3d.ai/zh/workspace/texture-pbr/3a6e9316-ca04-4e63-af78-05fea3018059
+				39 link Description: 绑定, Value: studio.tripo3d.ai/zh/workspace/rigging/3a6e9316-ca04-4e63-af78-05fea3018059
+				40 link Description: 动画, Value: studio.tripo3d.ai/zh/workspace/animate/3a6e9316-ca04-4e63-af78-05fea3018059
+			41 pop up button (collapsed) Description: 扫码下载 Tripo App, Secondary Actions: Expand
+			42 heading 生成模型, Value: 2
+				43 text 生成模型
+			90 container
+				91 button 高精度模型
+				92 button 智能网格
+			44 container
+				45 button
+				46 button
+				47 button
+				48 button
+				115 container
+					116 image
+					117 button
+					118 button
+				119 button
+					120 image
+				121 button 生成多视图, Help: Generate Multi Views
+					122 text 生成多视图
+				123 text 通用设置
+				55 container reka-popover-trigger-v-0-1-10
+					56 text 几何与纹理
+				57 text 订阅专享 分部件生成
+				58 button
+				93 text 试用 ×1
+				59 switch 0
+				60 text 8K 贴图
+				94 button
+				95 text 试用 ×1
+				61 switch 0
+				62 text 模型私密性
+				96 button
+				63 combo box (collapsed) Value: 仅分享, Secondary Actions: Expand
+					64 text 仅分享
+				65 text AI 模型
+				97 button H3.1 – 最高质量 预计等待更久
+					98 combo box (collapsed) Value: H3.1 – 最高质量 预计等待更久, Secondary Actions: Expand
+						99 text H3.1 – 最高质量
+						100 text 预计等待更久
+			66 button 生成 35
+				67 container
+					68 text 生成 35
+			101 container
+				129 pop up button (collapsed) 免费重试 (×3), ID: reka-popover-trigger-v-0-1-92, Secondary Actions: Expand
+					130 text 免费重试 (×3)
+				131 button
+				132 button New
+				133 button
+				134 button 分享
+				135 button 推荐我的模型
+				136 button 导出
+					137 text 导出
+				138 button reference
+					139 image reference
+				140 checkbox 0
+					141 image
+				142 checkbox 1
+					143 image
+				144 checkbox 0
+					145 image
+				146 checkbox 0
+					147 image
+				148 checkbox 0
+					149 image
+				150 checkbox 0
+					151 image
+				152 checkbox 0
+					153 image
+				154 text 拓扑
+				155 text Triangle
+				156 text 面
+				157 text 194388 / 194388
+				158 text 顶点
+				159 text 103620 / 103620
+				104 pop up button (collapsed) ID: reka-popover-trigger-v-0-1-49, Secondary Actions: Expand
+					105 button
+				106 button
+				107 checkbox 0
+			69 container
+				70 tab group
+					71 tab (selected, settable, boolean) 资产, ID: reka-tabs-v-0-1-14-trigger-assets, Value: 1
+资产
+					72 tab (selectable, settable, boolean) 属性, ID: reka-tabs-v-0-1-14-trigger-property, Value: 0
+属性
+				73 container Description: 资产, ID: reka-tabs-v-0-1-14-content-assets
+					74 tab group
+						75 tab (selected, settable, boolean) Value: 1, ID: reka-tabs-v-0-1-19-trigger-mine
+						76 tab (selectable, settable, boolean) Value: 0, ID: reka-tabs-v-0-1-19-trigger-collected
+					77 button
+					79 container
+						80 container
+							81 text 上传 3D 模型 OBJ、FBX、STL、GLB
+大小 ≤150MB
+							82 button 选择文件
+						128 link Description: canvas tote bag 3d model 11-07 18:36, Value: studio.tripo3d.ai/zh/workspace/generate/beige-canvas-tote-bag-with-green-handles-and-front-pocket-3a6e9316-ca04-4e63-af78-05fea3018059
+						83 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/generate/6029da2a-5139-4815-8246-85a0c57f3123
+						84 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/generate/36b888ba-a025-42da-a024-82564617d49d
+						85 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/generate/6e52fd59-3268-40ff-876f-b9582e1e3afb
+						86 link Description: Tripo Demo Model 11-07 12:51, Value: studio.tripo3d.ai/zh/workspace/generate/36c7e0d4-9de0-4fea-b7bc-6b9ab1217d52
+			108 container
+				109 button 智能网格 P2.0：四边面+编辑
+				110 button New 智能网格 P2.0：四边面+编辑 免费试用
+					111 text New
+					112 text 智能网格 P2.0：四边面+编辑
+					113 text 免费试用
+				114 button 关闭
+		87 container Notifications alt+T
+			88 content list
+		160 container 几何与纹理, ID: reka-popover-content-v-0-1-11
+			161 text 几何与纹理
+			162 button
+			163 text 我们会自动保存您的设置以便下次使用
+			164 text 超清几何精度
+			165 button
+			166 switch 0
+			167 text AI补全&3D增强
+			168 button
+			169 switch 0
+			170 text 纹理生成
+			171 switch 1
+			172 text 纹理质量
+			173 button
+			174 container
+				175 checkbox 2K, Value: 1
+				176 checkbox 4K, Value: 0
+				177 checkbox 8K 试用 ×1, Value: 0
+			178 text 去光处理
+			179 button
+			180 switch 0
+			181 text PBR
+			182 button
+			183 switch 1
+			184 text 拓扑
+			185 button
+			186 container
+				187 checkbox 四边面, Value: 1
+				188 checkbox 三角面, Value: 0
+			189 text 面数控制
+			190 text 500
+			194 text 50000
+			192 slider 50000
+			193 text field (settable) 50000
+
+The focused UI element is 175 checkbox 2K, Value: 1

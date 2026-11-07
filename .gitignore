@@ -1,0 +1,9 @@
+/.tools/
+/.deps/
+**/node_modules/
+**/__pycache__/
+*.pyc
+*.blend1
+*.blend2
+.env
+.env.*

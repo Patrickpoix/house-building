@@ -1,0 +1,20 @@
+{
+  "source": "A019-generated-shape.glb",
+  "vertices": 256443,
+  "triangles": 513026,
+  "watertight": true,
+  "connected_components": 3,
+  "visual_kind": null,
+  "bounds": [
+    [
+      -0.7883288860321045,
+      -0.7652604579925537,
+      -1.0001741647720337
+    ],
+    [
+      0.7805846929550171,
+      0.7244088649749756,
+      0.9927616715431213
+    ]
+  ]
+}
