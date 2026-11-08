@@ -13,3 +13,7 @@
 ## 开发和验证
 
 在Windows项目根目录运行 `& .\.tools\blender-5.2.3-windows-x64\blender.exe --version`。分项的可重跑命令见 [scripts/README.md](scripts/README.md)。场景源文件、模型、PBR及渲染随阶段记录验证结果并同步GitHub；`.tools/`、下载缓存及其他依赖环境不进入版本库。
+
+## 多视角预览（可选）
+
+本地 Codex 进行多视角渲染总览时，可使用 [scripts/preview_views.py](scripts/preview_views.py) 将同目录多张 PNG/JPG/WebP 合成一张小型联系表；运行命令、依赖和输出位置见 [scripts/README.md](scripts/README.md)。这**只减少会话图片负载**，不修改原图、PBR、模型或工程，近景细节和正式质量验收仍按需看原图。新会话也应阅读 [HANDOFF.md](HANDOFF.md) 与 [AGENTS.md](AGENTS.md)。
