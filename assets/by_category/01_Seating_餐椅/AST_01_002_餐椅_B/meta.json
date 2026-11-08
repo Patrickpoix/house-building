@@ -1,0 +1,42 @@
+{
+  "id": "AST_01_002_餐椅_B",
+  "category_no": "01",
+  "category_cn": "餐椅",
+  "category_en": "Seating",
+  "name": "餐椅",
+  "variant": "B",
+  "builder": "chair",
+  "dimensions_m": "0.466x0.443x0.935",
+  "materials_csv": "walnut_wood",
+  "materials_in_blend": [
+    "walnut_wood"
+  ],
+  "parts": 10,
+  "vertices": 2190,
+  "faces": 1988,
+  "bounds_m": [
+    0.466,
+    0.4427,
+    0.9351
+  ],
+  "textures": [
+    "assets/_textures/walnut_wood/walnut_wood_ao.png",
+    "assets/_textures/walnut_wood/walnut_wood_basecolor.png",
+    "assets/_textures/walnut_wood/walnut_wood_displacement.png",
+    "assets/_textures/walnut_wood/walnut_wood_height.png",
+    "assets/_textures/walnut_wood/walnut_wood_metallic.png",
+    "assets/_textures/walnut_wood/walnut_wood_normal.png",
+    "assets/_textures/walnut_wood/walnut_wood_roughness.png",
+    "assets/_textures/walnut_wood/walnut_wood_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "AST_07_001_灯具_A",
+  "category_no": "07",
+  "category_cn": "灯具",
+  "category_en": "Lighting",
+  "name": "灯具",
+  "variant": "A",
+  "builder": "lamp",
+  "dimensions_m": "0.432x0.433x1.535",
+  "materials_csv": "brass|linen_fabric|warm_light",
+  "materials_in_blend": [
+    "brass",
+    "linen_fabric",
+    "warm_light"
+  ],
+  "parts": 8,
+  "vertices": 6912,
+  "faces": 6718,
+  "bounds_m": [
+    0.4318,
+    0.4332,
+    1.5351
+  ],
+  "textures": [
+    "assets/_textures/brass/brass_ao.png",
+    "assets/_textures/brass/brass_basecolor.png",
+    "assets/_textures/brass/brass_displacement.png",
+    "assets/_textures/brass/brass_height.png",
+    "assets/_textures/brass/brass_metallic.png",
+    "assets/_textures/brass/brass_normal.png",
+    "assets/_textures/brass/brass_roughness.png",
+    "assets/_textures/brass/brass_specular.png",
+    "assets/_textures/linen_fabric/linen_fabric_ao.png",
+    "assets/_textures/linen_fabric/linen_fabric_basecolor.png",
+    "assets/_textures/linen_fabric/linen_fabric_displacement.png",
+    "assets/_textures/linen_fabric/linen_fabric_height.png",
+    "assets/_textures/linen_fabric/linen_fabric_metallic.png",
+    "assets/_textures/linen_fabric/linen_fabric_normal.png",
+    "assets/_textures/linen_fabric/linen_fabric_roughness.png",
+    "assets/_textures/linen_fabric/linen_fabric_specular.png"
+  ],
+  "texture_count": 16,
+  "relinked_textures": 16,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "AST_28_002_调味容器_B",
+  "category_no": "28",
+  "category_cn": "调味容器",
+  "category_en": "Condiments",
+  "name": "调味容器",
+  "variant": "B",
+  "builder": "bottle",
+  "dimensions_m": "0.101x0.101x0.162",
+  "materials_csv": "black_steel|paper|white_ceramic",
+  "materials_in_blend": [
+    "black_steel",
+    "paper",
+    "white_ceramic"
+  ],
+  "parts": 6,
+  "vertices": 5808,
+  "faces": 5696,
+  "bounds_m": [
+    0.1008,
+    0.1009,
+    0.1624
+  ],
+  "textures": [
+    "assets/_textures/black_steel/black_steel_ao.png",
+    "assets/_textures/black_steel/black_steel_basecolor.png",
+    "assets/_textures/black_steel/black_steel_displacement.png",
+    "assets/_textures/black_steel/black_steel_height.png",
+    "assets/_textures/black_steel/black_steel_metallic.png",
+    "assets/_textures/black_steel/black_steel_normal.png",
+    "assets/_textures/black_steel/black_steel_roughness.png",
+    "assets/_textures/black_steel/black_steel_specular.png",
+    "assets/_textures/white_ceramic/white_ceramic_ao.png",
+    "assets/_textures/white_ceramic/white_ceramic_basecolor.png",
+    "assets/_textures/white_ceramic/white_ceramic_displacement.png",
+    "assets/_textures/white_ceramic/white_ceramic_height.png",
+    "assets/_textures/white_ceramic/white_ceramic_metallic.png",
+    "assets/_textures/white_ceramic/white_ceramic_normal.png",
+    "assets/_textures/white_ceramic/white_ceramic_roughness.png",
+    "assets/_textures/white_ceramic/white_ceramic_specular.png"
+  ],
+  "texture_count": 16,
+  "relinked_textures": 16,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

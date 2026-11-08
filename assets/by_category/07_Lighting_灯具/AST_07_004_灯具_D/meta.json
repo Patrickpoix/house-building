@@ -1,0 +1,43 @@
+{
+  "id": "AST_07_004_灯具_D",
+  "category_no": "07",
+  "category_cn": "灯具",
+  "category_en": "Lighting",
+  "name": "灯具",
+  "variant": "D",
+  "builder": "lamp",
+  "dimensions_m": "0.432x0.433x1.435",
+  "materials_csv": "rattan|warm_light",
+  "materials_in_blend": [
+    "rattan",
+    "warm_light"
+  ],
+  "parts": 8,
+  "vertices": 6912,
+  "faces": 6718,
+  "bounds_m": [
+    0.4318,
+    0.4332,
+    1.4351
+  ],
+  "textures": [
+    "assets/_textures/rattan/rattan_ao.png",
+    "assets/_textures/rattan/rattan_basecolor.png",
+    "assets/_textures/rattan/rattan_displacement.png",
+    "assets/_textures/rattan/rattan_height.png",
+    "assets/_textures/rattan/rattan_metallic.png",
+    "assets/_textures/rattan/rattan_normal.png",
+    "assets/_textures/rattan/rattan_roughness.png",
+    "assets/_textures/rattan/rattan_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

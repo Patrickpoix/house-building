@@ -1,0 +1,45 @@
+{
+  "id": "AST_19_003_绿植_C",
+  "category_no": "19",
+  "category_cn": "绿植",
+  "category_en": "Plants",
+  "name": "绿植",
+  "variant": "C",
+  "builder": "plant",
+  "dimensions_m": "0.347x0.356x0.455",
+  "materials_csv": "plant_green|plant_green_3|rattan|soil",
+  "materials_in_blend": [
+    "plant_green",
+    "plant_green_3",
+    "rattan",
+    "soil"
+  ],
+  "parts": 12,
+  "vertices": 4971,
+  "faces": 4780,
+  "bounds_m": [
+    0.3469,
+    0.356,
+    0.4546
+  ],
+  "textures": [
+    "assets/_textures/rattan/rattan_ao.png",
+    "assets/_textures/rattan/rattan_basecolor.png",
+    "assets/_textures/rattan/rattan_displacement.png",
+    "assets/_textures/rattan/rattan_height.png",
+    "assets/_textures/rattan/rattan_metallic.png",
+    "assets/_textures/rattan/rattan_normal.png",
+    "assets/_textures/rattan/rattan_roughness.png",
+    "assets/_textures/rattan/rattan_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

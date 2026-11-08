@@ -1,0 +1,62 @@
+{
+  "id": "AST_22_002_挂画_B",
+  "category_no": "22",
+  "category_cn": "挂画",
+  "category_en": "WallArt",
+  "name": "挂画",
+  "variant": "B",
+  "builder": "frame",
+  "dimensions_m": "0.735x0.043x0.935",
+  "materials_csv": "accent_terracotta|brass|paper|wall_paint|walnut_wood",
+  "materials_in_blend": [
+    "accent_terracotta",
+    "brass",
+    "paper",
+    "wall_paint",
+    "walnut_wood"
+  ],
+  "parts": 9,
+  "vertices": 114,
+  "faces": 90,
+  "bounds_m": [
+    0.735,
+    0.043,
+    0.935
+  ],
+  "textures": [
+    "assets/_textures/brass/brass_ao.png",
+    "assets/_textures/brass/brass_basecolor.png",
+    "assets/_textures/brass/brass_displacement.png",
+    "assets/_textures/brass/brass_height.png",
+    "assets/_textures/brass/brass_metallic.png",
+    "assets/_textures/brass/brass_normal.png",
+    "assets/_textures/brass/brass_roughness.png",
+    "assets/_textures/brass/brass_specular.png",
+    "assets/_textures/wall_paint/wall_paint_ao.png",
+    "assets/_textures/wall_paint/wall_paint_basecolor.png",
+    "assets/_textures/wall_paint/wall_paint_displacement.png",
+    "assets/_textures/wall_paint/wall_paint_height.png",
+    "assets/_textures/wall_paint/wall_paint_metallic.png",
+    "assets/_textures/wall_paint/wall_paint_normal.png",
+    "assets/_textures/wall_paint/wall_paint_roughness.png",
+    "assets/_textures/wall_paint/wall_paint_specular.png",
+    "assets/_textures/walnut_wood/walnut_wood_ao.png",
+    "assets/_textures/walnut_wood/walnut_wood_basecolor.png",
+    "assets/_textures/walnut_wood/walnut_wood_displacement.png",
+    "assets/_textures/walnut_wood/walnut_wood_height.png",
+    "assets/_textures/walnut_wood/walnut_wood_metallic.png",
+    "assets/_textures/walnut_wood/walnut_wood_normal.png",
+    "assets/_textures/walnut_wood/walnut_wood_roughness.png",
+    "assets/_textures/walnut_wood/walnut_wood_specular.png"
+  ],
+  "texture_count": 24,
+  "relinked_textures": 24,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

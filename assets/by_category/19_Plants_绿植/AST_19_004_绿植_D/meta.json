@@ -1,0 +1,45 @@
+{
+  "id": "AST_19_004_绿植_D",
+  "category_no": "19",
+  "category_cn": "绿植",
+  "category_en": "Plants",
+  "name": "绿植",
+  "variant": "D",
+  "builder": "plant",
+  "dimensions_m": "0.759x0.854x1.06",
+  "materials_csv": "concrete_floor|plant_green|plant_green_3|soil",
+  "materials_in_blend": [
+    "concrete_floor",
+    "plant_green",
+    "plant_green_3",
+    "soil"
+  ],
+  "parts": 12,
+  "vertices": 4971,
+  "faces": 4780,
+  "bounds_m": [
+    0.7595,
+    0.8537,
+    1.0599
+  ],
+  "textures": [
+    "assets/_textures/concrete_floor/concrete_floor_ao.png",
+    "assets/_textures/concrete_floor/concrete_floor_basecolor.png",
+    "assets/_textures/concrete_floor/concrete_floor_displacement.png",
+    "assets/_textures/concrete_floor/concrete_floor_height.png",
+    "assets/_textures/concrete_floor/concrete_floor_metallic.png",
+    "assets/_textures/concrete_floor/concrete_floor_normal.png",
+    "assets/_textures/concrete_floor/concrete_floor_roughness.png",
+    "assets/_textures/concrete_floor/concrete_floor_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

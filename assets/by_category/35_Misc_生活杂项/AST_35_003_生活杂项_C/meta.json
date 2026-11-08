@@ -1,0 +1,37 @@
+{
+  "id": "AST_35_003_生活杂项_C",
+  "category_no": "35",
+  "category_cn": "生活杂项",
+  "category_en": "Misc",
+  "name": "生活杂项",
+  "variant": "C",
+  "builder": "misc",
+  "dimensions_m": "0.27x0.27x0.12",
+  "materials_csv": "accent_terracotta|glass_clear|plant_green|plant_green_2|plant_green_3",
+  "materials_in_blend": [
+    "accent_terracotta",
+    "glass_clear",
+    "plant_green",
+    "plant_green_2",
+    "plant_green_3"
+  ],
+  "parts": 7,
+  "vertices": 5105,
+  "faces": 5110,
+  "bounds_m": [
+    0.2699,
+    0.2702,
+    0.1199
+  ],
+  "textures": [],
+  "texture_count": 0,
+  "relinked_textures": 0,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

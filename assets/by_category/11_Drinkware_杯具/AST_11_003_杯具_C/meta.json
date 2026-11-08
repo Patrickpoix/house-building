@@ -1,0 +1,33 @@
+{
+  "id": "AST_11_003_杯具_C",
+  "category_no": "11",
+  "category_cn": "杯具",
+  "category_en": "Drinkware",
+  "name": "杯具",
+  "variant": "C",
+  "builder": "cup",
+  "dimensions_m": "0.126x0.093x0.102",
+  "materials_csv": "glass_clear",
+  "materials_in_blend": [
+    "glass_clear"
+  ],
+  "parts": 5,
+  "vertices": 4142,
+  "faces": 3980,
+  "bounds_m": [
+    0.1258,
+    0.0932,
+    0.1025
+  ],
+  "textures": [],
+  "texture_count": 0,
+  "relinked_textures": 0,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "AST_09_003_锅具_C",
+  "category_no": "09",
+  "category_cn": "锅具",
+  "category_en": "Cookware",
+  "name": "锅具",
+  "variant": "C",
+  "builder": "pot",
+  "dimensions_m": "0.389x0.267x0.207",
+  "materials_csv": "brushed_steel|glazed_terracotta",
+  "materials_in_blend": [
+    "brushed_steel",
+    "glazed_terracotta"
+  ],
+  "parts": 12,
+  "vertices": 9886,
+  "faces": 9804,
+  "bounds_m": [
+    0.3892,
+    0.2668,
+    0.2067
+  ],
+  "textures": [
+    "assets/_textures/brushed_steel/brushed_steel_ao.png",
+    "assets/_textures/brushed_steel/brushed_steel_basecolor.png",
+    "assets/_textures/brushed_steel/brushed_steel_displacement.png",
+    "assets/_textures/brushed_steel/brushed_steel_height.png",
+    "assets/_textures/brushed_steel/brushed_steel_metallic.png",
+    "assets/_textures/brushed_steel/brushed_steel_normal.png",
+    "assets/_textures/brushed_steel/brushed_steel_roughness.png",
+    "assets/_textures/brushed_steel/brushed_steel_specular.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_ao.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_basecolor.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_displacement.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_height.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_metallic.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_normal.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_roughness.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_specular.png"
+  ],
+  "texture_count": 16,
+  "relinked_textures": 16,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

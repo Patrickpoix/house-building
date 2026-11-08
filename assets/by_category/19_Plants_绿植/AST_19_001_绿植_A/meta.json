@@ -1,0 +1,45 @@
+{
+  "id": "AST_19_001_绿植_A",
+  "category_no": "19",
+  "category_cn": "绿植",
+  "category_en": "Plants",
+  "name": "绿植",
+  "variant": "A",
+  "builder": "plant",
+  "dimensions_m": "0.429x0.471x0.594",
+  "materials_csv": "glazed_terracotta|plant_green|plant_green_3|soil",
+  "materials_in_blend": [
+    "glazed_terracotta",
+    "plant_green",
+    "plant_green_3",
+    "soil"
+  ],
+  "parts": 12,
+  "vertices": 4971,
+  "faces": 4780,
+  "bounds_m": [
+    0.4294,
+    0.4709,
+    0.5943
+  ],
+  "textures": [
+    "assets/_textures/glazed_terracotta/glazed_terracotta_ao.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_basecolor.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_displacement.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_height.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_metallic.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_normal.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_roughness.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

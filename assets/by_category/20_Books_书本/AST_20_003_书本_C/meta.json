@@ -1,0 +1,61 @@
+{
+  "id": "AST_20_003_书本_C",
+  "category_no": "20",
+  "category_cn": "书本",
+  "category_en": "Books",
+  "name": "书本",
+  "variant": "C",
+  "builder": "books",
+  "dimensions_m": "0.198x0.254x0.084",
+  "materials_csv": "brass|leather|painted_wood|paper",
+  "materials_in_blend": [
+    "brass",
+    "leather",
+    "painted_wood",
+    "paper"
+  ],
+  "parts": 9,
+  "vertices": 504,
+  "faces": 486,
+  "bounds_m": [
+    0.1982,
+    0.254,
+    0.0843
+  ],
+  "textures": [
+    "assets/_textures/brass/brass_ao.png",
+    "assets/_textures/brass/brass_basecolor.png",
+    "assets/_textures/brass/brass_displacement.png",
+    "assets/_textures/brass/brass_height.png",
+    "assets/_textures/brass/brass_metallic.png",
+    "assets/_textures/brass/brass_normal.png",
+    "assets/_textures/brass/brass_roughness.png",
+    "assets/_textures/brass/brass_specular.png",
+    "assets/_textures/leather/leather_ao.png",
+    "assets/_textures/leather/leather_basecolor.png",
+    "assets/_textures/leather/leather_displacement.png",
+    "assets/_textures/leather/leather_height.png",
+    "assets/_textures/leather/leather_metallic.png",
+    "assets/_textures/leather/leather_normal.png",
+    "assets/_textures/leather/leather_roughness.png",
+    "assets/_textures/leather/leather_specular.png",
+    "assets/_textures/painted_wood/painted_wood_ao.png",
+    "assets/_textures/painted_wood/painted_wood_basecolor.png",
+    "assets/_textures/painted_wood/painted_wood_displacement.png",
+    "assets/_textures/painted_wood/painted_wood_height.png",
+    "assets/_textures/painted_wood/painted_wood_metallic.png",
+    "assets/_textures/painted_wood/painted_wood_normal.png",
+    "assets/_textures/painted_wood/painted_wood_roughness.png",
+    "assets/_textures/painted_wood/painted_wood_specular.png"
+  ],
+  "texture_count": 24,
+  "relinked_textures": 24,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

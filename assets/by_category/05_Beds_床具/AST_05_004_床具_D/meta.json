@@ -1,0 +1,60 @@
+{
+  "id": "AST_05_004_床具_D",
+  "category_no": "05",
+  "category_cn": "床具",
+  "category_en": "Beds",
+  "name": "床具",
+  "variant": "D",
+  "builder": "bed",
+  "dimensions_m": "2.107x2.088x1.123",
+  "materials_csv": "leather|wall_paint|wool_fabric",
+  "materials_in_blend": [
+    "leather",
+    "wall_paint",
+    "wool_fabric"
+  ],
+  "parts": 12,
+  "vertices": 5061,
+  "faces": 4824,
+  "bounds_m": [
+    2.1069,
+    2.0882,
+    1.1233
+  ],
+  "textures": [
+    "assets/_textures/leather/leather_ao.png",
+    "assets/_textures/leather/leather_basecolor.png",
+    "assets/_textures/leather/leather_displacement.png",
+    "assets/_textures/leather/leather_height.png",
+    "assets/_textures/leather/leather_metallic.png",
+    "assets/_textures/leather/leather_normal.png",
+    "assets/_textures/leather/leather_roughness.png",
+    "assets/_textures/leather/leather_specular.png",
+    "assets/_textures/wall_paint/wall_paint_ao.png",
+    "assets/_textures/wall_paint/wall_paint_basecolor.png",
+    "assets/_textures/wall_paint/wall_paint_displacement.png",
+    "assets/_textures/wall_paint/wall_paint_height.png",
+    "assets/_textures/wall_paint/wall_paint_metallic.png",
+    "assets/_textures/wall_paint/wall_paint_normal.png",
+    "assets/_textures/wall_paint/wall_paint_roughness.png",
+    "assets/_textures/wall_paint/wall_paint_specular.png",
+    "assets/_textures/wool_fabric/wool_fabric_ao.png",
+    "assets/_textures/wool_fabric/wool_fabric_basecolor.png",
+    "assets/_textures/wool_fabric/wool_fabric_displacement.png",
+    "assets/_textures/wool_fabric/wool_fabric_height.png",
+    "assets/_textures/wool_fabric/wool_fabric_metallic.png",
+    "assets/_textures/wool_fabric/wool_fabric_normal.png",
+    "assets/_textures/wool_fabric/wool_fabric_roughness.png",
+    "assets/_textures/wool_fabric/wool_fabric_specular.png"
+  ],
+  "texture_count": 24,
+  "relinked_textures": 24,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

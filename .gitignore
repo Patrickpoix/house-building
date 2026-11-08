@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# Blender 备份
+*.blend1
+*.blend2
+
+# 渲染中间块
+renders/**/_hero_tile_*.png
+
+# 系统
+.DS_Store
+Thumbs.db
+
+# 打包产物（上传资料库用，不入 git）
+*.zip

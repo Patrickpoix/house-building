@@ -1,0 +1,43 @@
+{
+  "id": "AST_02_004_桌案_D",
+  "category_no": "02",
+  "category_cn": "桌案",
+  "category_en": "Tables",
+  "name": "桌案",
+  "variant": "D",
+  "builder": "table",
+  "dimensions_m": "1.201x0.702x0.775",
+  "materials_csv": "brushed_steel|glass_clear",
+  "materials_in_blend": [
+    "brushed_steel",
+    "glass_clear"
+  ],
+  "parts": 9,
+  "vertices": 1324,
+  "faces": 1124,
+  "bounds_m": [
+    1.2014,
+    0.7015,
+    0.7749
+  ],
+  "textures": [
+    "assets/_textures/brushed_steel/brushed_steel_ao.png",
+    "assets/_textures/brushed_steel/brushed_steel_basecolor.png",
+    "assets/_textures/brushed_steel/brushed_steel_displacement.png",
+    "assets/_textures/brushed_steel/brushed_steel_height.png",
+    "assets/_textures/brushed_steel/brushed_steel_metallic.png",
+    "assets/_textures/brushed_steel/brushed_steel_normal.png",
+    "assets/_textures/brushed_steel/brushed_steel_roughness.png",
+    "assets/_textures/brushed_steel/brushed_steel_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "AST_32_004_办公_D",
+  "category_no": "32",
+  "category_cn": "办公",
+  "category_en": "Office",
+  "name": "办公",
+  "variant": "D",
+  "builder": "office",
+  "dimensions_m": "1.201x0.602x1.061",
+  "materials_csv": "black_steel|brass|painted_wood",
+  "materials_in_blend": [
+    "black_steel",
+    "brass",
+    "painted_wood"
+  ],
+  "parts": 10,
+  "vertices": 4724,
+  "faces": 4456,
+  "bounds_m": [
+    1.2012,
+    0.6017,
+    1.0606
+  ],
+  "textures": [
+    "assets/_textures/black_steel/black_steel_ao.png",
+    "assets/_textures/black_steel/black_steel_basecolor.png",
+    "assets/_textures/black_steel/black_steel_displacement.png",
+    "assets/_textures/black_steel/black_steel_height.png",
+    "assets/_textures/black_steel/black_steel_metallic.png",
+    "assets/_textures/black_steel/black_steel_normal.png",
+    "assets/_textures/black_steel/black_steel_roughness.png",
+    "assets/_textures/black_steel/black_steel_specular.png",
+    "assets/_textures/brass/brass_ao.png",
+    "assets/_textures/brass/brass_basecolor.png",
+    "assets/_textures/brass/brass_displacement.png",
+    "assets/_textures/brass/brass_height.png",
+    "assets/_textures/brass/brass_metallic.png",
+    "assets/_textures/brass/brass_normal.png",
+    "assets/_textures/brass/brass_roughness.png",
+    "assets/_textures/brass/brass_specular.png",
+    "assets/_textures/painted_wood/painted_wood_ao.png",
+    "assets/_textures/painted_wood/painted_wood_basecolor.png",
+    "assets/_textures/painted_wood/painted_wood_displacement.png",
+    "assets/_textures/painted_wood/painted_wood_height.png",
+    "assets/_textures/painted_wood/painted_wood_metallic.png",
+    "assets/_textures/painted_wood/painted_wood_normal.png",
+    "assets/_textures/painted_wood/painted_wood_roughness.png",
+    "assets/_textures/painted_wood/painted_wood_specular.png"
+  ],
+  "texture_count": 24,
+  "relinked_textures": 24,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

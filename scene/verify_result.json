@@ -1,0 +1,477 @@
+{
+  "textures": {
+    "material_sets": 16,
+    "channel_names": [
+      "basecolor",
+      "normal",
+      "roughness",
+      "metallic",
+      "ao",
+      "height",
+      "displacement",
+      "specular"
+    ],
+    "channel_complete_sets": 16,
+    "texture_4k_sets": 16,
+    "basecolor_resolutions": {
+      "black_steel": [
+        4096,
+        4096
+      ],
+      "brass": [
+        4096,
+        4096
+      ],
+      "brushed_steel": [
+        4096,
+        4096
+      ],
+      "concrete_floor": [
+        4096,
+        4096
+      ],
+      "floor_tile": [
+        4096,
+        4096
+      ],
+      "glazed_terracotta": [
+        4096,
+        4096
+      ],
+      "leather": [
+        4096,
+        4096
+      ],
+      "linen_fabric": [
+        4096,
+        4096
+      ],
+      "marble": [
+        4096,
+        4096
+      ],
+      "oak_wood": [
+        4096,
+        4096
+      ],
+      "painted_wood": [
+        4096,
+        4096
+      ],
+      "rattan": [
+        4096,
+        4096
+      ],
+      "wall_paint": [
+        4096,
+        4096
+      ],
+      "walnut_wood": [
+        4096,
+        4096
+      ],
+      "white_ceramic": [
+        4096,
+        4096
+      ],
+      "wool_fabric": [
+        4096,
+        4096
+      ]
+    },
+    "total_texture_files": 128,
+    "total_texture_mb": 440.2,
+    "ai_material_sources": 8,
+    "per_material": {
+      "black_steel": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "brass": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "brushed_steel": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "concrete_floor": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "floor_tile": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "glazed_terracotta": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "leather": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "linen_fabric": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "marble": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "oak_wood": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "painted_wood": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "rattan": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "wall_paint": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "walnut_wood": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "white_ceramic": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ],
+      "wool_fabric": [
+        "basecolor",
+        "normal",
+        "roughness",
+        "metallic",
+        "ao",
+        "height",
+        "displacement",
+        "specular"
+      ]
+    },
+    "albedo_quality": {
+      "black_steel": {
+        "luma_std": 0.0047,
+        "detail_energy": 0.00165,
+        "mirror_asymmetry": 0.0052
+      },
+      "brass": {
+        "luma_std": 0.0562,
+        "detail_energy": 0.01077,
+        "mirror_asymmetry": 0.0167
+      },
+      "brushed_steel": {
+        "luma_std": 0.0157,
+        "detail_energy": 0.00347,
+        "mirror_asymmetry": 0.0175
+      },
+      "concrete_floor": {
+        "luma_std": 0.0109,
+        "detail_energy": 0.00313,
+        "mirror_asymmetry": 0.0116
+      },
+      "floor_tile": {
+        "luma_std": 0.0114,
+        "detail_energy": 0.00305,
+        "mirror_asymmetry": 0.008
+      },
+      "glazed_terracotta": {
+        "luma_std": 0.0038,
+        "detail_energy": 0.00149,
+        "mirror_asymmetry": 0.0041
+      },
+      "leather": {
+        "luma_std": 0.0274,
+        "detail_energy": 0.01189,
+        "mirror_asymmetry": 0.0291
+      },
+      "linen_fabric": {
+        "luma_std": 0.0569,
+        "detail_energy": 0.05014,
+        "mirror_asymmetry": 0.0597
+      },
+      "marble": {
+        "luma_std": 0.0287,
+        "detail_energy": 0.00764,
+        "mirror_asymmetry": 0.0278
+      },
+      "oak_wood": {
+        "luma_std": 0.0657,
+        "detail_energy": 0.03571,
+        "mirror_asymmetry": 0.0729
+      },
+      "painted_wood": {
+        "luma_std": 0.0081,
+        "detail_energy": 0.00253,
+        "mirror_asymmetry": 0.0084
+      },
+      "rattan": {
+        "luma_std": 0.087,
+        "detail_energy": 0.02943,
+        "mirror_asymmetry": 0.0933
+      },
+      "wall_paint": {
+        "luma_std": 0.0024,
+        "detail_energy": 0.00059,
+        "mirror_asymmetry": 0.0023
+      },
+      "walnut_wood": {
+        "luma_std": 0.0447,
+        "detail_energy": 0.01852,
+        "mirror_asymmetry": 0.0456
+      },
+      "white_ceramic": {
+        "luma_std": 0.0069,
+        "detail_energy": 0.00448,
+        "mirror_asymmetry": 0.007
+      },
+      "wool_fabric": {
+        "luma_std": 0.0101,
+        "detail_energy": 0.00554,
+        "mirror_asymmetry": 0.0111
+      }
+    },
+    "albedo_quality_summary": {
+      "mean_luma_std": 0.0275,
+      "mean_detail_energy": 0.01188,
+      "mean_mirror_asymmetry": 0.0263,
+      "wood_mirror_asymmetry": {
+        "oak_wood": 0.0729,
+        "walnut_wood": 0.0456
+      }
+    }
+  },
+  "assets": {
+    "asset_count": 144,
+    "category_count": 36,
+    "total_parts": 1416,
+    "min_parts": 4,
+    "avg_parts": 9.83,
+    "collections_in_blend": 144,
+    "collections_with_bevel": 132,
+    "collections_with_multi_material": 113,
+    "total_mesh_vertices": 451048,
+    "total_mesh_faces": 428002,
+    "avg_vertices_per_asset": 3132.3,
+    "curved_parts": 526,
+    "collections_with_curved_geometry": 140,
+    "shape_breakdown": {
+      "box": 404,
+      "cloth": 24,
+      "cone": 112,
+      "cyl": 234,
+      "lathe": 76,
+      "leaf": 32,
+      "soft": 149,
+      "sph": 64,
+      "torus": 76,
+      "tube": 245
+    },
+    "materials_with_sheen": 4,
+    "materials_with_coat": 4,
+    "materials_with_anisotropic": 3,
+    "materials_with_normal_map": 15,
+    "materials_with_bump": 15,
+    "materials_with_displacement_node": 15,
+    "materials_with_ao": 15,
+    "texture_image_nodes": 120,
+    "packed_images": 0,
+    "objects_with_displace_modifier": 205
+  },
+  "house": {
+    "plank_floor_objects": 5,
+    "plank_faces": 2250,
+    "plank_material_variants": 12,
+    "scene_displace_objects": 112,
+    "door_casings": 12,
+    "switch_plates": 14,
+    "downlights": 18,
+    "vents": 16,
+    "curtain_panels": 9,
+    "sky_backdrop": 1,
+    "total_mesh_vertices": 268421,
+    "instances": 107,
+    "distinct_assets_used": 76,
+    "wall_segments": 48,
+    "glass_panes": 7,
+    "lights": 9,
+    "cameras": 6,
+    "door_leaves": 8,
+    "total_objects": 1050,
+    "engine": "CYCLES",
+    "device": "CPU",
+    "architectural_trims": 10,
+    "elevated_decor_instances": 34,
+    "textured_materials": 36,
+    "texture_images": 162,
+    "broken_texture_paths": [],
+    "absolute_texture_paths": []
+  },
+  "portable": {
+    "category_dirs": 36,
+    "asset_dirs": 144,
+    "expected_assets": 144,
+    "files": {
+      "blend": 144,
+      "preview": 144,
+      "meta": 144
+    },
+    "missing": [],
+    "missing_total": 0,
+    "all_relative_texture_paths": true
+  },
+  "renders": {
+    "total_png": 17,
+    "by_group": {
+      "空间主图": 6,
+      "资产特写": 5,
+      "4K主图": 1,
+      "材质检视": 5
+    },
+    "empty_files": []
+  },
+  "structure": {
+    "config.py": true,
+    "README.md": true,
+    "GOAL.md": true,
+    "CHANGELOG.md": true,
+    "docs/01_目录规范.md": true,
+    "docs/02_资产总表.md": true,
+    "docs/03_快速开始.md": true,
+    "docs/04_验收报告.md": true,
+    "docs/05_视频解析.md": true,
+    "docs/06_平面布局.md": true,
+    "docs/07_环境说明.md": true,
+    "docs/08_迁移指南.md": true,
+    "docs/09_任意组装指南.md": true,
+    "assets/catalog.csv": true,
+    "assets/_library/asset_library.blend": true,
+    "scene/house.blend": true,
+    "scene/placement.json": true,
+    "src/01_assets/export_assets.py": true,
+    "src/02_scene/assemble.py": true,
+    "src/04_tools/migrate_check.py": true
+  },
+  "layouts": {
+    "layout_count": 3,
+    "all_valid": true,
+    "detail": [
+      {
+        "name": "family_100.json",
+        "id": "family_100",
+        "assets": 27,
+        "bad_ids": 0,
+        "out_of_bounds": 0
+      },
+      {
+        "name": "loft_open.json",
+        "id": "loft_open",
+        "assets": 25,
+        "bad_ids": 0,
+        "out_of_bounds": 0
+      },
+      {
+        "name": "studio_45.json",
+        "id": "studio_45",
+        "assets": 20,
+        "bad_ids": 0,
+        "out_of_bounds": 0
+      }
+    ]
+  }
+}

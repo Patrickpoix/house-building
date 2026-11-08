@@ -1,0 +1,52 @@
+{
+  "id": "AST_12_001_瓶器_A",
+  "category_no": "12",
+  "category_cn": "瓶器",
+  "category_en": "Vessels",
+  "name": "瓶器",
+  "variant": "A",
+  "builder": "bottle",
+  "dimensions_m": "0.121x0.121x0.283",
+  "materials_csv": "brass|paper|white_ceramic",
+  "materials_in_blend": [
+    "brass",
+    "paper",
+    "white_ceramic"
+  ],
+  "parts": 6,
+  "vertices": 5808,
+  "faces": 5696,
+  "bounds_m": [
+    0.1212,
+    0.1213,
+    0.2832
+  ],
+  "textures": [
+    "assets/_textures/brass/brass_ao.png",
+    "assets/_textures/brass/brass_basecolor.png",
+    "assets/_textures/brass/brass_displacement.png",
+    "assets/_textures/brass/brass_height.png",
+    "assets/_textures/brass/brass_metallic.png",
+    "assets/_textures/brass/brass_normal.png",
+    "assets/_textures/brass/brass_roughness.png",
+    "assets/_textures/brass/brass_specular.png",
+    "assets/_textures/white_ceramic/white_ceramic_ao.png",
+    "assets/_textures/white_ceramic/white_ceramic_basecolor.png",
+    "assets/_textures/white_ceramic/white_ceramic_displacement.png",
+    "assets/_textures/white_ceramic/white_ceramic_height.png",
+    "assets/_textures/white_ceramic/white_ceramic_metallic.png",
+    "assets/_textures/white_ceramic/white_ceramic_normal.png",
+    "assets/_textures/white_ceramic/white_ceramic_roughness.png",
+    "assets/_textures/white_ceramic/white_ceramic_specular.png"
+  ],
+  "texture_count": 16,
+  "relinked_textures": 16,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

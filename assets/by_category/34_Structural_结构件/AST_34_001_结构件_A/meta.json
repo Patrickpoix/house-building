@@ -1,0 +1,42 @@
+{
+  "id": "AST_34_001_结构件_A",
+  "category_no": "34",
+  "category_cn": "结构件",
+  "category_en": "Structural",
+  "name": "结构件",
+  "variant": "A",
+  "builder": "structural",
+  "dimensions_m": "2.5x0.165x2.6",
+  "materials_csv": "painted_wood",
+  "materials_in_blend": [
+    "painted_wood"
+  ],
+  "parts": 6,
+  "vertices": 48,
+  "faces": 36,
+  "bounds_m": [
+    2.5,
+    0.165,
+    2.6
+  ],
+  "textures": [
+    "assets/_textures/painted_wood/painted_wood_ao.png",
+    "assets/_textures/painted_wood/painted_wood_basecolor.png",
+    "assets/_textures/painted_wood/painted_wood_displacement.png",
+    "assets/_textures/painted_wood/painted_wood_height.png",
+    "assets/_textures/painted_wood/painted_wood_metallic.png",
+    "assets/_textures/painted_wood/painted_wood_normal.png",
+    "assets/_textures/painted_wood/painted_wood_roughness.png",
+    "assets/_textures/painted_wood/painted_wood_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

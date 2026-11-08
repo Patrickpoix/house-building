@@ -1,0 +1,42 @@
+{
+  "id": "AST_10_003_餐具_C",
+  "category_no": "10",
+  "category_cn": "餐具",
+  "category_en": "Tableware",
+  "name": "餐具",
+  "variant": "C",
+  "builder": "plate",
+  "dimensions_m": "0.329x0.33x0.031",
+  "materials_csv": "marble",
+  "materials_in_blend": [
+    "marble"
+  ],
+  "parts": 4,
+  "vertices": 3872,
+  "faces": 3764,
+  "bounds_m": [
+    0.3293,
+    0.3298,
+    0.0314
+  ],
+  "textures": [
+    "assets/_textures/marble/marble_ao.png",
+    "assets/_textures/marble/marble_basecolor.png",
+    "assets/_textures/marble/marble_displacement.png",
+    "assets/_textures/marble/marble_height.png",
+    "assets/_textures/marble/marble_metallic.png",
+    "assets/_textures/marble/marble_normal.png",
+    "assets/_textures/marble/marble_roughness.png",
+    "assets/_textures/marble/marble_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

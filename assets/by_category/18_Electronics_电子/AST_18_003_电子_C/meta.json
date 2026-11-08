@@ -1,0 +1,44 @@
+{
+  "id": "AST_18_003_电子_C",
+  "category_no": "18",
+  "category_cn": "电子",
+  "category_en": "Electronics",
+  "name": "电子",
+  "variant": "C",
+  "builder": "electronics",
+  "dimensions_m": "1.401x0.2x0.916",
+  "materials_csv": "brushed_steel|matte_black|screen_dark",
+  "materials_in_blend": [
+    "brushed_steel",
+    "matte_black",
+    "screen_dark"
+  ],
+  "parts": 10,
+  "vertices": 312,
+  "faces": 248,
+  "bounds_m": [
+    1.4013,
+    0.2,
+    0.9162
+  ],
+  "textures": [
+    "assets/_textures/brushed_steel/brushed_steel_ao.png",
+    "assets/_textures/brushed_steel/brushed_steel_basecolor.png",
+    "assets/_textures/brushed_steel/brushed_steel_displacement.png",
+    "assets/_textures/brushed_steel/brushed_steel_height.png",
+    "assets/_textures/brushed_steel/brushed_steel_metallic.png",
+    "assets/_textures/brushed_steel/brushed_steel_normal.png",
+    "assets/_textures/brushed_steel/brushed_steel_roughness.png",
+    "assets/_textures/brushed_steel/brushed_steel_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

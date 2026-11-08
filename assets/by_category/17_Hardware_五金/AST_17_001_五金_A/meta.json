@@ -1,0 +1,42 @@
+{
+  "id": "AST_17_001_五金_A",
+  "category_no": "17",
+  "category_cn": "五金",
+  "category_en": "Hardware",
+  "name": "五金",
+  "variant": "A",
+  "builder": "hardware",
+  "dimensions_m": "0.118x0.095x0.045",
+  "materials_csv": "brass",
+  "materials_in_blend": [
+    "brass"
+  ],
+  "parts": 6,
+  "vertices": 2602,
+  "faces": 2424,
+  "bounds_m": [
+    0.118,
+    0.0952,
+    0.0452
+  ],
+  "textures": [
+    "assets/_textures/brass/brass_ao.png",
+    "assets/_textures/brass/brass_basecolor.png",
+    "assets/_textures/brass/brass_displacement.png",
+    "assets/_textures/brass/brass_height.png",
+    "assets/_textures/brass/brass_metallic.png",
+    "assets/_textures/brass/brass_normal.png",
+    "assets/_textures/brass/brass_roughness.png",
+    "assets/_textures/brass/brass_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "AST_03_002_沙发_B",
+  "category_no": "03",
+  "category_cn": "沙发",
+  "category_en": "Sofas",
+  "name": "沙发",
+  "variant": "B",
+  "builder": "sofa",
+  "dimensions_m": "2.129x0.91x0.895",
+  "materials_csv": "linen_fabric|oak_wood|wool_fabric",
+  "materials_in_blend": [
+    "linen_fabric",
+    "oak_wood",
+    "wool_fabric"
+  ],
+  "parts": 25,
+  "vertices": 8042,
+  "faces": 7548,
+  "bounds_m": [
+    2.1295,
+    0.9099,
+    0.8946
+  ],
+  "textures": [
+    "assets/_textures/linen_fabric/linen_fabric_ao.png",
+    "assets/_textures/linen_fabric/linen_fabric_basecolor.png",
+    "assets/_textures/linen_fabric/linen_fabric_displacement.png",
+    "assets/_textures/linen_fabric/linen_fabric_height.png",
+    "assets/_textures/linen_fabric/linen_fabric_metallic.png",
+    "assets/_textures/linen_fabric/linen_fabric_normal.png",
+    "assets/_textures/linen_fabric/linen_fabric_roughness.png",
+    "assets/_textures/linen_fabric/linen_fabric_specular.png",
+    "assets/_textures/oak_wood/oak_wood_ao.png",
+    "assets/_textures/oak_wood/oak_wood_basecolor.png",
+    "assets/_textures/oak_wood/oak_wood_displacement.png",
+    "assets/_textures/oak_wood/oak_wood_height.png",
+    "assets/_textures/oak_wood/oak_wood_metallic.png",
+    "assets/_textures/oak_wood/oak_wood_normal.png",
+    "assets/_textures/oak_wood/oak_wood_roughness.png",
+    "assets/_textures/oak_wood/oak_wood_specular.png",
+    "assets/_textures/wool_fabric/wool_fabric_ao.png",
+    "assets/_textures/wool_fabric/wool_fabric_basecolor.png",
+    "assets/_textures/wool_fabric/wool_fabric_displacement.png",
+    "assets/_textures/wool_fabric/wool_fabric_height.png",
+    "assets/_textures/wool_fabric/wool_fabric_metallic.png",
+    "assets/_textures/wool_fabric/wool_fabric_normal.png",
+    "assets/_textures/wool_fabric/wool_fabric_roughness.png",
+    "assets/_textures/wool_fabric/wool_fabric_specular.png"
+  ],
+  "texture_count": 24,
+  "relinked_textures": 24,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

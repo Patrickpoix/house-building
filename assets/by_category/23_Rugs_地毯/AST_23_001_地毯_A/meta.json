@@ -1,0 +1,51 @@
+{
+  "id": "AST_23_001_地毯_A",
+  "category_no": "23",
+  "category_cn": "地毯",
+  "category_en": "Rugs",
+  "name": "地毯",
+  "variant": "A",
+  "builder": "rug",
+  "dimensions_m": "2.02x1.49x0.037",
+  "materials_csv": "linen_fabric|wool_fabric",
+  "materials_in_blend": [
+    "linen_fabric",
+    "wool_fabric"
+  ],
+  "parts": 21,
+  "vertices": 665,
+  "faces": 484,
+  "bounds_m": [
+    2.02,
+    1.4903,
+    0.0374
+  ],
+  "textures": [
+    "assets/_textures/linen_fabric/linen_fabric_ao.png",
+    "assets/_textures/linen_fabric/linen_fabric_basecolor.png",
+    "assets/_textures/linen_fabric/linen_fabric_displacement.png",
+    "assets/_textures/linen_fabric/linen_fabric_height.png",
+    "assets/_textures/linen_fabric/linen_fabric_metallic.png",
+    "assets/_textures/linen_fabric/linen_fabric_normal.png",
+    "assets/_textures/linen_fabric/linen_fabric_roughness.png",
+    "assets/_textures/linen_fabric/linen_fabric_specular.png",
+    "assets/_textures/wool_fabric/wool_fabric_ao.png",
+    "assets/_textures/wool_fabric/wool_fabric_basecolor.png",
+    "assets/_textures/wool_fabric/wool_fabric_displacement.png",
+    "assets/_textures/wool_fabric/wool_fabric_height.png",
+    "assets/_textures/wool_fabric/wool_fabric_metallic.png",
+    "assets/_textures/wool_fabric/wool_fabric_normal.png",
+    "assets/_textures/wool_fabric/wool_fabric_roughness.png",
+    "assets/_textures/wool_fabric/wool_fabric_specular.png"
+  ],
+  "texture_count": 16,
+  "relinked_textures": 16,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

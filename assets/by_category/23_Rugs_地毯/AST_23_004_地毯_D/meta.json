@@ -1,0 +1,42 @@
+{
+  "id": "AST_23_004_地毯_D",
+  "category_no": "23",
+  "category_cn": "地毯",
+  "category_en": "Rugs",
+  "name": "地毯",
+  "variant": "D",
+  "builder": "rug",
+  "dimensions_m": "1.22x0.89x0.037",
+  "materials_csv": "rattan",
+  "materials_in_blend": [
+    "rattan"
+  ],
+  "parts": 21,
+  "vertices": 665,
+  "faces": 484,
+  "bounds_m": [
+    1.22,
+    0.8903,
+    0.037
+  ],
+  "textures": [
+    "assets/_textures/rattan/rattan_ao.png",
+    "assets/_textures/rattan/rattan_basecolor.png",
+    "assets/_textures/rattan/rattan_displacement.png",
+    "assets/_textures/rattan/rattan_height.png",
+    "assets/_textures/rattan/rattan_metallic.png",
+    "assets/_textures/rattan/rattan_normal.png",
+    "assets/_textures/rattan/rattan_roughness.png",
+    "assets/_textures/rattan/rattan_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

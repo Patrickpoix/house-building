@@ -1,0 +1,42 @@
+{
+  "id": "AST_10_002_餐具_B",
+  "category_no": "10",
+  "category_cn": "餐具",
+  "category_en": "Tableware",
+  "name": "餐具",
+  "variant": "B",
+  "builder": "plate",
+  "dimensions_m": "0.228x0.229x0.062",
+  "materials_csv": "glazed_terracotta",
+  "materials_in_blend": [
+    "glazed_terracotta"
+  ],
+  "parts": 4,
+  "vertices": 3872,
+  "faces": 3764,
+  "bounds_m": [
+    0.2284,
+    0.2287,
+    0.0617
+  ],
+  "textures": [
+    "assets/_textures/glazed_terracotta/glazed_terracotta_ao.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_basecolor.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_displacement.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_height.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_metallic.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_normal.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_roughness.png",
+    "assets/_textures/glazed_terracotta/glazed_terracotta_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

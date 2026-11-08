@@ -1,0 +1,42 @@
+{
+  "id": "AST_30_003_厨具_C",
+  "category_no": "30",
+  "category_cn": "厨具",
+  "category_en": "KitchenTools",
+  "name": "厨具",
+  "variant": "C",
+  "builder": "utensil",
+  "dimensions_m": "0.032x0.237x0.01",
+  "materials_csv": "black_steel",
+  "materials_in_blend": [
+    "black_steel"
+  ],
+  "parts": 4,
+  "vertices": 418,
+  "faces": 404,
+  "bounds_m": [
+    0.0319,
+    0.2367,
+    0.01
+  ],
+  "textures": [
+    "assets/_textures/black_steel/black_steel_ao.png",
+    "assets/_textures/black_steel/black_steel_basecolor.png",
+    "assets/_textures/black_steel/black_steel_displacement.png",
+    "assets/_textures/black_steel/black_steel_height.png",
+    "assets/_textures/black_steel/black_steel_metallic.png",
+    "assets/_textures/black_steel/black_steel_normal.png",
+    "assets/_textures/black_steel/black_steel_roughness.png",
+    "assets/_textures/black_steel/black_steel_specular.png"
+  ],
+  "texture_count": 8,
+  "relinked_textures": 8,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

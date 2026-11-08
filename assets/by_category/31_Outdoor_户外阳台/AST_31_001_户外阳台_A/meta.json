@@ -1,0 +1,60 @@
+{
+  "id": "AST_31_001_户外阳台_A",
+  "category_no": "31",
+  "category_cn": "户外阳台",
+  "category_en": "Outdoor",
+  "name": "户外阳台",
+  "variant": "A",
+  "builder": "outdoor",
+  "dimensions_m": "0.601x0.595x0.902",
+  "materials_csv": "linen_fabric|oak_wood|rattan",
+  "materials_in_blend": [
+    "linen_fabric",
+    "oak_wood",
+    "rattan"
+  ],
+  "parts": 8,
+  "vertices": 3032,
+  "faces": 2834,
+  "bounds_m": [
+    0.6014,
+    0.5946,
+    0.9022
+  ],
+  "textures": [
+    "assets/_textures/linen_fabric/linen_fabric_ao.png",
+    "assets/_textures/linen_fabric/linen_fabric_basecolor.png",
+    "assets/_textures/linen_fabric/linen_fabric_displacement.png",
+    "assets/_textures/linen_fabric/linen_fabric_height.png",
+    "assets/_textures/linen_fabric/linen_fabric_metallic.png",
+    "assets/_textures/linen_fabric/linen_fabric_normal.png",
+    "assets/_textures/linen_fabric/linen_fabric_roughness.png",
+    "assets/_textures/linen_fabric/linen_fabric_specular.png",
+    "assets/_textures/oak_wood/oak_wood_ao.png",
+    "assets/_textures/oak_wood/oak_wood_basecolor.png",
+    "assets/_textures/oak_wood/oak_wood_displacement.png",
+    "assets/_textures/oak_wood/oak_wood_height.png",
+    "assets/_textures/oak_wood/oak_wood_metallic.png",
+    "assets/_textures/oak_wood/oak_wood_normal.png",
+    "assets/_textures/oak_wood/oak_wood_roughness.png",
+    "assets/_textures/oak_wood/oak_wood_specular.png",
+    "assets/_textures/rattan/rattan_ao.png",
+    "assets/_textures/rattan/rattan_basecolor.png",
+    "assets/_textures/rattan/rattan_displacement.png",
+    "assets/_textures/rattan/rattan_height.png",
+    "assets/_textures/rattan/rattan_metallic.png",
+    "assets/_textures/rattan/rattan_normal.png",
+    "assets/_textures/rattan/rattan_roughness.png",
+    "assets/_textures/rattan/rattan_specular.png"
+  ],
+  "texture_count": 24,
+  "relinked_textures": 24,
+  "missing_textures": [],
+  "files": {
+    "blend": "model.blend",
+    "preview": "preview.png",
+    "meta": "meta.json"
+  },
+  "portable": "BLEND 以 // 相对路径引用 assets/_textures/；保持项目目录结构即可整体搬走复用",
+  "glb_on_demand": "需要跨软件单文件复用时：blpython src/04_tools/export_glb.py -- <资产ID>"
+}

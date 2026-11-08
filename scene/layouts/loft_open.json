@@ -1,0 +1,53 @@
+{
+  "id": "loft_open",
+  "name": "开放式 Loft · 无隔墙大空间",
+  "area_m2": 96,
+  "style": "混凝土地面 / 黑钢 / 皮革 / 胡桃木",
+  "shell": {
+    "x0": -6.0, "x1": 6.0, "y0": -4.0, "y1": 4.0,
+    "height": 3.4,
+    "wall_thick_ext": 0.26, "wall_thick_int": 0.14,
+    "floor_tex": "concrete_floor", "wall_tex": "wall_paint",
+    "ceiling": true
+  },
+  "rooms": [
+    {"name": "起居区", "x0": -6.0, "x1": 1.0, "y0": -4.0, "y1": 4.0, "floor_tex": "concrete_floor"},
+    {"name": "餐厨区", "x0": 1.0, "x1": 6.0, "y0": -4.0, "y1": 4.0, "floor_tex": "floor_tile"}
+  ],
+  "partitions": [],
+  "windows": [
+    {"side": "south", "from": 0.05, "to": 0.38, "z0": 0.4, "z1": 2.9},
+    {"side": "south", "from": 0.55, "to": 0.92, "z0": 0.4, "z1": 2.9},
+    {"side": "east", "from": 0.20, "to": 0.80, "z0": 0.6, "z1": 2.9}
+  ],
+  "assets": [
+    {"asset": "AST_03_003_沙发_C", "pos": [-3.0, -1.6, 0], "rot_z": 0, "scale": 1.15, "label": "主沙发"},
+    {"asset": "AST_02_002_桌案_B", "pos": [-3.0, 0.0, 0], "rot_z": 0, "scale": 1.1, "label": "大茶几"},
+    {"asset": "AST_23_004_地毯_D", "pos": [-3.0, -0.8, 0], "rot_z": 0, "scale": 1.2, "label": "大地毯"},
+    {"asset": "AST_03_004_沙发_D", "pos": [-4.6, 1.4, 0], "rot_z": 1.2, "scale": 1.0, "label": "单人沙发"},
+    {"asset": "AST_01_003_餐椅_C", "pos": [-1.2, 1.6, 0], "rot_z": -0.6, "scale": 1.0, "label": "休闲椅"},
+    {"asset": "AST_04_001_柜体_A", "pos": [-5.4, -0.4, 0], "rot_z": 1.571, "scale": 1.1, "label": "边柜"},
+    {"asset": "AST_22_003_挂画_C", "pos": [-3.0, -3.85, 0], "rot_z": 0, "scale": 1.3, "label": "大幅挂画"},
+    {"asset": "AST_19_003_绿植_C", "pos": [-5.2, 3.2, 0], "rot_z": 0, "scale": 1.3, "label": "大型绿植"},
+    {"asset": "AST_19_002_绿植_B", "pos": [0.4, 3.3, 0], "rot_z": 0, "scale": 1.1, "label": "绿植"},
+    {"asset": "AST_07_002_灯具_B", "pos": [-4.8, -2.8, 0], "rot_z": 0, "scale": 1.1, "label": "落地灯"},
+    {"asset": "AST_21_002_装饰摆件_B", "pos": [-3.0, 0.0, 0], "rot_z": 0, "scale": 1.0, "label": "茶几摆件"},
+    {"asset": "AST_25_003_靠垫_C", "pos": [-3.6, -1.6, 0], "rot_z": 0.2, "scale": 1.0, "label": "靠垫"},
+    {"asset": "AST_02_001_桌案_A", "pos": [3.4, -1.2, 0], "rot_z": 0, "scale": 1.2, "label": "长餐桌"},
+    {"asset": "AST_01_001_餐椅_A", "pos": [2.4, -1.2, 0], "rot_z": 1.571, "scale": 1.0, "label": "餐椅1"},
+    {"asset": "AST_01_002_餐椅_B", "pos": [4.4, -1.2, 0], "rot_z": -1.571, "scale": 1.0, "label": "餐椅2"},
+    {"asset": "AST_01_004_餐椅_D", "pos": [3.4, -2.1, 0], "rot_z": 0, "scale": 1.0, "label": "餐椅3"},
+    {"asset": "AST_07_001_灯具_A", "pos": [3.4, -1.2, 0], "rot_z": 0, "scale": 1.2, "label": "餐桌吊灯"},
+    {"asset": "AST_08_003_厨电_C", "pos": [5.4, 2.6, 0], "rot_z": -1.571, "scale": 1.1, "label": "厨电"},
+    {"asset": "AST_13_003_水槽龙头_C", "pos": [4.0, 3.4, 0], "rot_z": 0, "scale": 1.1, "label": "水槽"},
+    {"asset": "AST_04_003_柜体_C", "pos": [2.0, 3.4, 0], "rot_z": 0, "scale": 1.1, "label": "餐边柜"},
+    {"asset": "AST_12_001_瓶器_A", "pos": [2.0, 3.4, 0], "rot_z": 0, "scale": 1.0, "label": "瓶器"},
+    {"asset": "AST_11_001_杯具_A", "pos": [3.4, -1.2, 0], "rot_z": 0, "scale": 0.9, "label": "杯具"},
+    {"asset": "AST_32_003_办公_C", "pos": [-1.0, -3.0, 0], "rot_z": 0, "scale": 1.0, "label": "开放工作台"},
+    {"asset": "AST_20_003_书本_C", "pos": [-1.0, -3.0, 0], "rot_z": 0, "scale": 1.0, "label": "书本"},
+    {"asset": "AST_31_002_户外阳台_B", "pos": [4.6, 0.6, 0], "rot_z": 0, "scale": 1.1, "label": "休闲角"}
+  ],
+  "camera": {"pos": [9.0, -11.0, 13.0], "target": [0.0, 0.0, 0.6], "lens": 22},
+  "lighting": {"sun": 2.0},
+  "render": {"resolution": [1280, 720], "samples": 24, "exposure": -0.30}
+}
