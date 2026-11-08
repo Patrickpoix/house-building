@@ -4,6 +4,13 @@
 
 ## Blender 阶段
 
+起居木边几试验（依赖台灯电线试验稿；覆盖独立试验目录）：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/study_living_side_table.py
+```
+
+
 台灯电线试验（依赖台灯试放工程；覆盖独立试验目录）：
 
 ```powershell

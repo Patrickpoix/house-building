@@ -1,5 +1,9 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-09：起居木边几
+
+`scripts/study_living_side_table.py` 在灯具试验稿中复用书架白橡木材质，生成四腿、四围板和桌面，保存 `stages/S003/side-table-study/`。重开确认九部件和尺寸 0.48×0.48×0.54 m、贴图已打包；已查看房间与近景。榫接、稳定、碰撞、UV 与电线通行待核查，不计正式资产；本阶段零积分。
+
 ## 2026-11-09：台灯电线试验
 
 复用 S003 试放稿添加电线、插座及插头，`scripts/study_lamp_power.py` 输出 `stages/S003/lamp-power-study/`。原自动曲线部分陷入地板；尝试 Blender 5.2.3 不支持的 AUTO_CLAMPED 手柄在渲染前报错，改用 VECTOR 并提高路径后重渲。细节图见连续线，但地面走线偏直、裸露，仍须检查通行和接触，不能作为正式电气布置；无新增积分。
