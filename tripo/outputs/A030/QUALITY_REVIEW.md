@@ -12,3 +12,7 @@
 复跑：从项目根目录执行 Blender 后台 `scripts/inspect_tripo_asset.py -- tripo/outputs/A030/tripo-original.glb tripo/outputs/A030/inspection.json`，以及 `scripts/render_tripo_a030_comparison.py`。两项已成功执行；渲染初次因空场景没有 World 而失败，添加 World 后重跑成功。
 
 下一步：定位提带和非流形边、评估织纹与缝线，按原设计尺度处理并检查修复后的四向/近景；再根据实物质量决定能否纳入住宅。正式生产的配置与后续资产安排见项目根目录 AGENTS.md、HANDOFF.md。
+
+## 2026-11-08 粗糙度隔离
+
+Blender 5.2.3 在相同相机、灯光下将粗糙度单独改为常数 0.5，保留颜色、法线与金属度；结果与原材质位于 `roughness-diagnostic/`。无损局部 `(150, 160, 512, 512)` 对照可见高光变化，但袋身织纹波纹及方向异常仍在；这只说明该视角下统一粗糙度不足以消除缺陷，不能排除原粗糙度图的其他问题，也不能据此区分 UV 与颜色/法线贴图的贡献。恢复粗糙度连接后生成的 `without-normal.png` 与原诊断对应图逐像素一致。未改原 GLB，未用积分；资产仍未通过验收。后续优先定位 UV 和纹理畸变、提带连接，再评估局部重做或改用布料工艺。

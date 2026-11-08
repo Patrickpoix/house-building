@@ -70,6 +70,19 @@ if diagnostic:
                for node in mat.node_tree.nodes if node.type == "BSDF_PRINCIPLED"]
     if not shaders:
         raise RuntimeError("没有可检查的 Principled 材质")
+    roughness_links = []
+    for shader in shaders:
+        socket = shader.inputs["Roughness"]
+        roughness_links.append((shader, socket.default_value,
+                                [(link.from_socket, link.to_socket) for link in socket.links]))
+        for link in list(socket.links):
+            shader.id_data.links.remove(link)
+        socket.default_value = 0.5
+    render_view("constant-roughness", (0.35, -1, 0.2), 0.65)
+    for shader, value, links in roughness_links:
+        shader.inputs["Roughness"].default_value = value
+        for from_socket, to_socket in links:
+            shader.id_data.links.new(from_socket, to_socket)
     for shader in shaders:
         socket = shader.inputs["Normal"]
         for link in list(socket.links):
