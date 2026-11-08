@@ -1,5 +1,11 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-08：起居台灯首次生成
+
+- 输入 `references/living-table-lamp/front.png`、`left-candidate.png` 原图，Studio 前、左槽；侧视是 AI 推断，灯罩内部、灯泡支架及电线未验证。模型任务 `5c9ef11a-90f5-4cc9-b29a-363397154ef2`，H3.1、2K、PBR、去光开启、三角面 200000、超清关闭，AI 增强状态未核对。生成前价 30；余额 4470→4440，账户记录多视角生成 -30；界面显示 195520 三角面。
+- 资产预览呈台灯轮廓，但不构成几何或材质验收。点击 GLB 2K 导出后浏览器控制超时；下载目录未见对应文件，导出结果未确认。下一步重连同一任务导出、检查和留存 GLB/PBR，多视角与局部检查并进房间验收；不重复付费。单资产累计 30/40，剩余 10。首次合格率、去光效果和隐藏结构尚未验证。
+
+
 ## 2026-11-08：书架底座、托销与背板对照
 
 - 下载 Poly Haven CC0 Oak Veneer 01，4K Diffuse 与 2K Rough/Normal 完整解码；颜色图两次传输超时后断点续传成功。`scripts/refine_s003_bookshelf.py` 首次因 Blender 未包含脚本目录而导入失败，调整搜索路径后成功渲染独立对照。新背板按 1.8 m 来源尺度映射，同镜头无损局部显示木纹对比过强、与侧板不协调；保留 `bookshelf-refinement/`，不作为当前较优材质。
