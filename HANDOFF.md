@@ -1,5 +1,10 @@
 # 住宅项目生产交接
 
+## 2026-11-08：S003 开放区木地板试验
+
+- 引入 Poly Haven CC0 Wood Floor 的 2K Diffuse、Rough 和 OpenGL Normal，来源及色彩空间见 `assets/materials/wood_floor/README.md`。`scripts/build_s003_floor_study.py` 从原 S003 基线另存 `stages/S003/floor-study/house-floor-study.blend` 并渲染起居镜头，按来源 1.7 m 图块宽度映射，非金属度为 0。
+- 首次输出因相对路径基准错误未找到三张图，已停止并修正；最终工程重新打开核实三图存在、2048×2048 与色彩空间正确。起居渲染可见木纹、板缝且消除了原先只覆盖起居区造成的突兀边界；餐厨视角、贴图重复、墙边门口收口、湿区适用性与最终灯光仍未验收。家具仍是白模，不能称样板房完成；下一步继续实际装修与家具并进行多视角及近景质量检查。本阶段未用 Tripo 积分。
+
 ## 2026-11-08：阅读椅结构引导
 
 - 已基于候选及真实产品承托原则建立独立结构示意 `stages/S003/reading-chair-guide/guide.blend`，脚本 `scripts/build_reading_chair_guide.py` 可重跑，六向图已查看。重开工程测得约 0.760×0.818×0.778 m、四个腿对象；背梁和座面承托为设计假设。扶手前端黑色小块、简化交叠接头、软垫和材质均待修复与核查，不是正式资产或直接生成输入。详见 `references/reading-chair/说明.md`。

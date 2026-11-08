@@ -6,6 +6,14 @@
 
 使用 Blender 5.2.3 LTS，以下命令从项目目录运行；`--python-exit-code 1` 确保 Python 异常产生非零退出码。
 
+开放起居餐厨木地板材质试验（另存于 `stages/S003/floor-study/`，会覆盖该目录同名试验）：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/build_s003_floor_study.py
+```
+
+运行前需保留 `assets/materials/wood_floor/` 三张原图；来源和验收限制见该目录 README。脚本不覆盖 S003 基线。
+
 阅读椅结构预检引导（非正式资产；输出在 `stages/S003/reading-chair-guide/`，重跑会覆盖该目录的同名工程与视图）：
 
 ```powershell
