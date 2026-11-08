@@ -71,4 +71,3 @@ for name, position, target, lens in (
     bpy.ops.render.render(write_still=True)
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT / "house-lamp-power-study.blend"))
 print("电线与插座试验已保存；空间通行与最终电气设计待验收。")
-
