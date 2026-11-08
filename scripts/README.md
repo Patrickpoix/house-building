@@ -30,6 +30,20 @@
 
 A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generated-shape.glb` 和 `A030-hunyuan-textured.glb`。连续袋身试验以 A030 的 `study-textured.blend` 为输入，单独保存，不覆盖原研究稿。纹理研究稿的图片路径为相对 `.blend` 文件的 `textures/`；移动时须一并保留。检查脚本只覆盖尺寸、指定槽口或贴图连接，不能代替视觉、碰撞及完整 PBR 验收。
 
+## 多视角渲染预览（可选，不影响正式画质）
+
+当需要同时比较正面、背面、侧面和近景等多张 Blender 渲染图时，优先用仓库自带的 `scripts/preview_views.py` 生成**一张小型联系表**，再把联系表提供给 Codex 查看。这样避免同一轮直接输入四五张完整PNG，减少长会话的历史图片负载。
+
+在项目根目录执行（本机已安装 Pillow 的 Python 位于 `D:\Python\python.exe`）：
+
+```powershell
+& D:\Python\python.exe scripts\preview_views.py "stages\S002\A031-study\reconstructed-v2-views"
+```
+
+脚本输出生成的 JPEG 文件路径，位置为 `.tools/view-previews/`（Git 已忽略）。支持读取**指定目录中**的 PNG/JPG/WebP，按 `front/back/left/right/top/close` 优先排序、带标签排列；输入图有更新时重新生成。再次查看同一批未修改图片可直接复用预览。在其他环境中可用已安装 Pillow 的 Python 调用，无需依赖 Blender，也不要求修改 Magpie 或 Codex 设置。
+
+**质量边界**：此工具仅供总览；不修改原始渲染图、2K/4K贴图、模型或Blender工程。需要检查织纹、缝合、拓扑、UV/PBR或真实成品验收时，照常打开对应原始图片/必要的局部放大，绝不能把联系表当作最终质量验收。工具可选，不应拖慢建模与生产。
+
 ## 三维生成环境
 
 已验证的环境为 WSL Ubuntu、Python 3.11、PyTorch 2.6.0+cu124，完整包版本见 `requirements-hunyuan-linux.txt`；Hunyuan3D-2 代码版本及官方权重修订见 `REPORT.md`。从项目根目录用 `bash scripts/run_hunyuan.sh shape 输入图片 输出.glb` 启动形状生成，或用 `bash scripts/run_hunyuan.sh texture 网格.glb 参考.png 输出.glb` 启动纹理试验。入口在 Python 启动前设置项目内 OpenGL 库路径，并默认使用项目内模型与缓存；`HY3DGEN_MODELS` 和 `HF_HOME` 可覆盖默认值。形状生成只输出几何。
