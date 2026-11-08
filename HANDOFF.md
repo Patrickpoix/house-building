@@ -1,5 +1,10 @@
 # 住宅项目生产交接
 
+## 2026-11-08：S003 书架分板研究
+
+- 从日光研究稿另存 `stages/S003/bookshelf-study/house-bookshelf-study.blend`，用 2 块侧板、1 块背板、7 块层板替换实心占位书架；`scripts/build_s003_bookshelf_study.py` 可重跑。2K 白橡木皮来源及色彩空间见 `assets/materials/white_oak_veneer/README.md`。
+- Blender 5.2.3 重开核对 10 个板件、包围盒约 0.33×1.15×2.10 m 和三张有效贴图；同镜头前后及书架近景已查看。内部偏暗、背板木纹有重复感，底部、层板支撑五金、防倾固定、物品与 UV 接缝等尚未完成；未作完整结构、碰撞、近景及正式房间验收，不计正式资产。继续修复并布置，同时推进 Tripo 参考预检和预算内生成；本阶段无积分消耗，Studio 生成页重试超时、实时余额未核对。
+
 ## 2026-11-08：S003 封顶日光研究
 
 - 从地板研究稿另存 `stages/S003/daylight-study/house-daylight-study.blend`，启用原 3 m 天花，关闭白模顶部检查灯，改用 Blender 5.2.3 多重散射天空；脚本 `scripts/build_s003_daylight_study.py` 输出起居、餐厨和地板近景。重开工程核实天花可渲染、天空节点和三张地板贴图路径；三张图已通过联系表总览，地板近景 `(400, 250, 512, 512)` 已看原像素。

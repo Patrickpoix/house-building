@@ -6,6 +6,12 @@
 
 使用 Blender 5.2.3 LTS，以下命令从项目目录运行；`--python-exit-code 1` 确保 Python 异常产生非零退出码。
 
+起居书架分板与材质研究（依赖 S003 日光试验和 `assets/materials/white_oak_veneer/` 三图，重跑覆盖该研究目录的同名输出）：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/build_s003_bookshelf_study.py
+```
+
 S003 封顶日光试验（需要先生成地板试验工程，输出会覆盖 `stages/S003/daylight-study/` 同名试验）：
 
 ```powershell

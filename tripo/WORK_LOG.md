@@ -1,5 +1,10 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-08：S003 书架结构研究
+
+- Studio 生成页在内置浏览器重试超时，实时登录、余额及报价未核对；未提交生成。按规则家具优先 Blender：从日光工程建立 `stages/S003/bookshelf-study/`，用 10 个板件替换占位，白橡木皮 2K 三图取自 Poly Haven CC0，来源见 `assets/materials/white_oak_veneer/README.md`。重开工程核对尺寸约 0.33×1.15×2.10 m、10 个板件、贴图路径及色彩空间；查看同镜头局部前后与近景。
+- 内部偏暗、背板纹理有重复感，底部和支撑五金、防倾固定、书籍、UV 接缝、完整碰撞及正式房间光照未完成；该研究稿不计正式资产。本阶段未用积分；继续修复结构和空间，并恢复合格参考的 Tripo 生产。
+
 ## 2026-11-08：S003 封顶日光试验
 
 - `scripts/build_s003_daylight_study.py` 从地板研究稿另存工程，启用原天花、关闭原检查灯并设置多重散射天空，生成起居、餐厨和地板近景。首次尝试旧节点枚举 `NISHITA` 被 Blender 5.2.3 拒绝，渲染前退出；查询本机节点枚举改为 `MULTIPLE_SCATTERING` 后成功。重开工程核对天花与三张贴图路径；联系表和地板无损局部已查看。
