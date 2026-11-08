@@ -6,6 +6,14 @@
 
 使用 Blender 5.2.3 LTS，以下命令从项目目录运行；`--python-exit-code 1` 确保 Python 异常产生非零退出码。
 
+S003 封顶日光试验（需要先生成地板试验工程，输出会覆盖 `stages/S003/daylight-study/` 同名试验）：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/build_s003_daylight_study.py
+```
+
+该工程启用已有 3 m 天花和 Blender 5.2.3 的多重散射天空，输出起居、餐厨与地板近景；房间、家具、窗外和最终灯光仍须验收。
+
 开放起居餐厨木地板材质试验（另存于 `stages/S003/floor-study/`，会覆盖该目录同名试验）：
 
 ```powershell

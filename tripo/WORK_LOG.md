@@ -1,5 +1,10 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-08：S003 封顶日光试验
+
+- `scripts/build_s003_daylight_study.py` 从地板研究稿另存工程，启用原天花、关闭原检查灯并设置多重散射天空，生成起居、餐厨和地板近景。首次尝试旧节点枚举 `NISHITA` 被 Blender 5.2.3 拒绝，渲染前退出；查询本机节点枚举改为 `MULTIPLE_SCATTERING` 后成功。重开工程核对天花与三张贴图路径；联系表和地板无损局部已查看。
+- 日光及地板细节可见，但窗外过曝且无庭院，家具仍为体块，材质收口和最终照明未验收；不视为样板房完成。无 Tripo 积分消耗，余额未重新核对。继续室外背景、曝光、真实家具和房间装配，另行推进预算内 Tripo 生产。
+
 ## 2026-11-08：S003 木地板试验
 
 - 用 Poly Haven CC0 Wood Floor 2K 颜色、粗糙度和 OpenGL 法线，在 `scripts/build_s003_floor_study.py` 中按来源 1.7 m 宽度平铺；`stages/S003/floor-study/` 为独立工程及起居渲染。起初相对路径按旧工程解析而缺图，停止后改为新工程保存后设置相对路径；最终重开确认三图 2048×2048 且颜色空间正确。

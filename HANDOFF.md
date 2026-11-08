@@ -1,5 +1,10 @@
 # 住宅项目生产交接
 
+## 2026-11-08：S003 封顶日光研究
+
+- 从地板研究稿另存 `stages/S003/daylight-study/house-daylight-study.blend`，启用原 3 m 天花，关闭白模顶部检查灯，改用 Blender 5.2.3 多重散射天空；脚本 `scripts/build_s003_daylight_study.py` 输出起居、餐厨和地板近景。重开工程核实天花可渲染、天空节点和三张地板贴图路径；三张图已通过联系表总览，地板近景 `(400, 250, 512, 512)` 已看原像素。
+- 日光照亮空间、局部木纹和板缝可见；窗外过曝且缺少庭院环境、家具仍是白模，整屋材质、墙边收口、灯光与最终画质均未通过验收。下一步做可验证的窗外环境与曝光、真实家具及房间装配；继续 Tripo 参考预检和预算内生产。本阶段无积分消耗。
+
 ## 2026-11-08：S003 开放区木地板试验
 
 - 引入 Poly Haven CC0 Wood Floor 的 2K Diffuse、Rough 和 OpenGL Normal，来源及色彩空间见 `assets/materials/wood_floor/README.md`。`scripts/build_s003_floor_study.py` 从原 S003 基线另存 `stages/S003/floor-study/house-floor-study.blend` 并渲染起居镜头，按来源 1.7 m 图块宽度映射，非金属度为 0。
