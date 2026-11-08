@@ -48,6 +48,7 @@ Tripo Studio：历史工作环境曾登录；当前环境是否能控制该浏�
 - **失败后换工艺而非无限返工**：每次有效修复须保存前后视图和可复核改善；若退步则回退较优基线，同一路线连续两次实质修改仍不提升则停止该方法并切换。非关键件暂存待办，不拖住整屋生产，但最终交付前仍须解决且达到相同质量基准。
 - **A031已证实的教训**：原Tripo围裙约29.7cm错误袋状深度；剖切破坏细节，后续程序化重建v1/v2虽修薄却失去自然褶皱与细节，均不得作为合格资产；不再机械微调当前简化正弦布面，保留原件和试验稿，待更合适的布料受力/模拟工艺重新验证，不因这件软装持续耽误完整房间。
 - **精简会话、保留原件**：2K/4K图、正式参考、渲染和GLB完整落盘，聊天分析优先使用缩图与局部近景，避免把同一大批图片反复加入Codex历史；可靠状态以文件、质量记录、GitHub提交为准。
+- **新本地Codex会话的图片查看工具**：先读根目录AGENTS.md和scripts/README.md。需要看同一资产的多个渲染视角时，可在工程根目录运行 `D:\Python\python.exe scripts\preview_views.py <渲染图片目录>`，然后只打开输出的一张联系表；纹理、缝线、几何、UV/PBR与最终验收按需打开原图或局部裁切。脚本见 [scripts/preview_views.py](scripts/preview_views.py)，用法见 [scripts/README.md](scripts/README.md)，均已提交GitHub；此工具仅改善会话图片负载，不是新门禁，也不替代正式质量验收。
 
 ## Tripo成本矩阵（已测生成前按钮价）
 证据：tripo/STUDIO_PRICE_MATRIX_REPORT.md、tripo/STUDIO_PRICE_MATRIX.csv、tripo/price-evidence/。比较条件为PBR与纹理开启、超清与模型内分部件关闭；三角面200000，四边面50000。
