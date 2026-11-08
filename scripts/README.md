@@ -4,6 +4,13 @@
 
 ## Blender 阶段
 
+台灯电线试验（依赖台灯试放工程；覆盖独立试验目录）：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/study_lamp_power.py
+```
+
+
 起居台灯试放（依赖书架结构研究稿和台灯原始 GLB；覆盖独立试验目录）：
 
 ```powershell

@@ -1,5 +1,9 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-09：台灯电线试验
+
+复用 S003 试放稿添加电线、插座及插头，`scripts/study_lamp_power.py` 输出 `stages/S003/lamp-power-study/`。原自动曲线部分陷入地板；尝试 Blender 5.2.3 不支持的 AUTO_CLAMPED 手柄在渲染前报错，改用 VECTOR 并提高路径后重渲。细节图见连续线，但地面走线偏直、裸露，仍须检查通行和接触，不能作为正式电气布置；无新增积分。
+
 ## 2026-11-08：台灯房间试放
 
 `scripts/study_living_table_lamp.py` 重用原 GLB，输出 `stages/S003/table-lamp-study/` 独立工程与日光远近图，台灯高 0.52 m，临时支撑体高 0.54 m；复开确认二者 Z 接触及文件贴图已打包。近景原像素可见布纹与顶部封面，台灯、房间和支撑家具均未正式验收；实际构造、电线、碰撞通行及夜间灯光待做。本阶段零积分，累计 30/40。
