@@ -257,3 +257,12 @@
 - **实际验证**：用D:\Python\python.exe运行py_compile通过；对A031 v2五张PNG实际生成预览，第二次执行复用已有预览；原图合计3,785,151字节，预览29,511字节；git diff --check通过。
 - **未运行与不确定**：未测试全部图片格式和极端目录，未运行Blender或Tripo，因为只新增辅助检查工具；Codex未来请求字节数减少幅度仍需在实际使用时验证。
 - **边界与下一步**：未限制原图、降级2K/4K贴图、修改Magpie/Codex内核或操作账户积分。接手优先读AGENTS.md；仅多视角总览时用联系表，需要检查细节时直接看原图。
+
+## 2026-11-08：本机Blender 5.2.3 LTS升级与GitHub说明
+
+- **任务目的与范围**：统一住宅项目Windows/Codex Cloud文档中的Blender正式生产基准至5.2.3 LTS，实际安装本机Windows便携版；不修改模型、不覆盖旧软件、不擅自修改云端环境。
+- **新增/修改文件**：新增本机忽略目录 .tools/blender-5.2.3-windows-x64/ 及下载校验缓存 .tools/download-cache/、定向渲染测试文件 .tools/blender-upgrade-check/cycles-oidn-96.png；修改README.md、AGENTS.md、HANDOFF.md、scripts/README.md，本日志追加本条。无源文件删除或移动；原 .tools/blender-5.0.1-windows-x64/ 保留。
+- **实际运行与结果**：官方Windows ZIP 405839452字节，SHA256为723f08a4401502561eb763cdeacf8745b31e5f3f154d287d3830d97cf75dc2fb，与Blender官方sha256文件一致；Blender显示5.2.3 LTS，Cycles及去噪属性可用。新版本执行白模检查、门窗检查、每5°门扇扫掠检查、A030 12张2048贴图节点与路径检查，均返回退出码0；能读取S001 furnished-study.blend（151个对象）、A031 reconstructed-v2.blend（10个对象），导入A031原始GLB成功；96×96 Cycles 2 samples＋去噪渲染成功并输出项目忽略目录的PNG。
+- **未运行的验证及原因**：未重新生成全部资产、未完整逐项跑所有建模脚本、未进行整屋最终高质量Cycles渲染或实际GPU性能测试，以免重写进行中的研究成果；真实视觉质量和资产合格率与本次版本兼容性测试分开判断。Codex Cloud Linux环境的安装、域名授权、GPU/去噪兼容性须独立验证。
+- **已知风险/未确定**：历史质量报告中5.0.1是当时运行版本的事实记录，不做历史替换；Windows与Linux的可用渲染功能需分别测试。此前本地main包含Codex尚未推送的LFS大文件提交，GitHub远端说明需单独核实是否更新。
+- **边界与接手**：只在住宅项目 .tools 内安装新版本，没有终止Blender/Codex作业、切换VPN、修改系统文件关联或更改付费服务。接手优先读README.md、AGENTS.md、HANDOFF.md、scripts/README.md；新任务使用5.2.3，旧版本只作回退，保留原始 .blend，待验证后再另存新版本产物。

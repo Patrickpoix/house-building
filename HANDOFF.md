@@ -2,6 +2,8 @@
 
 ## 工程与参考
 工程根目录：D:\Projects\house-building
+Blender正式生产基准：**5.2.3 LTS**，Windows便携版目标路径 `.tools/blender-5.2.3-windows-x64/blender.exe`；旧 `.tools/blender-5.0.1-windows-x64/` 保留回退。云端需对应Linux x64包和域名权限，不能把本机安装视为云端已升级。执行新生产脚本前核查版本、历史工程加载、PBR/Cycles与去噪，详见README.md和scripts/README.md。
+本机已于2026-11-08使用官方5.2.3 ZIP校验安装：白模、门窗、门扇扫掠、A030 PBR、S001家具场景、A031工程、GLB导入及96×96 Cycles去噪渲染定向检查通过；原5.0.1未删除。此为兼容性抽查，不代表全部脚本/整屋渲染通过；Codex Cloud仍未升级。详见tripo/WORK_LOG.md当日记录。
 Tripo Studio：用户已经登录，可直接继续正式生产。
 参考视频：Rainy 雨夜厨房 / Astra 卡洛斯la
 视频文件：references/source-video/original-reference.mp4（约86.5秒、2595帧、30fps、720×1280）
