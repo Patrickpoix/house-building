@@ -1,5 +1,10 @@
 # 住宅项目生产交接
 
+## 2026-11-08：书架结构与背板对照
+
+- `scripts/refine_s003_bookshelf.py` 在独立副本中增加底座前板与 20 个活动层板托销，并试用更大图块的橡木背板。无损同镜头对照显示新背板木纹对比过强、与侧板不协调，保留 `stages/S003/bookshelf-refinement/` 作为负面证据；不采用该材质作为当前较优版。
+- `--geometry-only` 生成 `stages/S003/bookshelf-geometry/`，保留原背板并保留结构改动；重开核对 20 个托销、底座及六张原贴图路径。同镜头总览未见整体明显退步，但托销接触未在足够近景确认，背板重复、五金固定、防倾、书籍、完整 UV/PBR 和正式房间验收仍未解决。继续处理这些问题及其他房间，不把研究稿计为正式资产。本阶段未消耗 Tripo 积分。
+
 ## 2026-11-08：S003 书架分板研究
 
 - 从日光研究稿另存 `stages/S003/bookshelf-study/house-bookshelf-study.blend`，用 2 块侧板、1 块背板、7 块层板替换实心占位书架；`scripts/build_s003_bookshelf_study.py` 可重跑。2K 白橡木皮来源及色彩空间见 `assets/materials/white_oak_veneer/README.md`。

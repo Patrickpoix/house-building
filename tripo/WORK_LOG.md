@@ -1,5 +1,11 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-08：书架底座、托销与背板对照
+
+- 下载 Poly Haven CC0 Oak Veneer 01，4K Diffuse 与 2K Rough/Normal 完整解码；颜色图两次传输超时后断点续传成功。`scripts/refine_s003_bookshelf.py` 首次因 Blender 未包含脚本目录而导入失败，调整搜索路径后成功渲染独立对照。新背板按 1.8 m 来源尺度映射，同镜头无损局部显示木纹对比过强、与侧板不协调；保留 `bookshelf-refinement/`，不作为当前较优材质。
+- 运行 `--geometry-only` 保留原背板，同时增加底座前板和 20 个托销，生成 `bookshelf-geometry/`；重开工程核对托销数、底座及原六张贴图路径，联系表及原像素局部已对比。画面未提供足够近的托销接触证据，背板重复、五金及结构强度、完整 UV/PBR、房间验收均未解决；不计正式资产。无 Tripo 积分消耗，当前余额未核对。
+- 对照后脚本默认输出保留原背板的结构版，`--alternate-back` 输出未采用的材质方案；已在 Blender 中检查两种参数选择的输出目录，历史 `--geometry-only` 调用仍可用。
+
 ## 2026-11-08：S003 书架结构研究
 
 - Studio 生成页在内置浏览器重试超时，实时登录、余额及报价未核对；未提交生成。按规则家具优先 Blender：从日光工程建立 `stages/S003/bookshelf-study/`，用 10 个板件替换占位，白橡木皮 2K 三图取自 Poly Haven CC0，来源见 `assets/materials/white_oak_veneer/README.md`。重开工程核对尺寸约 0.33×1.15×2.10 m、10 个板件、贴图路径及色彩空间；查看同镜头局部前后与近景。

@@ -6,6 +6,15 @@
 
 使用 Blender 5.2.3 LTS，以下命令从项目目录运行；`--python-exit-code 1` 确保 Python 异常产生非零退出码。
 
+书架局部精修对照（先生成书架研究稿；分别覆盖各自研究目录）：
+
+```powershell
+# 保留原背板，只加入底座和托销；历史 --geometry-only 调用仍可用
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/refine_s003_bookshelf.py
+# 背板改用较大图块并加入底座和托销；该背板视觉方案目前未采用
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/refine_s003_bookshelf.py -- --alternate-back
+```
+
 起居书架分板与材质研究（依赖 S003 日光试验和 `assets/materials/white_oak_veneer/` 三图，重跑覆盖该研究目录的同名输出）：
 
 ```powershell
