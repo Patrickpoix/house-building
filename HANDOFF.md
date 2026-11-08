@@ -1,5 +1,11 @@
 # 住宅项目生产交接
 
+## 最新接手进展（2026-11-08）
+
+- 用户确认本机正式使用 Blender 5.2.3 LTS，路径 `.tools/blender-5.2.3-windows-x64/blender.exe`。S003 基线 `stages/S003/house-baseline.blend` 从 S001 家具研究稿另存，起居图仍为白模；`scripts/build_s003_baseline.py` 可重跑。
+- 阅读椅两视角生成与临时试放见 `tripo/outputs/reading-chair/QUALITY_REVIEW.md` 和 `stages/S003/reading-chair-study/`。30 积分，生成后余额 4470；近景布纹有明显扭曲斑块，未通过正式验收。下一步判断贴图、UV 或几何缺陷并选择合适工艺，同时推进起居样板空间，不把单件返工当主线。
+- A031 用户更喜欢较早版本的纹理、褶皱与侧面弧度；保留原始版本，不继续简化重建路线。多视角先用 `scripts/preview_views.py` 看联系表，细节及正式验收按需看原图。
+
 接手生产前另读 `tripo/PRODUCTION_WORKFLOW.md`：包含多视角预检、视觉基准、Tripo 报价与 Blender 验收、A031 对照实验及止损规则；其中未实测的步骤不等于成果。
 
 ## 工程与参考

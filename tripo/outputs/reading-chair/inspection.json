@@ -1,0 +1,175 @@
+{
+  "source": "tripo\\outputs\\reading-chair\\tripo-original.glb",
+  "meshes": [
+    {
+      "name": "tripo_node_beb25f2b-eaae-43c3-82bf-b5822b55b1e3",
+      "vertices": 105863,
+      "faces": 191841,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_analysis": [
+        {
+          "name": "UVMap",
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "triangles_with_near_zero_uv_area": 216,
+          "triangles": 191841
+        }
+      ],
+      "nonmanifold_edges": 19501,
+      "dimensions_m_unscaled": [
+        0.9708251953125,
+        0.978271484375,
+        1.0
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_material_beb25f2b-eaae-43c3-82bf-b5822b55b1e3",
+      "channels": {
+        "Base Color": [
+          {
+            "node": "Image Texture",
+            "type": "TEX_IMAGE",
+            "output": "Color"
+          }
+        ],
+        "Roughness": [
+          {
+            "node": "Separate Color",
+            "type": "SEPARATE_COLOR",
+            "output": "Green"
+          }
+        ],
+        "Metallic": [
+          {
+            "node": "Separate Color",
+            "type": "SEPARATE_COLOR",
+            "output": "Blue"
+          }
+        ],
+        "Normal": [
+          {
+            "node": "Normal Map",
+            "type": "NORMAL_MAP",
+            "output": "Normal"
+          }
+        ]
+      },
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "wooden_armchair_3d_model_basecolor.jpg",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "sRGB",
+          "packed": true,
+          "sample_rgb_min": [
+            0.12156863510608673,
+            0.04313725605607033,
+            0.0
+          ],
+          "sample_rgb_max": [
+            0.9058824181556702,
+            0.7960785031318665,
+            0.7019608020782471
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "wooden_armchair_3d_model_rm.jpg",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color",
+          "packed": true,
+          "sample_rgb_min": [
+            0.7960785031318665,
+            0.27450981736183167,
+            0.0
+          ],
+          "sample_rgb_max": [
+            1.0,
+            0.9921569228172302,
+            0.2352941334247589
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "wooden_armchair_3d_model_normal.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color",
+          "packed": true,
+          "sample_rgb_min": [
+            0.0784313753247261,
+            0.062745101749897,
+            0.6980392336845398
+          ],
+          "sample_rgb_max": [
+            0.9450981020927429,
+            0.9490196704864502,
+            1.0
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "Principled BSDF",
+          "output": "BSDF",
+          "to": "Material Output",
+          "input": "Surface"
+        },
+        {
+          "from": "Image Texture",
+          "output": "Color",
+          "to": "Principled BSDF",
+          "input": "Base Color"
+        },
+        {
+          "from": "Separate Color",
+          "output": "Blue",
+          "to": "Principled BSDF",
+          "input": "Metallic"
+        },
+        {
+          "from": "Separate Color",
+          "output": "Green",
+          "to": "Principled BSDF",
+          "input": "Roughness"
+        },
+        {
+          "from": "Image Texture.001",
+          "output": "Color",
+          "to": "Separate Color",
+          "input": "Color"
+        },
+        {
+          "from": "Normal Map",
+          "output": "Normal",
+          "to": "Principled BSDF",
+          "input": "Normal"
+        },
+        {
+          "from": "Image Texture.002",
+          "output": "Color",
+          "to": "Normal Map",
+          "input": "Color"
+        }
+      ]
+    }
+  ]
+}
