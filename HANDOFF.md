@@ -1,5 +1,7 @@
 # 住宅项目生产交接
 
+接手生产前另读 `tripo/PRODUCTION_WORKFLOW.md`：包含多视角预检、视觉基准、Tripo 报价与 Blender 验收、A031 对照实验及止损规则；其中未实测的步骤不等于成果。
+
 ## 工程与参考
 工程根目录：D:\Projects\house-building
 Tripo Studio：用户已经登录，可直接继续正式生产。
