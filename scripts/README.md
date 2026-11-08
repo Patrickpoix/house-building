@@ -44,6 +44,15 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 
 **质量边界**：此工具仅供总览；不修改原始渲染图、2K/4K贴图、模型或Blender工程。需要检查织纹、缝合、拓扑、UV/PBR或真实成品验收时，照常打开对应原始图片/必要的局部放大，绝不能把联系表当作最终质量验收。工具可选，不应拖慢建模与生产。
 
+单张高清渲染图也可以用同一脚本生成较轻的JPEG预览；需局部像素级核对时使用无缩放、无损PNG裁切，参数为原图中的左上角XY坐标和宽高（像素）。裁切不修改原图：
+
+```powershell
+& D:\Python\python.exe scripts\preview_views.py tripo\outputs\reading-chair\views\close.png
+& D:\Python\python.exe scripts\preview_views.py tripo\outputs\reading-chair\views\close.png --crop 180 160 512 512
+```
+
+图片生成工具可能把完整新图直接返回给Codex会话，**该脚本无法拦截或消除已经返回的图片数据**。需要Images 2.6时继续使用，但应按必要角度分阶段生成、及时保存原始参考图；后续反复核对优先用联系表/单张轻量预览/针对性裁切，避免重复打开同一张整图。对于工具/网页/命令的大量文本输出，先用精准搜索与限量摘要定位，再按需读取局部，不将全部日志和重复全文带入长会话。若经过较大阶段积累，先把关键进展、路径、当前阻断与下一步写入HANDOFF.md、REPORT.md、tripo/WORK_LOG.md并核对Git状态，再使用Codex官方压缩功能；不得直接裁剪、修改或删除会话数据库和原始证据。
+
 ## 三维生成环境
 
 已验证的环境为 WSL Ubuntu、Python 3.11、PyTorch 2.6.0+cu124，完整包版本见 `requirements-hunyuan-linux.txt`；Hunyuan3D-2 代码版本及官方权重修订见 `REPORT.md`。从项目根目录用 `bash scripts/run_hunyuan.sh shape 输入图片 输出.glb` 启动形状生成，或用 `bash scripts/run_hunyuan.sh texture 网格.glb 参考.png 输出.glb` 启动纹理试验。入口在 Python 启动前设置项目内 OpenGL 库路径，并默认使用项目内模型与缓存；`HY3DGEN_MODELS` 和 `HF_HOME` 可覆盖默认值。形状生成只输出几何。

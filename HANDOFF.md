@@ -1,5 +1,12 @@
 # 住宅项目生产交接
 
+## 2026-11-08：长会话提速与压缩前接力
+
+- 当前正式Codex Desktop生产会话为本项目新线程，正在研究“Images 2.6多源参考→一致多视角→Tripo高精度生成→Blender局部精修→房间验收”的改进方案；本轮研究尚未证明首次合格率改善，后续必须以代表样品实际验收和积分记录衡量，不应把方案当作生产成果。
+- 已有S003整屋基线及阅读椅两视角Tripo研究稿，具体路径、已核实缺陷和30积分支出见本文件下方、REPORT.md与tripo/outputs/reading-chair/QUALITY_REVIEW.md。阅读椅纹理斑驳、背部结构问题未解决，不能计为正式资产；A030/A031也尚未验收通过，禁止为减轻上下文而遗失质量证据或覆盖较优版本。
+- 已扩展现有scripts/preview_views.py：目录→小联系表、单图→轻量JPEG、单图加--crop→保留原始像素的无损PNG局部。命令和验证见scripts/README.md与tripo/WORK_LOG.md。Images 2.6工具直接返回的新图仍可能放大会话；原图需落盘，后续复看先用预览并按需原图核验。长网页/日志用限量摘要，必要时再读原文。
+- **恢复锚点**：每次压缩/换会话前确认Git状态，保存最新文件、模型/参考图路径、实际积分、已经验证及仍需验证的结论到HANDOFF.md、REPORT.md和tripo/WORK_LOG.md；确认旧任务已保存且不在进行关键文件写入后，使用Codex官方压缩，不剪裁原始会话记录。压缩后先核查本段、goal.md与最新工作记录，再继续当前研究和整屋生产。所有原尺寸素材、PBR、Blender工程和质量标准保持不变。
+
 ## 最新接手进展（2026-11-08）
 
 - 用户确认本机正式使用 Blender 5.2.3 LTS，路径 `.tools/blender-5.2.3-windows-x64/blender.exe`。S003 基线 `stages/S003/house-baseline.blend` 从 S001 家具研究稿另存，起居图仍为白模；`scripts/build_s003_baseline.py` 可重跑。

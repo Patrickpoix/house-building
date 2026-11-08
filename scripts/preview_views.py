@@ -1,14 +1,16 @@
-r"""Make one small contact sheet for AI review; never modify source renders.
+r"""Make compact previews for AI review; never modify the source images.
 
 Usage:
     D:\Python\python.exe scripts\preview_views.py stages\S002\A031-study\reconstructed-v2-views
+    D:\Python\python.exe scripts\preview_views.py tripo\outputs\reading-chair\views\close.png
+    D:\Python\python.exe scripts\preview_views.py tripo\outputs\reading-chair\views\close.png --crop 100 100 512 512
 
-Open the printed JPEG for an overview. Inspect an original render or a cropped
-detail only when necessary to judge fabric, UV, topology, or PBR quality.
+Open the printed JPEG for an overview or a lossless PNG crop for focused detail.
+The original render remains untouched and available for definitive inspection.
 """
 
+import argparse
 import hashlib
-import sys
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageOps
@@ -54,10 +56,47 @@ def create_preview(source: Path) -> Path:
     return destination
 
 
+def create_image_preview(source: Path, crop: tuple[int, int, int, int] | None = None) -> Path:
+    source = source.resolve()
+    if not source.is_file() or source.suffix.lower() not in EXTENSIONS:
+        raise ValueError(f"Not a supported image file: {source}")
+
+    digest = hashlib.sha1(f"{str(source).casefold()}|{crop}".encode("utf-8")).hexdigest()[:12]
+    suffix = ".png" if crop is not None else ".jpg"
+    destination = ROOT / ".tools" / "view-previews" / f"{source.stem}-{digest}{suffix}"
+    destination.parent.mkdir(parents=True, exist_ok=True)
+
+    with Image.open(source) as original:
+        image = ImageOps.exif_transpose(original)
+        if crop is not None:
+            x, y, width, height = crop
+            if min(x, y) < 0 or min(width, height) <= 0 or x + width > image.width or y + height > image.height:
+                raise ValueError(f"Crop {crop} outside source dimensions {image.size}")
+        if destination.exists() and destination.stat().st_mtime_ns >= source.stat().st_mtime_ns:
+            return destination
+        if crop is not None:
+            # Lossless original-pixel region, without downsampling.
+            image.crop((x, y, x + width, y + height)).save(destination, "PNG", optimize=True)
+        else:
+            image = image.convert("RGB")
+            image.thumbnail((1280, 1280), Image.Resampling.LANCZOS)
+            image.save(destination, "JPEG", quality=88, optimize=True)
+    return destination
+
+
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
-        raise SystemExit("Usage: python scripts/preview_views.py <render-image-directory>")
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("source", type=Path, help="Render directory or single image")
+    parser.add_argument("--crop", nargs=4, type=int, metavar=("X", "Y", "WIDTH", "HEIGHT"),
+                        help="Lossless pixel crop from a single image")
+    args = parser.parse_args()
     try:
-        print(create_preview(Path(sys.argv[1])))
+        if args.source.is_dir():
+            if args.crop:
+                raise ValueError("--crop requires a single image file")
+            result = create_preview(args.source)
+        else:
+            result = create_image_preview(args.source, tuple(args.crop) if args.crop else None)
+        print(result)
     except (OSError, ValueError) as exc:
         raise SystemExit(str(exc)) from exc
