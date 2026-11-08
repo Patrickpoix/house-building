@@ -8,6 +8,19 @@ Blender 5.0.1 导入结果：一个网格，191406 面、104734 顶点，一个 
 
 下一步：以正面轮廓、侧面薄层结构为约束重建或替换布身，保留原始文件作对照；核查口袋开口、系带连接、真实布厚和 UV，再按目标尺寸设置轴心，检查材质并在房间中复验。未经复验不能计入资产数量；不重复付费生成，除非明确缺陷与预期改善。
 
+## 2026-11-08 重建试验
+
+`stages/S002/A031-study/front-cut-views/` 显示剖切原网格后正面褶皱仍在，但腰带被切除，背面口袋处露洞，侧边出现硬切口，不能作为成品。改用 `scripts/build_a031_reconstruction.py` 构造有厚度的单层布身、贴袋和独立织带，原始模型保留为隐藏参照。`reconstructed-v2.blend` 和 GLB 为第二次研究稿，五向图在 `reconstructed-v2-views/`；可重跑命令如下。
+
+实际查看正、背、左右及斜向近景：侧面没有原来的深袋形空腔，修正后腰带末端不再收缩为尖点；但布面与腰带过于规整对称，织物立体感和缝边较弱，接头缺少可信的缝合，贴袋开口及材质仍待核验。侧视检查图的物件很窄，不能据此判断接触及穿插。GLB 导出提示多个图像纹理采样器按第一个处理，尚需检查实际贴图采样；尺度、轴心、拓扑、UV 拉伸、口袋可用性和真实房间光照均未验收。该稿仍未通过，不入正式资产库。
+
+下一步应以悬挂受力为依据制作自然下垂与不对称织带、缝合固定和布面褶皱，做针对接头和口袋的近景及可达性检查，并在住宅实际位置复验。
+
+```powershell
+& .\.tools\blender-5.0.1-windows-x64\blender.exe -b -t 4 --python scripts/build_a031_reconstruction.py
+& .\.tools\blender-5.0.1-windows-x64\blender.exe -b -t 4 --python scripts/render_tripo_views.py -- stages/S002/A031-study/reconstructed-v2.glb stages/S002/A031-study/reconstructed-v2-views
+```
+
 检查命令：
 
 ```powershell
