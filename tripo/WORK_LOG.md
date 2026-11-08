@@ -1,5 +1,9 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-09：阅读椅布料对照
+
+从原始 GLB 提取颜色图检查，布料区域可见不连续织纹；采用 Poly Haven Terlenka CC0 2K 图与按原颜色区分木布的试验遮罩，`scripts/study_chair_fabric.py` 输出对照。保留 v1、v2 和加法线版；原像素对比 v2 深色斑驳明显减少但布纹偏平，加法线版当前镜头无明显改善。v2 Blender 5.2.3 重开，图像均已打包。颜色掩码可能误判，侧背、边界、接缝和房间验收未做；累计 30/40，无新增积分。
+
 ## 2026-11-09：起居木边几
 
 `scripts/study_living_side_table.py` 在灯具试验稿中复用书架白橡木材质，生成四腿、四围板和桌面，保存 `stages/S003/side-table-study/`。重开确认九部件和尺寸 0.48×0.48×0.54 m、贴图已打包；已查看房间与近景。榫接、稳定、碰撞、UV 与电线通行待核查，不计正式资产；本阶段零积分。

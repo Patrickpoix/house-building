@@ -4,6 +4,13 @@
 
 ## Blender 阶段
 
+阅读椅布料遮罩与真实贴图试验（依赖原 GLB 和 Terlenka 2K，覆盖 `fabric-study/`）：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/study_chair_fabric.py
+```
+
+
 起居木边几试验（依赖台灯电线试验稿；覆盖独立试验目录）：
 
 ```powershell
