@@ -1,0 +1,175 @@
+{
+  "source": "tripo\\outputs\\living-table-lamp\\tripo-original.glb",
+  "meshes": [
+    {
+      "name": "tripo_node_35044d34-91db-4f85-8f98-632b8ca0ab30",
+      "vertices": 103366,
+      "faces": 195520,
+      "uv_layers": [
+        "UVMap"
+      ],
+      "uv_analysis": [
+        {
+          "name": "UVMap",
+          "min": [
+            0.0,
+            0.0
+          ],
+          "max": [
+            1.0,
+            1.0
+          ],
+          "triangles_with_near_zero_uv_area": 150,
+          "triangles": 195520
+        }
+      ],
+      "nonmanifold_edges": 11072,
+      "dimensions_m_unscaled": [
+        0.58056640625,
+        0.57720947265625,
+        1.0
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "name": "tripo_material_35044d34-91db-4f85-8f98-632b8ca0ab30",
+      "channels": {
+        "Base Color": [
+          {
+            "node": "Image Texture",
+            "type": "TEX_IMAGE",
+            "output": "Color"
+          }
+        ],
+        "Roughness": [
+          {
+            "node": "Separate Color",
+            "type": "SEPARATE_COLOR",
+            "output": "Green"
+          }
+        ],
+        "Metallic": [
+          {
+            "node": "Separate Color",
+            "type": "SEPARATE_COLOR",
+            "output": "Blue"
+          }
+        ],
+        "Normal": [
+          {
+            "node": "Normal Map",
+            "type": "NORMAL_MAP",
+            "output": "Normal"
+          }
+        ]
+      },
+      "textures": [
+        {
+          "node": "Image Texture",
+          "image": "beige_table_lamp_3d_model_basecolor.jpg",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "sRGB",
+          "packed": true,
+          "sample_rgb_min": [
+            0.5764706134796143,
+            0.4745098352432251,
+            0.3176470696926117
+          ],
+          "sample_rgb_max": [
+            1.0,
+            0.917647123336792,
+            0.7450980544090271
+          ]
+        },
+        {
+          "node": "Image Texture.001",
+          "image": "beige_table_lamp_3d_model_rm.jpg",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color",
+          "packed": true,
+          "sample_rgb_min": [
+            0.7450980544090271,
+            0.40392160415649414,
+            0.0
+          ],
+          "sample_rgb_max": [
+            1.0,
+            1.0,
+            0.7725490927696228
+          ]
+        },
+        {
+          "node": "Image Texture.002",
+          "image": "beige_table_lamp_3d_model_normal.png",
+          "size": [
+            2048,
+            2048
+          ],
+          "colorspace": "Non-Color",
+          "packed": true,
+          "sample_rgb_min": [
+            0.4392157196998596,
+            0.4392157196998596,
+            0.9921569228172302
+          ],
+          "sample_rgb_max": [
+            0.5529412031173706,
+            0.5529412031173706,
+            1.0
+          ]
+        }
+      ],
+      "links": [
+        {
+          "from": "Principled BSDF",
+          "output": "BSDF",
+          "to": "Material Output",
+          "input": "Surface"
+        },
+        {
+          "from": "Image Texture",
+          "output": "Color",
+          "to": "Principled BSDF",
+          "input": "Base Color"
+        },
+        {
+          "from": "Separate Color",
+          "output": "Blue",
+          "to": "Principled BSDF",
+          "input": "Metallic"
+        },
+        {
+          "from": "Separate Color",
+          "output": "Green",
+          "to": "Principled BSDF",
+          "input": "Roughness"
+        },
+        {
+          "from": "Image Texture.001",
+          "output": "Color",
+          "to": "Separate Color",
+          "input": "Color"
+        },
+        {
+          "from": "Normal Map",
+          "output": "Normal",
+          "to": "Principled BSDF",
+          "input": "Normal"
+        },
+        {
+          "from": "Image Texture.002",
+          "output": "Color",
+          "to": "Normal Map",
+          "input": "Color"
+        }
+      ]
+    }
+  ]
+}
