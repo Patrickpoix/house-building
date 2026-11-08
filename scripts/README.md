@@ -61,6 +61,33 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 
 图片生成工具可能把完整新图直接返回给Codex会话，**该脚本无法拦截或消除已经返回的图片数据**。需要Images 2.6时继续使用，但应按必要角度分阶段生成、及时保存原始参考图；后续反复核对优先用联系表/单张轻量预览/针对性裁切，避免重复打开同一张整图。对于工具/网页/命令的大量文本输出，先用精准搜索与限量摘要定位，再按需读取局部，不将全部日志和重复全文带入长会话。若经过较大阶段积累，先把关键进展、路径、当前阻断与下一步写入HANDOFF.md、REPORT.md、tripo/WORK_LOG.md并核对Git状态，再使用Codex官方压缩功能；不得直接裁剪、修改或删除会话数据库和原始证据。
 
+### 整条图像制作链的低负载查看方式（已实测）
+
+除原先的单目录联系表、单张高保真JPEG预览和无损原像素裁切，现在还可直接处理 Codex 已落盘生图、跨目录多来源参考与前后版本对比。以下均从项目根目录运行；请把 `<实际会话ID>` 改为当前 Codex 正式会话ID：
+
+```powershell
+# Images 2.6自动保存过的原始生图：只读最新6张，输出一张联系表；原图不复制不修改
+& D:\Python\python.exe scripts\preview_views.py "$env:USERPROFILE\.codex\generated_images\<实际会话ID>" --newest 6
+
+# 8-12张或更多参考图：同一目录自动每6张一页；最多24张，避免单次大量回传
+& D:\Python\python.exe scripts\preview_views.py references\reading-chair
+
+# 参考图分布在不同目录：选入同一分批联系表，无需复制源文件
+& D:\Python\python.exe scripts\preview_views.py --files references\reading-chair\front-candidate.png tripo\outputs\reading-chair\views\left.png
+
+# 旧版与新版的相同视角严格成对比较；有缺失视角则报错，绝不悄悄跳过
+& D:\Python\python.exe scripts\preview_views.py stages\S002\A031-study\reconstructed-views --compare stages\S002\A031-study\reconstructed-v2-views
+
+# 在同一原像素坐标处无损并排查看两个文件，RGB/RGBA像素和alpha都原样保留
+& D:\Python\python.exe scripts\preview_views.py tripo\outputs\A030\material-diagnostic\original.png --compare tripo\outputs\A030\material-diagnostic\without-normal.png --crop 150 160 512 512
+```
+
+所有预览仍只生成在Git忽略的 `.tools/view-previews/`，每张联系表旁附有同名 `.json`，记录各格对应的**原始完整路径、尺寸及位置**，供Codex在发现问题时精准回到高清原件。多图自动分页，单页最多6张；前后对照单页最多3组。变更输入后缓存失效，生成时原子写入以避免留下半张损坏图片。缓存只是查看证据，不可作为Tripo正式输入、UV/PBR数值判断或最终验收替代品。8/16位材质通道请查看原始数值贴图，16位不允许伪装成8位“像素无损”并排图。
+
+**生产顺序**：多源高质量原始参考图完整保存 → 用本工具选择/核对视角一致性 → 用真正的原图生成/上传Tripo（而非轻量JPEG）→ Blender保留GLB、2K/4K PBR与正式渲染 → 小联系表查看形体 → 必要时单张高保真预览/无损ROI/原图定位缺陷 → 使用本工具严格成对对比修复前后 → **只按原图、模型、UV/PBR和真实房间近景做最终验收**。质检不能因为缩图看不清就宣布通过。
+
+回归命令：`D:\Python\python.exe scripts\test_preview_views.py -v`。已运行的测试、压缩数据、已知限制与交接留痕参见 `scripts/IMAGE_PREVIEW_QUALITY.md`、`tripo/WORK_LOG.md`。
+
 ## 三维生成环境
 
 已验证的环境为 WSL Ubuntu、Python 3.11、PyTorch 2.6.0+cu124，完整包版本见 `requirements-hunyuan-linux.txt`；Hunyuan3D-2 代码版本及官方权重修订见 `REPORT.md`。从项目根目录用 `bash scripts/run_hunyuan.sh shape 输入图片 输出.glb` 启动形状生成，或用 `bash scripts/run_hunyuan.sh texture 网格.glb 参考.png 输出.glb` 启动纹理试验。入口在 Python 启动前设置项目内 OpenGL 库路径，并默认使用项目内模型与缓存；`HY3DGEN_MODELS` 和 `HF_HOME` 可覆盖默认值。形状生成只输出几何。
