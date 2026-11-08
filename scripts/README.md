@@ -4,6 +4,13 @@
 
 ## Blender 阶段
 
+起居台灯试放（依赖书架结构研究稿和台灯原始 GLB；覆盖独立试验目录）：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/study_living_table_lamp.py
+```
+
+
 使用 Blender 5.2.3 LTS，以下命令从项目目录运行；`--python-exit-code 1` 确保 Python 异常产生非零退出码。
 
 书架局部精修对照（先生成书架研究稿；分别覆盖各自研究目录）：
