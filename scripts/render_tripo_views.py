@@ -1,6 +1,6 @@
 """将单个 Tripo GLB 渲染为四向和近景，不修改源文件。
 
-用法：blender -b --python scripts/render_tripo_views.py -- 输入.glb 输出目录
+用法：blender -b --python scripts/render_tripo_views.py -- 输入.glb 输出目录 [material-diagnostic]
 """
 import sys
 from pathlib import Path
@@ -9,9 +9,10 @@ import bpy
 from mathutils import Vector
 
 args = sys.argv[sys.argv.index("--") + 1:]
-if len(args) != 2:
-    raise SystemExit("用法：-- 输入.glb 输出目录")
-source, output = map(Path, args)
+if len(args) not in (2, 3) or (len(args) == 3 and args[2] != "material-diagnostic"):
+    raise SystemExit("用法：-- 输入.glb 输出目录 [material-diagnostic]")
+source, output = map(Path, args[:2])
+diagnostic = len(args) == 3
 output.mkdir(parents=True, exist_ok=True)
 bpy.ops.wm.read_factory_settings(use_empty=True)
 bpy.ops.import_scene.gltf(filepath=str(source.resolve()))
@@ -42,13 +43,17 @@ camera = bpy.context.object
 camera.data.type = "ORTHO"
 scene.camera = camera
 
-for name, direction, scale in (
+views = (
     ("front", (0, -1, 0.08), 1.25),
     ("back", (0, 1, 0.08), 1.25),
     ("left", (-1, 0, 0.08), 1.25),
     ("right", (1, 0, 0.08), 1.25),
     ("close", (0.35, -1, 0.2), 0.65),
-):
+)
+if diagnostic:
+    views = (("original", (0.35, -1, 0.2), 0.65),)
+
+def render_view(name, direction, scale):
     camera.location = center + Vector(direction).normalized() * extent * 3
     camera.rotation_euler = (center - camera.location).to_track_quat("-Z", "Y").to_euler()
     camera.data.ortho_scale = extent * scale
@@ -56,4 +61,24 @@ for name, direction, scale in (
     light.rotation_euler = (center - light.location).to_track_quat("-Z", "Y").to_euler()
     scene.render.filepath = str((output / f"{name}.png").resolve())
     bpy.ops.render.render(write_still=True)
-print(f"五向检查图已保存：{output}")
+
+for name, direction, scale in views:
+    render_view(name, direction, scale)
+
+if diagnostic:
+    shaders = [node for mat in bpy.data.materials if mat.use_nodes
+               for node in mat.node_tree.nodes if node.type == "BSDF_PRINCIPLED"]
+    if not shaders:
+        raise RuntimeError("没有可检查的 Principled 材质")
+    for shader in shaders:
+        socket = shader.inputs["Normal"]
+        for link in list(socket.links):
+            shader.id_data.links.remove(link)
+    render_view("without-normal", (0.35, -1, 0.2), 0.65)
+    for shader in shaders:
+        socket = shader.inputs["Base Color"]
+        for link in list(socket.links):
+            shader.id_data.links.remove(link)
+        socket.default_value = (0.5, 0.5, 0.5, 1)
+    render_view("neutral-color-without-normal", (0.35, -1, 0.2), 0.65)
+print(f"检查图已保存：{output}")

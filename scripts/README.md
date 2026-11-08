@@ -32,6 +32,14 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 
 ## 多视角渲染预览（可选，不影响正式画质）
 
+已有 Tripo GLB 的材质对照可使用：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/render_tripo_views.py -- tripo/outputs/reading-chair/tripo-original.glb tripo/outputs/reading-chair/material-diagnostic material-diagnostic
+```
+
+该模式依次渲染原材质、断开 Normal、再替换 Base Color 为中性色；粗糙度和金属度保持原样。输出用于缩小排查范围，不证明 UV、贴图或去光的单一根因；不会修改输入 GLB。省略最后一个参数时沿用原来的五向渲染。
+
 当需要同时比较正面、背面、侧面和近景等多张 Blender 渲染图时，优先用仓库自带的 `scripts/preview_views.py` 生成**一张小型联系表**，再把联系表提供给 Codex 查看。这样避免同一轮直接输入四五张完整PNG，减少长会话的历史图片负载。
 
 在项目根目录执行（本机已安装 Pillow 的 Python 位于 `D:\Python\python.exe`）：
