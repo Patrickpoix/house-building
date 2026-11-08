@@ -4,6 +4,13 @@
 
 ## Blender 阶段
 
+阅读椅第二版材质的房间试放（依赖边几研究稿及 v2 椅工程；覆盖独立试验目录）：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/study_chair_fabric_in_room.py
+```
+
+
 阅读椅布料遮罩与真实贴图试验（依赖原 GLB 和 Terlenka 2K，覆盖 `fabric-study/`）：
 
 ```powershell
