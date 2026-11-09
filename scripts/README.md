@@ -4,6 +4,13 @@
 
 ## Blender 阶段
 
+起居沙发原始模型试放（依赖阅读椅房间试验和沙发 GLB；覆盖独立试验目录）：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/study_sofa_in_room.py
+```
+
+
 阅读椅第二版材质的房间试放（依赖边几研究稿及 v2 椅工程；覆盖独立试验目录）：
 
 ```powershell
