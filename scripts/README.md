@@ -4,6 +4,13 @@
 
 ## Blender 阶段
 
+沙发背部剖切负面试验（依赖原 GLB；覆盖独立试验目录，当前结果未采用）：
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 4 --factory-startup --python-exit-code 1 --python scripts/study_sofa_back_repair.py
+```
+
+
 起居沙发原始模型试放（依赖阅读椅房间试验和沙发 GLB；覆盖独立试验目录）：
 
 ```powershell
