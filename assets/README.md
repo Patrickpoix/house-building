@@ -1,0 +1,28 @@
+# 正式资产与生产状态
+
+验收采用 [B 级实用标准](资产质量基准.md)。下表的正式件位于 `assets/<ID>/`，目录内的同名 BLEND 是可追加、可链接的 Blender 集合库，GLB 可单独导入。PBR 贴图随两种文件打包，可在 Blender 解包使用。以米记录本地 XYZ 包围尺寸，挂放和旋转后的空间位置见 [house.blend](../house.blend)。
+
+| ID 与用途 | 状态 | 本地尺寸（m） | 参考、来源与使用位置 |
+|---|---|---|---|
+| [living-bookshelf](living-bookshelf/) 白橡书架 | 已正式验收 | 0.330 × 1.150 × 2.100 | [结构研究](../stages/S003/bookshelf-geometry/)的分板、底座和托销，使用 [Poly Haven 白橡木皮 2K](materials/white_oak_veneer/README.md)。起居西北角。 |
+| [living-side-table](living-side-table/) 木边几 | 已正式验收 | 0.480 × 0.480 × 0.540 | [九件木结构研究](../stages/S003/side-table-study/)与白橡木皮 2K。沙发和书架之间支撑台灯。 |
+| [living-table-lamp](living-table-lamp/) 布罩陶瓷台灯 | 已正式验收 | 0.302 × 0.300 × 0.520 | [生成参考](../references/living-table-lamp/)与 [Tripo 原始 2K PBR](../tripo/outputs/living-table-lamp/QUALITY_REVIEW.md)。沿用封顶灯罩，电线、插座与灯光在房间中配置。 |
+| [reading-chair](reading-chair/) 阅读椅 | 已正式验收 | 0.757 × 0.763 × 0.780 | [原创参考与构造参考](../references/reading-chair/说明.md)，使用 [Tripo 网格及第二版布料候选](../tripo/outputs/reading-chair/)，把木布混合转换成 GLB 可表达的 2K 图。起居北窗前。 |
+| [living-sofa](living-sofa/) 双人沙发 | 已正式验收 | 2.200 × 0.926 × 0.866 | 按[原创参考](../references/living-sofa/README.md)在 Blender 重建独立座垫、单面靠垫、连续背框和四木脚，使用 [Terlenka 2K](materials/terlenka/README.md)及白橡木皮。起居西窗前。 |
+| [living-coffee-table](living-coffee-table/) 三足茶几 | 已正式验收 | 0.732 × 0.732 × 0.394 | [起居平面](../平面方案.md)内原创圆桌，使用白橡木皮 2K。起居地毯中央。 |
+| [living-rug](living-rug/) 燕麦色地毯 | 已正式验收 | 2.110 × 2.630 × 0.020 | 起居坐席范围内的原创低绒织物，使用 Terlenka 2K 粗糙度、法线及统一染色。 |
+| [A103](A103/) 釉面陶碗 | 已正式验收 | 0.228 × 0.228 × 0.090 | [试验参考](../references/experiments/A101-A103-说明.md)，采用 [S002 碗体及 2K PBR](../stages/S002/A103-study/)。起居茶几。 |
+| [entry-bench](entry-bench/) 换鞋凳 | 已正式验收 | 0.410 × 1.080 × 0.470 | 按玄关通道尺寸制作双板脚和撑板，使用白橡木皮 2K。玄关与储物区之间。 |
+| [A030](A030/) 帆布挂袋 | 已正式验收 | 0.354 × 0.125 × 0.605 | [设计参考](../references/experiments/A030-说明.md)，采用 [S002 连续袋体和提带](../stages/S002/A030-study/)及原有 2K PBR。玄关换鞋凳。 |
+| [A031](A031/) 门挂式围裙 | 已正式验收 | 1.018 × 0.046 × 1.108 | [设计参考](../references/A031-apron/说明.md)，采用 [S002 单层重建 v2](../stages/S002/A031-study/)，保留口袋和腰带及原有 2K PBR。餐厨挂钩上。 |
+| [A019](A019/) 电饭煲 | 已正式验收 | 0.280 × 0.322 × 0.250 | [电饭煲参考](../references/experiments/A019-说明.md)，采用 [S002 纹理研究和铰接盖](../stages/S002/A019-study/)。餐厨东侧操作台。 |
+
+原 Tripo 沙发的几何在正反两面重复布置坐垫，场景改用同一设计的 Blender 重建。A030 原 Tripo 候选侧视呈现断续提带和局部织纹失真，采用连续袋体。A031 原 Tripo 候选有双层袋状空腔，采用单层重建。台灯顶部内构与隐蔽侧、阅读椅轻微布纹不均、挂袋与围裙较规整的布面按 B 级接受。各原件和阶段稿保留原位置。
+
+| 范围 | 状态 | 进展 |
+|---|---|---|
+| A031 凳背围裙、台面搭布、地面抹布 | 待制作 | [视频观察](视频资产观察.md)中的不同状态各须独立覆盖。 |
+| 餐厨橱柜和水槽组 | 修复中 | 东北两侧更新柜面，已布置水槽与龙头，整组待做材料和交付验收。 |
+| 其余参考项目与其他房间资产 | 待制作 | 以 [视频观察](视频资产观察.md)和[整屋目标](../goal.md)接续。 |
+
+房间实景与抽样记录见 [REPORT.md](../REPORT.md)。Tripo 历史实扣见 [工作记录](../tripo/WORK_LOG.md)。

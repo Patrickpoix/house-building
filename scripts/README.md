@@ -4,6 +4,12 @@
 
 ## Blender 阶段
 
+S003 起居装配及玄关、餐厨扩展。读取现有 S002/S003 研究文件，重建 `assets/README.md` 所列 12 个 BLEND/GLB 包、根目录 `house.blend` 和 `renders/S003/` 实景。房间需要保持与 `assets/` 的相对目录。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_living.py
+```
+
 沙发背部剖切负面试验（依赖原 GLB；覆盖独立试验目录，当前结果未采用）：
 
 ```powershell
