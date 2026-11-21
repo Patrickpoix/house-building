@@ -185,10 +185,10 @@ Codex要把完整住宅工程全部做完，并在用户原定质量与验收标
 
 ## 2026-11-21 当前生产锚点
 
-以仓库根目录 `house.blend` 与 `scripts/build_s003_living.py` 为当前生产入口。12 个正式链接、房间镜头及抽查见 [REPORT.md](REPORT.md)，每件来源和当前状态见 [资产清单](assets/README.md)。新标准以 [B 级质量基准](assets/资产质量基准.md) 为准。
+以 [S003 餐厨阶段工程](stages/S003/dining-seating/house.blend)继续装配，包含根目录工程已有的起居成果、餐桌、托盘，以及新装入的双灶和四把餐椅。16 个正式资产库、重开和回导记录见 [REPORT.md](REPORT.md)，重跑命令见 [脚本入口](scripts/README.md)。验收采用 [B 级质量基准](assets/资产质量基准.md)。
 
-继续餐厨餐桌、座椅、灶台和储物，与已链接的 A019、A031 一起检查工作区和走道。接续卧室、卫浴、家政和收纳，随后复核全屋。保留 S001–S003 历史阶段和原始 Tripo 模型。此前已有的 HDRI 研究与本批工程各自保留。
+继续餐厨小物、储物和灶具使用区，检查拉椅净空与走道。接续卧室、卫浴、家政和收纳，随后复核全屋。原始 Tripo 模型、历史阶段和 HDRI 研究仍可按原路径查看。
 
-当前 Desktop 会话记录为 OpenAI `gpt-6.2-sol`、`high`，本机账号认证模式 `chatgpt`，本次请求的订阅计费归属未独立核对。内置浏览器连接报 `Trusted RPC service is not configured: browser`，Studio 页面、登录、实时余额、到期和报价待核对。继续使用本地 Blender，核实全部付费前置条件后再使用预算。五件已付费资产各累计 30/40 积分，本批新增 0。
+待生成资产为 [A104 暖白釉面陶水壶](references/A104/)，项目记录 0/40。当前 Desktop 内置浏览器有 Tripo 标签，控制接口返回 `Trusted RPC service is not configured: browser`。登录、余额、到期、H3.1＋2K＋PBR 报价及本次订阅计费归属待核对，本批实扣 0。浏览器控制恢复后，从已保存的原图继续。
 4. 完善整屋灯光、材质、碰撞和生活细节，形成整屋、各主要空间及至少5件随机正式资产特写渲染。
 5. 使用可重跑的bpy脚本保存建模、装配、质量检查和渲染过程；更新REPORT.md和tripo/WORK_LOG.md。

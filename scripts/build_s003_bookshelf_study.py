@@ -35,20 +35,13 @@ def board(name, center, dimensions, material, grain_axis, offset):
     return obj
 
 
-def main():
-    OUT.mkdir(parents=True, exist_ok=True)
-    bpy.ops.wm.open_mainfile(filepath=str(SOURCE))
-    bpy.context.preferences.filepaths.save_version = 0
-    placeholder = bpy.data.objects.get("STUDY_bookshelf")
-    if placeholder is None:
-        raise RuntimeError("未找到书架占位体，停止以避免重复装配")
-    bpy.data.objects.remove(placeholder, do_unlink=True)
-    mat = bpy.data.materials.new("书架_白橡木皮_试验")
+def white_oak_material(name, uv_name=""):
+    mat = bpy.data.materials.new(name)
     mat.use_nodes = True
     tree = mat.node_tree
     shader = tree.nodes.get("Principled BSDF")
     uv = tree.nodes.new("ShaderNodeUVMap")
-    uv.uv_map = "WoodUV"
+    uv.uv_map = uv_name
     images = []
     for suffix, channel, color_space in (("diff", "Base Color", "sRGB"),
                                          ("rough", "Roughness", "Non-Color"),
@@ -67,6 +60,18 @@ def main():
         else:
             tree.links.new(tex.outputs["Color"], shader.inputs[channel])
     shader.inputs["Metallic"].default_value = 0.0
+    return mat, images
+
+
+def main():
+    OUT.mkdir(parents=True, exist_ok=True)
+    bpy.ops.wm.open_mainfile(filepath=str(SOURCE))
+    bpy.context.preferences.filepaths.save_version = 0
+    placeholder = bpy.data.objects.get("STUDY_bookshelf")
+    if placeholder is None:
+        raise RuntimeError("未找到书架占位体，停止以避免重复装配")
+    bpy.data.objects.remove(placeholder, do_unlink=True)
+    mat, images = white_oak_material("书架_白橡木皮_试验", "WoodUV")
 
     # 宽沿 Y、深沿 X；板件各自保留，内部连接尚需设计。
     for i, y in enumerate((8.509, 9.641)):

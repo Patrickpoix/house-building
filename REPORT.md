@@ -1,5 +1,12 @@
 # 进度与验收报告
 
+## 2026-11-21 · S003 餐厨双灶与四人餐位
+
+- [餐厨阶段工程](stages/S003/dining-seating/house.blend)由根目录现有工程另存。Blender 5.2.3 LTS 重开解析 16 个相对路径资产库，包含此前合格的 12 件。新增完成 A105 电磁炉和四把同源餐椅，复验本轮开始时已有的餐桌与托盘。镜头见[餐位总览](renders/S003/dining-seating.png)、[餐椅近景](renders/S003/dining-chair-detail.png)、[东侧台面](renders/S003/kitchen-cooktop.png)、[灶面近景](renders/S003/cooktop-detail.png)和[托盘近景](renders/S003/kitchen-tray.png)。
+- 四个资产均回导 GLB 并检查 UV 与嵌入贴图。A105 的 25 个网格有 UV，2048 × 2048 颜色图为 sRGB，均匀的粗糙度和金属度用材质值，玻璃使用平滑表面。餐桌、托盘分别复核 9 个和 1 个网格及 3 张白橡木皮 2K 图。餐椅复核 11 个网格及 5 张打包图，其中布料贴图为源文件的 2048 × 2053。四件达到 B 级，文件和尺寸见[清单](assets/README.md)。
+- 双灶原占位已移除。原像素同机位比较确认加热区与触控丝印更清楚，机脚与台面相接。重开测得灶底和托盘底 Z = 0.940 m，餐桌与四把椅子的腿底 Z = 0，餐椅与桌体在当前摆位留有约 22 mm 的包围盒净距。双灶与餐椅按回导结果另渲染多视角，起居原相机从阶段工程再渲染核对。尚未验证拉椅时的通行、灶具实际供电及排烟，也未进行整屋终验。
+- A104 的[两张参考](references/A104/)已归档。内置浏览器标签可见，当前会话控制接口报 `Trusted RPC service is not configured: browser`，登录、余额、到期、H3.1 报价和 2K PBR 待核对。A104 未上传、未生成，本批实扣 0。下一步接续 A104 和其余餐厨生活细节，随后推进卧室、卫浴、家政及收纳。
+
 ## 2026-11-21 · S003 起居样板与首批正式资产
 
 - Blender 5.2.3 LTS 已重开 [house.blend](house.blend)。起居采用原封顶与木地板，装入沙发、阅读椅、书架、边几、台灯、茶几、地毯和陶碗，补上书籍、插座走线和半吸顶灯。扩展至玄关的换鞋凳与挂袋，以及餐厨的围裙、电饭煲、柜面和带实开口的水槽。主镜头是 [起居](renders/S003/living.png)，另有 [起居反向](renders/S003/living-reverse.png)、[阅读角](renders/S003/reading-corner.png)、[玄关](renders/S003/entry.png)及 [餐厨](renders/S003/kitchen.png)。

@@ -10,6 +10,15 @@ S003 起居装配及玄关、餐厨扩展。读取现有 S002/S003 研究文件�
 & .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_living.py
 ```
 
+S003 餐厨阶段从含餐桌和托盘的根目录工程接续。先安装 A105 双灶，再由双灶阶段工程安装餐椅。两个脚本分别另存阶段工程，重跑会更新对应的资产包和实景图。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_cooktop.py --
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_dining_seating.py --
+```
+
+[当前餐厨工程](../stages/S003/dining-seating/house.blend)依赖 `assets/` 的相对路径。两条命令可用 `--source` 和 `--output` 指定输入和输出工程。旧版 `build_s003_dining.py` 提供餐桌、托盘和餐椅的几何与装配，直接执行会将结果保存至根目录工程。
+
 沙发背部剖切负面试验（依赖原 GLB；覆盖独立试验目录，当前结果未采用）：
 
 ```powershell
