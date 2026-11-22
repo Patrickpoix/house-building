@@ -1,5 +1,11 @@
 # 进度与验收报告
 
+## 2026-11-22 · S003 餐桌生活物件
+
+- Blender 5.2.3 LTS 完成 [A106 青灰釉面陶杯](assets/A106/)和 [A107 亚麻餐垫](assets/A107/)。参考视频 V007、V009 的杯柄和织物用途，按本住宅餐桌直接建模。修正细分后圈足的轻微抬升，用按实物尺度的 2K 经纬纹取代初稿偏平的表面。
+- [阶段工程](stages/S003/table-setting/house.blend)重开后解析 18 个相对路径资产库。三只杯的实际圈足底为 Z = 0.7586 m，对应餐垫平织面，四张餐垫的底面和桌面均为 Z = 0.7550 m。[餐区](renders/S003/dining-table-setting.png)、[餐桌近景](renders/S003/table-setting-detail.png)和[回导实图](renders/S003/table-setting-glb.png)已检查。两件按 B 级入库。
+- 两件 BLEND 均包含可追加的集合、UV 和打包贴图。GLB 分别回导两个及一个网格，均通过网格校验。各有三张内嵌 PBR 图，A106 为 2048²，A107 的粗糙度和法线沿用 2048 × 2053 源图。Tripo 本批实扣 0。A104 和其他房间完整布置仍待完成。
+
 ## 2026-11-21 · S003 餐厨双灶与四人餐位
 
 - [餐厨阶段工程](stages/S003/dining-seating/house.blend)由根目录现有工程另存。Blender 5.2.3 LTS 重开解析 16 个相对路径资产库，包含此前合格的 12 件。新增完成 A105 电磁炉和四把同源餐椅，复验本轮开始时已有的餐桌与托盘。镜头见[餐位总览](renders/S003/dining-seating.png)、[餐椅近景](renders/S003/dining-chair-detail.png)、[东侧台面](renders/S003/kitchen-cooktop.png)、[灶面近景](renders/S003/cooktop-detail.png)和[托盘近景](renders/S003/kitchen-tray.png)。

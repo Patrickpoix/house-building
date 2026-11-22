@@ -1,5 +1,10 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-22 · 餐桌小件与 A104 待办
+
+- 当前会话能看到内置 Tripo 标签的 URL，`cua_repl` 未出现在工具列表。实时余额、到期、H3.1 完整报价和 2K PBR 选择未核对。A104 沿用已存原图，记录累计 0/40，本批无上传或实扣。
+- A106 陶杯和 A107 餐垫用 Blender 5.2.3 LTS 直接建模，实扣均为 0。两件已回导和实景验收，见 [文件与近景](../REPORT.md)。
+
 ## 2026-11-21 · A104 参考完成，餐厨阶段装配
 
 - 用户已打开并登录同会话的 Tripo 标签，提供的页面读数为 4335 积分、H3.1 单次 30 积分。本会话未暴露 `cua_repl`，内置浏览器当前标签接口多次返回 `Trusted RPC service is not configured: browser`。当前会话记录确认为 OpenAI `gpt-6.2-sol`、`high`，具体订阅计费归属待核对。实时余额、到期、完整报价和 2K PBR 待核对。未提交上传、生成、后处理或充值，实扣 0。

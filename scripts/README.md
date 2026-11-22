@@ -17,7 +17,13 @@ S003 餐厨阶段从含餐桌和托盘的根目录工程接续。先安装 A105 
 & .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_dining_seating.py --
 ```
 
-[当前餐厨工程](../stages/S003/dining-seating/house.blend)依赖 `assets/` 的相对路径。两条命令可用 `--source` 和 `--output` 指定输入和输出工程。旧版 `build_s003_dining.py` 提供餐桌、托盘和餐椅的几何与装配，直接执行会将结果保存至根目录工程。
+[餐椅阶段工程](../stages/S003/dining-seating/house.blend)依赖 `assets/` 的相对路径。两条命令可用 `--source` 和 `--output` 指定输入和输出工程。重放双灶阶段时，以历史提交 `8786a34` 中的根目录工程作为 `--source`。旧版 `build_s003_dining.py` 提供餐桌、托盘和餐椅的几何与装配，直接执行会将结果保存至根目录工程。
+
+从餐椅阶段重跑 A106 马克杯、A107 餐垫和[餐桌陈设工程](../stages/S003/table-setting/house.blend)。脚本更新这两个资产库和餐桌对应视图。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_table_setting.py --
+```
 
 沙发背部剖切负面试验（依赖原 GLB；覆盖独立试验目录，当前结果未采用）：
 

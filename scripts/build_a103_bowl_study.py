@@ -52,60 +52,69 @@ def material(name, color, roughness, seed):
     return mat
 
 
-def bowl(glaze, clay):
+def ceramic_vessel(glaze, clay, profile, *, name, underside_z, inner_floor_z,
+                   foot_height, planar_inner_row, uv_size, uv_repeats):
     sides = 128
-    vertices = [(0, 0, 0.000)]
-    for radius, z in PROFILE:
+    vertices = [(0, 0, underside_z)]
+    for radius, z in profile:
         for i in range(sides):
             angle = 2 * math.pi * i / sides
             irregularity = 1 + 0.004 * math.sin(3 * angle + 0.6) + 0.002 * math.sin(7 * angle)
             vertices.append((radius * math.cos(angle) * irregularity, radius * math.sin(angle) * irregularity, z))
     top_center = len(vertices)
-    vertices.append((0, 0, 0.021))
+    vertices.append((0, 0, inner_floor_z))
     faces = [(0, 1 + (i + 1) % sides, 1 + i) for i in range(sides)]
-    for row in range(len(PROFILE) - 1):
+    for row in range(len(profile) - 1):
         for i in range(sides):
             a = 1 + row * sides + i
             b = 1 + row * sides + (i + 1) % sides
             faces.append((a, b, b + sides, a + sides))
-    last = 1 + (len(PROFILE) - 1) * sides
+    last = 1 + (len(profile) - 1) * sides
     faces.extend((last + i, last + (i + 1) % sides, top_center) for i in range(sides))
-    mesh = bpy.data.meshes.new("A103_bowl_mesh")
+    mesh = bpy.data.meshes.new(f"{name}_mesh")
     mesh.from_pydata(vertices, [], faces)
     mesh.update()
     uv = mesh.uv_layers.new(name="ceramic_uv")
     lengths = [0.0]
-    for current, previous in zip(PROFILE[1:], PROFILE):
+    for current, previous in zip(profile[1:], profile):
         lengths.append(lengths[-1] + math.dist(current, previous))
     for face in mesh.polygons:
         coords = []
         quad_row = (face.index - sides) // sides
         # 较陡的内壁使用弧长坐标，内底与胎土底使用平面坐标。
-        is_planar = face.center.z < 0.006 or top_center in face.vertices or quad_row >= 17
+        is_planar = face.center.z < foot_height or top_center in face.vertices or quad_row >= planar_inner_row
         for loop_index in face.loop_indices:
             vertex_index = mesh.loops[loop_index].vertex_index
             v = mesh.vertices[vertex_index].co
             if is_planar:
-                coords.append((0.5 + v.x / 0.25, 0.5 + v.y / 0.25))
+                scale = uv_size[0]
+                coords.append((0.5 + v.x / scale, 0.5 + v.y / scale))
             else:
                 row = (vertex_index - 1) // sides
-                coords.append(((math.atan2(v.y, v.x) / (2 * math.pi)) % 1, lengths[row] / 0.23))
+                coords.append(((math.atan2(v.y, v.x) / (2 * math.pi)) % 1, lengths[row] / uv_size[1]))
         us = [p[0] for p in coords]
         if not is_planar and max(us) - min(us) > 0.5:
             coords = [(u + 1 if u < 0.5 else u, v) for u, v in coords]
         if not is_planar:
-            coords = [(u * 3, v) for u, v in coords]
+            coords = [(u * uv_repeats, v) for u, v in coords]
         for loop_index, coord in zip(face.loop_indices, coords):
             uv.data[loop_index].uv = coord
         face.use_smooth = True
-        face.material_index = 1 if face.center.z < 0.006 else 0
-    obj = bpy.data.objects.new("A103_bowl", mesh)
+        face.material_index = int(face.center.z < foot_height)
+    obj = bpy.data.objects.new(name, mesh)
     bpy.context.collection.objects.link(obj)
     obj.data.materials.append(glaze)
     obj.data.materials.append(clay)
     sub = obj.modifiers.new("ceramic_smoothing", "SUBSURF")
     sub.levels = 2
     return obj
+
+
+def bowl(glaze, clay):
+    return ceramic_vessel(
+        glaze, clay, PROFILE, name="A103_bowl", underside_z=0.0, inner_floor_z=0.021,
+        foot_height=0.006, planar_inner_row=17, uv_size=(0.25, 0.23), uv_repeats=3,
+    )
 
 
 def main():

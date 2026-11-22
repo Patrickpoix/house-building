@@ -23,6 +23,14 @@ VIEWS = {
 }
 
 
+def rounded_rectangle(width, depth, z, radius, corner_steps):
+    for corner, (sx, sy) in enumerate(((1, 1), (-1, 1), (-1, -1), (1, -1))):
+        cx, cy = sx * (width / 2 - radius), sy * (depth / 2 - radius)
+        for step in range(corner_steps):
+            angle = (corner + step / (corner_steps - 1)) * pi / 2
+            yield (cx + radius * cos(angle), cy + radius * sin(angle), z)
+
+
 def tray(wood):
     profile = (
         (0.368, 0.248, 0.000, 0.029),
@@ -36,13 +44,7 @@ def tray(wood):
     )
     corner_steps = 9
     ring_size = 4 * corner_steps
-    vertices = []
-    for width, depth, z, radius in profile:
-        for i, (sx, sy) in enumerate(((1, 1), (-1, 1), (-1, -1), (1, -1))):
-            cx, cy = sx * (width / 2 - radius), sy * (depth / 2 - radius)
-            for step in range(corner_steps):
-                t = (i + step / (corner_steps - 1)) * pi / 2
-                vertices.append((cx + radius * cos(t), cy + radius * sin(t), z))
+    vertices = [point for ring in profile for point in rounded_rectangle(*ring, corner_steps)]
     faces = [tuple(reversed(range(ring_size)))]
     for ring in range(len(profile) - 1):
         for i in range(ring_size):
