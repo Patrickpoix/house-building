@@ -1,5 +1,9 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-22 · 主卧移门衣柜
+
+- A110 在 Blender 5.2.3 LTS 直接建模，实扣 0。回导和移门开合实图见 [验收报告](../REPORT.md)。A104 实时设置及报价待核对。
+
 ## 2026-11-22 · 主卧床位
 
 - A108 床架和 A109 床品采用 Blender 5.2.3 LTS 直接建模，各实扣 0。已回导、重开并按 B 级入库。主卧剩余项和文件见 [验收报告](../REPORT.md)。A104 的 Studio 核对条件仍待满足。

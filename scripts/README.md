@@ -31,6 +31,12 @@ S003 餐厨阶段从含餐桌和托盘的根目录工程接续。先安装 A105 
 & .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_bedroom.py --
 ```
 
+从主卧床架阶段重跑 A110 双轨移门衣柜、[衣柜阶段工程](../stages/S003/bedroom-wardrobe/house.blend)以及关门实景和回导后的两个开启视图。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_wardrobe.py --
+```
+
 沙发背部剖切负面试验（依赖原 GLB；覆盖独立试验目录，当前结果未采用）：
 
 ```powershell

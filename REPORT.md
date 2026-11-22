@@ -1,5 +1,10 @@
 # 进度与验收报告
 
+## 2026-11-22 · S003 主卧移门衣柜
+
+- [A110 双轨移门衣柜](assets/A110/)以沿柜面滑动的门板保留床侧通道，内部做五层叠放区及挂衣区。重开[主卧工程](stages/S003/bedroom-wardrobe/house.blend)解析 21 个相对路径资产库，确认旧柜占位已替换。柜体落在木地板，柜前突出部至床品包围盒净距约 0.707 m。
+- BLEND 已重开。GLB 回导 31 个有效网格，带 UV 与三张内嵌 2048² 白橡木皮贴图。[房间](renders/S003/bedroom-wardrobe.png)和[拉手近景](renders/S003/wardrobe-detail.png)已检查。两门独立回导并各平移 0.807 m 做[层板区](renders/S003/wardrobe-shelves-glb.png)和[挂衣区](renders/S003/wardrobe-hanging-glb.png)实图，测得门与对侧把手的深度净距约 6.5 mm。A110 按 B 级入库，展示工程为闭门静态实例，整屋通行待复核。
+
 ## 2026-11-22 · S003 主卧床架、床品及木地板
 
 - [主卧阶段工程](stages/S003/bedroom-bed/house.blend)继承餐厨和起居成果。补主卧木地板，将床居中于南窗下，沿用衣柜占位，替换旧床、床垫和枕头。新增 [A108 白橡软包床架](assets/A108/)和 [A109 床垫与床品](assets/A109/)，均按 B 级入库。
