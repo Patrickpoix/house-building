@@ -14,7 +14,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from build_a103_bowl_study import ceramic_vessel, material as glaze_material
 from build_s003_cooktop import scene_camera
 from build_s003_dining import rounded_rectangle
-from build_s003_living import LIBRARY, place_new, room_material, textile
+from build_s003_living import LIBRARY, mesh_object, place_new, room_material, textile
 import texture_a019_study as textures
 
 
@@ -33,17 +33,6 @@ VIEWS = {
     "dining-table-setting": ((4.24, 5.73, 1.54), (6.13, 7.64, 0.73), 29),
     "table-setting-detail": ((6.96, 6.77, 1.36), (6.45, 7.25, 0.77), 44),
 }
-
-
-def mesh_object(name, vertices, faces, materials):
-    mesh = bpy.data.meshes.new(name)
-    mesh.from_pydata(vertices, [], faces)
-    mesh.update()
-    obj = bpy.data.objects.new(name, mesh)
-    bpy.context.scene.collection.objects.link(obj)
-    for material in materials:
-        mesh.materials.append(material)
-    return obj
 
 
 def mug():

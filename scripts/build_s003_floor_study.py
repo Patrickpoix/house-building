@@ -10,6 +10,23 @@ OUT = ROOT / "stages" / "S003" / "floor-study"
 TEXTURES = ROOT / "assets" / "materials" / "wood_floor"
 
 
+def wood_floor_surface(name, bounds, material, z=0.002):
+    x0, y0, x1, y1 = bounds
+    vertices = [(x0, y0, z), (x1, y0, z), (x1, y1, z), (x0, y1, z)]
+    mesh = bpy.data.meshes.new(name)
+    mesh.from_pydata(vertices, [], [(0, 1, 2, 3)])
+    mesh.update()
+    layer = mesh.uv_layers.new(name="FloorUV")
+    # 贴图原始图块宽约 1.7 m。
+    for loop in mesh.loops:
+        point = mesh.vertices[loop.vertex_index].co
+        layer.data[loop.index].uv = ((point.x - x0) / 1.7, (point.y - y0) / 1.7)
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.scene.collection.objects.link(obj)
+    mesh.materials.append(material)
+    return obj
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     bpy.ops.wm.open_mainfile(filepath=str(SOURCE))
@@ -39,20 +56,7 @@ def main():
             tree.links.new(node.outputs["Color"], shader.inputs[channel])
     shader.inputs["Metallic"].default_value = 0.0
 
-    # 官方图块宽约 1.7 m；按米映射，保持物理尺寸。
-    vertices = [(0.2, 4.06, 0.002), (9.8, 4.06, 0.002),
-                (9.8, 9.8, 0.002), (0.2, 9.8, 0.002)]
-    mesh = bpy.data.meshes.new("开放区地板网格")
-    mesh.from_pydata(vertices, [], [(0, 1, 2, 3)])
-    mesh.update()
-    layer = mesh.uv_layers.new(name="FloorUV")
-    for poly in mesh.polygons:
-        for loop_id in poly.loop_indices:
-            vertex = mesh.vertices[mesh.loops[loop_id].vertex_index].co
-            layer.data[loop_id].uv = ((vertex.x - 0.2) / 1.7, (vertex.y - 4.06) / 1.7)
-    obj = bpy.data.objects.new("STUDY_起居餐厨木地板", mesh)
-    bpy.context.scene.collection.objects.link(obj)
-    obj.data.materials.append(mat)
+    wood_floor_surface("STUDY_起居餐厨木地板", (0.2, 4.06, 9.8, 9.8), mat)
     scene = bpy.context.scene
     scene.render.filepath = str(OUT / "living-floor.png")
     bpy.ops.wm.save_as_mainfile(filepath=str(OUT / "house-floor-study.blend"))

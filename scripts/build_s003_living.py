@@ -158,6 +158,17 @@ def room_material(name, color, roughness, metallic=0):
     return mat
 
 
+def mesh_object(name, vertices, faces, materials):
+    mesh = bpy.data.meshes.new(name)
+    mesh.from_pydata(vertices, [], faces)
+    mesh.update()
+    obj = bpy.data.objects.new(name, mesh)
+    bpy.context.scene.collection.objects.link(obj)
+    for material in materials:
+        mesh.materials.append(material)
+    return obj
+
+
 def textile(name, color):
     mat = room_material(name, color, 0.8)
     nodes, links = mat.node_tree.nodes, mat.node_tree.links

@@ -25,6 +25,12 @@ S003 餐厨阶段从含餐桌和托盘的根目录工程接续。先安装 A105 
 & .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_table_setting.py --
 ```
 
+从餐桌陈设阶段接续 A108 床架和 A109 床品，补齐主卧木地板并另存[主卧阶段工程](../stages/S003/bedroom-bed/house.blend)。脚本更新床架、床品资产库及两个房间镜头。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_bedroom.py --
+```
+
 沙发背部剖切负面试验（依赖原 GLB；覆盖独立试验目录，当前结果未采用）：
 
 ```powershell
