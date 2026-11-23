@@ -1,5 +1,10 @@
 # 进度与验收报告
 
+## 2026-11-24 · S003 卫浴盥洗区
+
+- [A113 壁挂盥洗组](assets/A113/)采用连续陶瓷台盆、弧形龙头、弹跳下水和双抽白橡柜。卫浴补地砖、西墙釉砖、镜与照明。同机位复验确认移除原柜和原台盆后，新盆口、下水及两个抽面完整可见。见[实景](renders/S003/bathroom-vanity.png)、[盆口近景](renders/S003/bathroom-vanity-detail.png)和 [GLB 回导](renders/S003/bathroom-vanity-glb.png)。
+- 重开[卫浴阶段工程](stages/S003/bathroom-vanity/house.blend)及[根工程](house.blend)均解析 24 个相对路径资产库。挂板贴墙砖，柜底距地砖 222 mm，与马桶占位的横向净距 775 mm。BLEND 集合可追加，GLB 回导 18 个有效网格、UV 及三张 2048² PBR 图。射线命中连续盆底及独立下水盖，台面至盆底约 122 mm。A113 按 B 级入库，抽屉保持关闭。给排水、抽屉行程、淋浴、马桶和整间卫浴验收待完成。
+
 ## 2026-11-23 · S003 主卧窗帘与床头柜
 
 - [A111 南窗双幅帘](assets/A111/)根据现有窗洞制作双幅落地帘、导轨、挂片和三组背墙支座。[A112 白橡床头柜](assets/A112/)安装在左床侧，带独立抽屉面、实木脚及开放下层。两件已装入[阶段工程](stages/S003/bedroom-furnishings/house.blend)和[根工程](house.blend)，两处重开均解析 23 个相对路径资产库。
