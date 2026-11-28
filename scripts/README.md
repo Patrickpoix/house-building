@@ -49,6 +49,13 @@ S003 餐厨阶段从含餐桌和托盘的根目录工程接续。先安装 A105 
 & .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_bathroom_vanity.py --
 ```
 
+从盥洗组继续构建 [A114 淋浴](../stages/S003/bathroom-shower/house.blend) 和 [A115 坐便区](../stages/S003/bathroom-toilet/house.blend)。脚本另存阶段工程及实景、GLB 回导视图。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_bathroom_shower.py --
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/build_s003_bathroom_toilet.py --
+```
+
 沙发背部剖切负面试验（依赖原 GLB；覆盖独立试验目录，当前结果未采用）：
 
 ```powershell

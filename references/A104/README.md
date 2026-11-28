@@ -2,12 +2,13 @@
 
 为 S003 餐桌设计，使用时盛水，台面陈列时露出壶口和壶柄。目标尺寸约 0.18–0.20 × 0.13 × 0.18 m，壶口约 0.09 m，釉面微斑、单向捏嘴、贯通式 D 形单柄和无釉圈足。尺寸为设计值，待模型实测。
 
-两张原图由 Codex 内置 `image_gen.imagegen` 生成，工具未回传模型 ID。正视由侧斜原图派生。两图的口沿、收颈、鼓腹、釉色与圈足一致。侧斜图可见壶柄上下连接及握孔，正视图壶柄被遮挡，均可辨识开口与捏嘴。内部深度、背侧和壶柄背侧接头待回导检查。侧图的抬高视角会产生透视；若 Studio 正侧槽需要更严格的角度，先补同物体平视侧向图。现有侧斜图也可作为单图输入候选。
+三张原图均由 Codex 内置 `image_gen.imagegen` 生成，工具未回传模型 ID。正视由侧斜原图派生，平视侧图由两张原图派生。已并排看过捏嘴、收颈、鼓腹、单柄双接头、贯通握孔和窄圈足。平视侧图口沿略平、下腹略饱满，内部开口以抬高的正视和侧斜图辅助核对。优先将正视和平视侧图放入对应图位，内部深度、背侧和壶柄背部接头需回导检查。
 
 - [侧斜图](side-three-quarter.png)
 - [壶嘴正视](front.png)
+- [平视左侧](left-profile.png)
 
-截至 2026-11-28 实扣 0；壶口空腔和贯通握孔是首轮结构重点，按 [生产流程](../../tripo/PRODUCTION_WORKFLOW.md) 使用 H3.5 Standard + 2K PBR。
+截至 2026-11-28 实扣 0。内置浏览器两次附着 Tripo 标签均超时，图位、报价及参数未核对，未上传或生成。壶口空腔和贯通握孔是首轮结构重点，按 [生产流程](../../tripo/PRODUCTION_WORKFLOW.md) 使用 H3.5 Preview、Standard、2K PBR，开启去光和 AI 增强。
 
 ## 实际提示
 
@@ -18,3 +19,7 @@
 ### 壶嘴正视（附侧斜原图）
 
 > Create a second image of exactly the attached same ceramic pitcher as a 3D modeling reference. Rotate ONLY the same object 90 degrees about its vertical axis from the mostly side image: camera now looking straight into the pinched spout end, with the single D handle directly behind the vessel and naturally occluded by the body. The spout lies centered and projects forward, open rim and interior still visible because camera elevated 18 degrees. Do not change the silhouette height, tapered round belly, foot ring, mouth size, warm ivory satin glaze with subtle kiln speckle, wall thickness, or spout height. Precisely one object. Orthographic-like product photograph on seamless white, diffuse neutral illumination, complete visible silhouette with white margin. No text or other objects.
+
+### 平视左侧（附侧斜图、正视图）
+
+> Use image 1 as the original identity reference (elevated lateral view) and image 2 as the matching spout-end identity reference. Produce one clean image-to-3D reference of the exact same individual ivory stoneware pitcher, straight lateral orthographic profile, camera at the midpoint of the pitcher with horizontal optical axis and perpendicular to the spout-and-handle plane. Put the single short pinched spout on picture left and the single D handle on picture right, both fully visible in profile. No roll, no tilt, no perspective distortion, no view of the bottom. Preserve the height-to-body-width ratio, the low round belly, smoothly tapering shoulder, short slightly flared neck, narrow unglazed gray-brown foot band, low warm ivory satin glaze with subtle fine kiln speckles, the heights and curvature of the two handle joins, and the unmistakably empty single D-shaped grip opening. Preserve a thin open ceramic rim; at horizontal camera height the image should naturally show almost none of the interior. Design height 18 cm, body diameter about 13 cm. One object, centered with generous white margins, pure seamless white background and nearly shadowless diffuse neutral lighting. No change to the design, no additional object, no text, no grid.

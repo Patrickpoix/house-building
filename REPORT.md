@@ -1,5 +1,12 @@
 # 进度与验收报告
 
+## 2026-11-28 · S003 淋浴与坐便区
+
+- [A114 淋浴组](assets/A114/)和 [A115 坐便器](assets/A115/)已通过 B 级资产验收并替换原占位。[根工程](house.blend)重开解析 26 个相对路径资产库。两件底部与地砖面均为 Z=0.010 m，坐便器水箱后缘距北墙约 18 mm。见[卫浴总览](renders/S003/bathroom-complete.png)、[淋浴底盘](renders/S003/shower-base-detail.png)和[坐便器近景](renders/S003/bathroom-toilet-detail.png)。
+- A114、A115 的 GLB 在干净 Blender 场景分别回导 94、15 个有效网格，均含 UV 和三张内嵌 2048² PBR 图。修复 A115 回导时的四元数模式，开盖后顶边达约 0.95 m，实图可看到盆腔和两侧铰链。见[淋浴回导](renders/S003/bathroom-shower-glb.png)和[坐便器开盖](renders/S003/bathroom-toilet-glb-open.png)。卫浴给排水、操作通行及整屋终验待复核。
+- 对照本地参考视频第 300、660、2280 帧，保留了分立五金、构件接触和有明确灯具的局部照明思路。旧庭院 HDRI 在历史样板里使室内明显偏暗偏绿，现阶段保留主工程的天空照明。
+- [A104](references/A104/)补平视左侧原图，Codex 内置生图工具未披露模型 ID。Tripo 已发现标签页，两次附着超时，未核对实时余额、报价和参数。本阶段无上传或积分消耗。
+
 ## 2026-11-28 · 生产策略
 统一 H3.5 Standard + 2K PBR，取消旧单件上限；见 [生产流程](tripo/PRODUCTION_WORKFLOW.md) 和 [报价](tripo/STUDIO_PRICE_MATRIX_REPORT.md)。本轮无模型生成或验收。
 
