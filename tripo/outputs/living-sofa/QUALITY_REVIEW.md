@@ -1,6 +1,6 @@
 # 起居沙发原始模型检查（未验收）
 
-Tripo 任务 `e3ccbe99-8fe0-4ecf-982c-949baf628124`，H3.1、2K、PBR、去光、目标 200000 三角面；实扣 30，余额 4410，单资产剩余 10。参考和侧视推断限制见 `references/living-sofa/README.md`。
+Tripo 任务 `e3ccbe99-8fe0-4ecf-982c-949baf628124`，H3.1、2K、PBR、去光、目标 200000 三角面；实扣 30，余额 4410，按当时 40 积分上限计算剩余 10（历史口径；现行规则见 ../../PRODUCTION_WORKFLOW.md）。参考和侧视推断限制见 `references/living-sofa/README.md`。
 
 原始 GLB 已通过浏览器下载事件保存至 `E:/收件箱/sofa 3d model.glb`，副本 `tripo-original.glb`。Blender 5.2.3 检查：单网格 100803 顶点、187952 三角面、一个 UV；101 个近零 UV 面积三角形及 13412 条非流形边是待定位统计，不能单凭数量判定破损。三张内嵌 2048 贴图连接 Base Color、Roughness/Metallic 和 Normal，视觉质量仍需检查。
 

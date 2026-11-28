@@ -1,5 +1,7 @@
 # house-building
 
+当前生产采用 **Images 2.6 → Tripo H3.5 Preview → Blender**（适用于复杂资产）；以首次成品质量和 Tripo 积分、Codex 额度及返工总成本决策，规则件直接 Blender。现行参数和预算规则见 [生产流程](tripo/PRODUCTION_WORKFLOW.md)，实时核价口径见 [成本报告](tripo/STUDIO_PRICE_MATRIX_REPORT.md)。
+
 约100㎡原创超写实住宅工程。最终目标是完成建筑、家具家电、软装、真实PBR、房间布景及整屋渲染，不把白模或试验资产当作交付。现行执行规范见 [AGENTS.md](AGENTS.md)，进度与约束见 [HANDOFF.md](HANDOFF.md)，验收见 [goal.md](goal.md)。
 
 ## Blender：5.2.3 LTS（本地及云端版本基准）

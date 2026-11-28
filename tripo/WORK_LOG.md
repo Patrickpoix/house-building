@@ -1,5 +1,13 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-28 · H3.5 生产规范及总成本策略统一
+
+- 目的：依据用户确认改为 H3.5 默认主线，取消旧单件 40 积分硬上限，以首轮质量、Tripo 积分、Codex 额度和返工时间综合决策；保留实际历史实扣、不擅自充值、不重做已验收资产。
+- 实测：2026-11-28 同账户、目标 100 万三角面、纹理/PBR、去光、AI 增强开启、分部件关闭、无输入图片的生成前报价：H3.5 Standard 2K/4K 为 35/45，Ultra 4K 为 60；H3.1 对应 30/40/55。Ultra 2K 的 50/45 仅由附加费推算，未直接核价。H3.5 Standard/Ultra 面数上限为 200 万/500 万；H3.1 为 100 万/200 万，另有四边面选项。H3.5 当前价格有促销划线价，不是永久定价。余额界面见 4,335；到期、上传后报价及实际扣费仍需生产时核实。本次未生成或付费。
+- 范围：根目录执行规范、目标、交接、报告及任务索引；资产质量标准和待制作 A104；Tripo 生产流程、功能、价格报告/协议及索引；对历史阅读椅、沙发、台灯预算口径加注。原 CSV、旧截图和原始模型保留。
+- 文件清单：AGENTS.md、HANDOFF.md、README.md、REPORT.md、goal.md、CODEX_TERRA_TASK.md、assets/README.md、assets/资产质量基准.md、references/A104/README.md、references/reading-chair/说明.md、tripo/README.md、tripo/TERRA_HANDOFF.md、tripo/PRODUCTION_WORKFLOW.md、tripo/STUDIO_FEATURES.md、tripo/STUDIO_PRICE_MATRIX_PROTOCOL.md、tripo/STUDIO_PRICE_MATRIX_REPORT.md、tripo/WORK_LOG.md、tripo/outputs/living-sofa/QUALITY_REVIEW.md、tripo/outputs/living-table-lamp/QUALITY_REVIEW.md。共 19 份；本次未删除或移动文件。AGENTS/HANDOFF 中既有未提交的浏览器接管说明随相关规范保留；其他未提交的模型成果不纳入本次提交。
+- 验证：检查 Git 工作树中 40 份 Markdown 的旧模型/预算口径，复核所有命中项，git diff --check 通过；未运行 Blender 或生成回归，因为未修改模型、脚本或场景；未消耗积分、未充值、未向 Codex 发送消息。模型侧浏览器控制、H3.5 首次合格率及修复工时待生产验证；到期及上传后报价待核。后续先读 AGENTS.md、HANDOFF.md、PRODUCTION_WORKFLOW.md 与 STUDIO_PRICE_MATRIX_REPORT.md。历史日期条目中的 40 上限、旧模型选择和余额是当时记录，不再约束新生产。
+
 ## 2026-11-24 · 盥洗组
 
 - A113 历史记录无消费，采用 Blender 5.2.3 LTS 连续台盆与分件柜体，实扣 0。台盆、下水及挂墙接触已用回导和房间实图核对。实时 Tripo 状态仍待核对。

@@ -1,5 +1,7 @@
 # Tripo Studio已测报价矩阵口径
 
+2026-11-28 更新：本协议及 CSV 只描述 2026-11-07 H3.0/H3.1 历史矩阵，不是 H3.5 当前报价或生产限制。现行 H3.5 策略及同账户核价见 [生产流程](PRODUCTION_WORKFLOW.md) 和 [成本报告](STUDIO_PRICE_MATRIX_REPORT.md)。
+
 实际调查结果见 STUDIO_PRICE_MATRIX.csv、STUDIO_PRICE_MATRIX_REPORT.md，截图及参数证据见 price-evidence/。
 
 64组理论组合包含 H3.0/H3.1 × 三角/四边 × 去光开关 × 模型内分部件开关 × AI补全/增强开关 × 2K/4K。均要求PBR和纹理开启，默认超清关闭；三角200000面、四边50000面是矩阵的固定比较口径。32组已有生成前UI报价，32组因分部件生成与纹理互斥记为N/A。
