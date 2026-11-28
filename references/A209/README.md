@@ -1,0 +1,11 @@
+# A209 日用双肩包参考
+
+[四向原图](four-view-original.png)由 Codex 内置 `image_gen.imagegen` 生成，原图 1199 × 1312，具体子版本未披露。画面从左上沿顺时针为正、左、右、背视。同一方案的主舱弧形拉链、左拉片前袋、提手和两条背带在对应视角可辨。侧影厚度和背带弧长按原图估计，模型依照设计尺度重建。
+
+主体设计尺寸约 280 × 150 × 420 mm，基于日用通勤包。背带、前袋和提手计入交付包围尺寸。Tripo 内置浏览器本会话无法访问，采用 Blender 分片塑形，参考图用于比对轮廓、车缝路线和织带锚点。
+
+实际生成提示词
+
+```text
+Use case: product-mockup. Create a production image-to-3D blueprint for one single unbranded original 16 L household daypack, with four rigorously matched orthographic views in a clean 2-by-2 grid on pure white. Top left front (the pocket face), top right exact left side, bottom left exact rear (the shoulder straps), bottom right exact right side. All are exact same scale, neutral upright closed resting state and 42 cm H by 28 cm W by 15 cm D excluding shoulder straps, full silhouette visible, generous white gutters, aligned bottoms and no labels. Camera horizontal centered halfway up the pack with zero perspective and constant non-directional soft high-key lighting. Design: simple compact rounded-rectangle waxed cotton canvas body, warm ochre khaki, slightly curved twin upper corners and a flat reinforced base. A single dark olive double zipper arches over the top and both shoulders of the body with exactly two short gunmetal pulls adjacent at top center. On the front face only, a shallow horizontal hand pocket width 20 cm, with a single straight exposed zipper at 35 percent of total height and one pull on viewer left. The rear has a full-length slightly padded ochre back panel and exactly two dark olive padded shoulder straps, individually sewn into the back at upper and lower anchor points. Straps curve close to the rear panel in this empty resting state and do not touch ground. One short dark olive webbing haul grip arch sewn above rear shoulder anchors, visible at the top in every view. Flush clean side walls with clean double-stitched edge gussets, no side pockets. Fine visible seams, webbing texture and natural minor wrinkles, structural accuracy and subtle materials at product catalog quality. No text, logos, watermark, visible scene props, dimension arrows, floor reflections, extra handles or artifacts. Preserve front/rear features and silhouette exactly across the four views.
+```

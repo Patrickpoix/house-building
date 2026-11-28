@@ -2,8 +2,8 @@
 
 ## 2026-11-29 · 资产库首款接续
 
-- 到 [A197](assets/README.md)已验收的最新阶段为[家政熨烫](stages/S003/utility-ironing/house.blend)。A192–A197 依次补齐室内盆栽、吸水浴垫、马桶刷、淋浴刮水器、蒸汽熨斗和折叠熨衣板。开合尺寸与实图见 [REPORT.md](REPORT.md)。
-- 下一批 A198 无绳吸尘器、A199 顶装晾衣架、A200 门铃在 [家用设备阶段](stages/S003/home-devices/house.blend)接续。独立追加和回导通过，实图待复核。Tripo 标签附着再次超时，A104 原候选和现时积分仍待核对。
+- A198–A209 的独立 BLEND、GLB 和房间实图已复核，最近阶段为[玄关双肩包](stages/S003/entry-daypack/house.blend)。联系 [资产索引](assets/README.md)查看该批尺寸和用途，[验收报告](REPORT.md)有实景证据。根工程保留实际资产链接，按常见用途补齐首款后再扩变体。
+- 当前会话内置浏览器报告无法访问本地浏览器。Tripo 的 A104 原候选、实时积分和到期日待核对。继续按[资产索引](assets/README.md)推进厨房、卫浴和家政缺项。
 
 ## 2026-11-28 · 接续生产
 

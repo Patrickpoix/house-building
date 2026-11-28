@@ -1,5 +1,14 @@
 # 进度与验收报告
 
+## 2026-11-29 · 家用设备、日用配件与备餐工具
+
+- [无绳吸尘器](renders/S003/utility-stick-vacuum.png)的滚轮落在 Z = 0.002 m 地板，充电座贴家政门外墙。晾衣架与卫浴排风口安装在 Z = 3.000 m 吊顶，晾杆最低 Z = 2.105 m。已查看 [晾衣架](renders/S003/utility-drying-rack.png)、[排风口](renders/S003/bathroom-exhaust-grille.png)及 [门铃](renders/S003/entry-doorbell.png)的安装实景。
+- [吹风机](renders/S003/bathroom-hair-dryer.png)的壁托与 X = 4.069 m 砖面齐平，模型与盥洗组未检出表面相交。[抽纸盒](renders/S003/living-tissue-box.png)从书上移到茶几空位，止滑脚落在 Z = 0.4135 m 桌面，与书和陶碗未检出表面相交。[鞋拔](renders/S003/entry-shoehorn.png)改用右钩，挂环与金属钩的位置已查看，勺面与邻侧衣架及挂袋未检出相交。
+- 洗碗机在水槽右侧原柜舱，侧板间净宽 0.601 m。机脚落地，机顶到台面底约 7.5 mm。已看 [闭门](renders/S003/kitchen-dishwasher.png)、[打开与抽篮](renders/S003/kitchen-dishwasher-open.png)及 [独立 GLB 回导](renders/library/A205-open.png)。门从 0–90° 每 5° 与北柜、东柜、台面和烤箱采样检查，未检出表面相交。下篮伸出 0.235 m，内外轨轴向搭接约 0.248 m。现阶段给排水连接待核对。
+- [煎锅](renders/S003/kitchen-skillet.png)底贴 Z = 0.996 m 灶面，与邻灶奶锅未检出相交。[料理夹](renders/S003/kitchen-tongs.png)移到台面前沿，避开电饭煲、滤篮和灶台。[厨房秤](renders/S003/kitchen-scale.png)四脚与料理夹夹头均接触 Z = 0.940 m 台面。
+- [双肩包](renders/S003/entry-daypack.png)的底部接触换鞋凳面。回导后查看[前侧拉链](renders/library/A209-front.png)及[后侧背带](renders/library/A209-rear.png)，28 个网格及三张 2K 左右贴图完整。按 B 级接受布面较规整及关闭状态下的固定袋形。A198–A209 均已从主工程核对相对链接，并逐件在干净场景追加 BLEND 和回导 GLB，轴向包围边界差均小于 1 μm。
+- 已查看 S003 [外观](renders/S003/review-garden-arrival.png)、[平面](renders/S003/review-house-plan.png)、[玄关](renders/S003/review-entry-arrival-interior.png)、[起居](renders/S003/review-living.png)、[餐区](renders/S003/review-dining-window-counter.png)、[厨房](renders/S003/review-kitchen-in-use.png)、[主卧](renders/S003/review-bedroom-bed.png)、[卫浴](renders/S003/review-bathroom-complete.png)与[家政](renders/S003/review-utility-folding.png)尺度检查图。庭院背景偏亮、生活层次和最终取景仍待整屋终验。
+
 ## 2026-11-29 · 窗边盆栽、卫浴用品与熨烫
 
 - [窗边豆瓣绿](renders/S003/dining-window-plant.png)托碟与窗桌均在 Z=0.906 m 接触。四向参考用于造型，叶柄与厚叶按同一组三根主茎在 Blender 重建。同机位对照后减弱不自然的明亮反光并收顺叶端。

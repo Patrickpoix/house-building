@@ -258,6 +258,19 @@ foreach ($step in 'window_plant', 'bathroom_accessories', 'utility_ironing') {
 & $blender -b --factory-startup --python-exit-code 1 --python scripts/check_asset_library.py -- --house stages/S003/utility-ironing/house.blend A192 A193 A194 A195 A196 A197
 ```
 
+A198–A209 从家政熨烫阶段接续，依次归档家用设备、日用配件、柜下洗碗机、烹饪与计量工具及玄关双肩包。洗碗机保存为闭门状态。`--render-only` 重开洗碗机工程渲染关门和下翻门、拉出下篮两图。
+
+```powershell
+foreach ($step in 'home_devices', 'fixture_details', 'dishwasher', 'cooking_tools', 'daypack') {
+    & $blender -b -t 10 --factory-startup --python-exit-code 1 --python "scripts/build_s003_$step.py" -- --build-only
+    if ($LASTEXITCODE -ne 0) { throw "生成 $step 失败" }
+}
+$assets = 198..209 | ForEach-Object { "A$_" }
+& $blender -b --factory-startup --python-exit-code 1 --python scripts/check_asset_library.py -- --house house.blend $assets
+& $blender -b --factory-startup --python-exit-code 1 --python scripts/render_geometry_check.py -- assets/A205/A205.glb renders/library/A205-open.png --preserve-materials --rotate-x '洗碗机_门下翻轴' 90 --translate-y '洗碗机_下篮伸出轴' -0.235
+& $blender -b house.blend --python-exit-code 1 --python scripts/render_s003_review.py -- --device CUDA
+```
+
 ## 多视角渲染预览（可选，不影响正式画质）
 
 已有 Tripo GLB 的材质对照可使用：

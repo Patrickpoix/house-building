@@ -25,16 +25,24 @@ def main():
     parser.add_argument("destination", type=Path)
     parser.add_argument("--preserve-materials", action="store_true")
     parser.add_argument("--view", choices=VIEWS, default="front")
+    parser.add_argument("--rotate-x", metavar=("对象", "角度"), nargs=2, action="append", default=[])
     parser.add_argument("--rotate-z", metavar=("对象", "角度"), nargs=2, action="append", default=[])
+    parser.add_argument("--translate-y", metavar=("对象", "米"), nargs=2, action="append", default=[])
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1:])
     source, destination = args.source, args.destination
     bpy.ops.wm.read_factory_settings(use_empty=True)
     bpy.ops.import_scene.gltf(filepath=str(source.resolve()))
-    for name, angle in args.rotate_z:
+    for name, angle, axis in [*((name, angle, "X") for name, angle in args.rotate_x),
+                              *((name, angle, "Z") for name, angle in args.rotate_z)]:
         target = bpy.context.scene.objects.get(name)
         if target is None:
             raise ValueError(f"回导场景缺少指定轴心 {name}")
-        target.matrix_basis @= Matrix.Rotation(radians(float(angle)), 4, "Z")
+        target.matrix_basis @= Matrix.Rotation(radians(float(angle)), 4, axis)
+    for name, distance in args.translate_y:
+        target = bpy.context.scene.objects.get(name)
+        if target is None:
+            raise ValueError(f"回导场景缺少指定移动轴 {name}")
+        target.matrix_basis @= Matrix.Translation((0, float(distance), 0))
     bpy.context.view_layer.update()
     meshes = [obj for obj in bpy.context.scene.objects if obj.type == "MESH"]
     if not meshes:
@@ -52,11 +60,15 @@ def main():
         for obj in meshes:
             obj.data.materials.clear()
             obj.data.materials.append(material)
-    bpy.ops.object.light_add(type="AREA", location=center + Vector((extent * 2, -extent * 3, extent * 4)))
-    light = bpy.context.object
-    light.data.energy = 500 * extent * extent
-    light.data.size = 3 * extent
-    light.rotation_euler = (center - light.location).to_track_quat("-Z", "Y").to_euler()
+    direction = Vector(VIEWS[args.view]).normalized()
+    fill_side = Vector((-direction.y, direction.x, 0)).normalized()
+    for offset, power, size in ((direction * 3 + fill_side * 1.35 + Vector((0, 0, 2)), 460, 2.8),
+                                (direction * 2.8 - fill_side * 1.8 + Vector((0, 0, 0.8)), 210, 3.5)):
+        bpy.ops.object.light_add(type="AREA", location=center + extent * offset)
+        light = bpy.context.object
+        light.data.energy = power * extent * extent
+        light.data.size = size * extent
+        light.rotation_euler = (center - light.location).to_track_quat("-Z", "Y").to_euler()
     bpy.ops.object.camera_add(location=center + extent * Vector(VIEWS[args.view]))
     camera = bpy.context.object
     camera.rotation_euler = (center - camera.location).to_track_quat("-Z", "Y").to_euler()
