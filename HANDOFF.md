@@ -2,8 +2,8 @@
 
 ## 2026-11-28 · 接续生产
 
-- [根工程](house.blend)更新至餐厨烹饪工位，含 33 个正式相对路径资产库。复现入口及实景验收见 [脚本](scripts/README.md)和 [报告](REPORT.md)。北侧洗涤区接续 `stages/S003/washing-station/house.blend`，待看实景和回导文件，再继续餐厨生活物件。
-- 通过 Codex 原生窗口操作内置 Tripo 浏览器，已完成 A104 双图生成。任务与实扣见 [A104](references/A104/)，余额 4,300。确认 GLB 落盘后检查内腔和壶柄，再按餐桌尺寸装配。H3.5 Standard + 2K PBR 统一生产，旧 40 积分上限取消。
+- [根工程](house.blend)更新至餐厨洗涤工位，含 35 个正式相对路径资产库。复现入口见 [脚本](scripts/README.md)，已验收图与结果见 [报告](REPORT.md)。餐厨日常炊具接续 `stages/S003/kitchen-in-use/house.blend`，实景与回导待复核。
+- 已在 Codex 内置 Tripo 浏览器完成 A104 双图生成，余额 4,300。两次常规导出未落盘，下载记录显示中断。沿 [原任务](references/A104/)继续取得 GLB，检查内腔、壶柄并装配。下一步兼顾餐厨生活细节、床头与主卧西窗、玄关小物、窗外环境及整屋渲染。
 
 ## 2026-11-09 Codex 图生图与 Tripo 入口实测
 
