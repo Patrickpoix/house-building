@@ -202,6 +202,14 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 & .tools/blender-5.2.3-windows-x64/blender.exe -b --python-exit-code 1 --python scripts/build_s003_kitchen_props.py
 ```
 
+## S003 主卧阅读角
+
+从餐厨日用阶段装配主卧的臂式床头灯和西窗罗马帘，渲染日光、床头近景及黄昏。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --python-exit-code 1 --python scripts/build_s003_bedroom_lighting.py
+```
+
 ## 多视角渲染预览（可选，不影响正式画质）
 
 已有 Tripo GLB 的材质对照可使用：

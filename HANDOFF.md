@@ -2,7 +2,7 @@
 
 ## 2026-11-28 · 接续生产
 
-- [根工程](house.blend)已装入餐厨日用四件，含 39 个相对路径资产库。复现入口见 [脚本](scripts/README.md)，已验收图与结果见 [报告](REPORT.md)。主卧接续 `stages/S003/bedroom-lighting/house.blend`，先复核床头灯、西窗帘及黄昏实景。
+- [根工程](house.blend)已装入主卧床头灯和西窗罗马帘，含 41 个相对路径资产库。复现入口见 [脚本](scripts/README.md)，已验收图与结果见 [报告](REPORT.md)。
 - A104 已在 Codex 内置 Tripo 浏览器完成双图生成，余额 4,300。两次常规导出失败，资产页只选陶壶的批量 GLB 未见落盘。沿 [原任务](references/A104/)取得 GLB 后检查内腔、壶柄并装配。窗外实体环境、玄关小物及整屋通行仍待推进。
 
 ## 2026-11-09 Codex 图生图与 Tripo 入口实测
