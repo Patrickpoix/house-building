@@ -210,6 +210,15 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 & .tools/blender-5.2.3-windows-x64/blender.exe -b --python-exit-code 1 --python scripts/build_s003_bedroom_lighting.py
 ```
 
+从主卧照明阶段生成庭院和双坡屋盖，再装配餐区吊灯和版画。庭院默认使用已归档的 A131/A132 集合，`--plant-source` 可指定含官方两组 glTF 子目录的源目录。餐区需要 A136 印画原图。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 10 --factory-startup --python-exit-code 1 --python scripts/build_s003_garden.py
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 10 --factory-startup --python-exit-code 1 --python scripts/build_s003_dining_lighting.py
+```
+
+地面使用 Poly Haven 的 CC0 2K 材质，三组目录名与资源名一致。颜色图使用 sRGB，粗糙度与 OpenGL 法线图使用非颜色数据。[草地](https://polyhaven.com/a/grass_ground)、[落叶碎石](https://polyhaven.com/a/leaf_scattered_gravel)、[磨面混凝土](https://polyhaven.com/a/concrete_floor_worn_001)。
+
 ## 多视角渲染预览（可选，不影响正式画质）
 
 已有 Tripo GLB 的材质对照可使用：

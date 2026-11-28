@@ -1,5 +1,11 @@
 # 进度与验收报告
 
+## 2026-11-28 · 庭院、屋盖与餐区照明
+
+- [根工程](house.blend)重开解析 47 个相对路径资产库。保留 10 × 10 m 建筑平面，加入双坡立边金属屋盖、浅木入户饰面、勒脚、庭院及格栅。对照外景后调整曝光，并将踏板底标高移至 Z = −0.197 m，让板底与 Z = −0.196 m 的碎石面接触。已查看 [入户](renders/S003/garden-arrival.png)、[西北庭院](renders/S003/garden-northwest.png)、[厨房窗景](renders/S003/garden-from-kitchen.png)及[阅读角窗景](renders/S003/garden-from-reading-chair.png)。远景地平线与外墙细纹仍可改善。
+- [A135 搪瓷灯](assets/A135/)的安装面与 Z = 3.0 m 顶面齐平，光源位于扩散盘下方，日光和黄昏图均可辨餐桌上的照明落点。[A136 版画](assets/A136/)安装于家政门西侧的餐区墙面。首次近景机位受打开的门扇遮挡，移至门西侧后复核画心方向与拼角。见 [日光](renders/S003/dining-pendant-day.png)、[黄昏](renders/S003/dining-pendant-dusk.png)及[版画近景](renders/S003/dining-woodcut.png)。
+- A131–A136 的 GLB 分别回导 1、1、1、27、6、11 个带材质及 UV 的有效网格，六件均含内嵌 2K PBR 图。植物来源及各件实测尺寸见 [资产索引](assets/README.md)。A136 画心保留生成原分辨率，木框使用 2K PBR。
+
 ## 2026-11-28 · S003 主卧阅读角
 
 - 安装 [A129 床头灯](assets/A129/)及 [A130 西窗罗马帘](assets/A130/)。灯背板贴西墙，灯罩臂越出床头柜上方，局部暖光实际落在柜顶和床枕一侧。帘轨两端各越过窗洞 65 mm，固定在洞口上方，织物在西窗玻璃内侧，底边 Z≈1.75 m。
