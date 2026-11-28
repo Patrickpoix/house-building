@@ -178,6 +178,14 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 & .tools/blender-5.2.3-windows-x64/blender.exe -b stages/S003/utility-and-entry-storage/house.blend --python-exit-code 1 --python scripts/check_s001_door_sweep.py -- --assets A116 A117 A118 A119 entry-bench
 ```
 
+### S003 餐厨烹饪工位
+
+从储物阶段重跑烟罩、烤箱和东侧分舱柜，输出房间实景及三件 GLB 的诊断视角。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --python-exit-code 1 --python scripts/build_s003_cooking_station.py
+```
+
 ## 多视角渲染预览（可选，不影响正式画质）
 
 已有 Tripo GLB 的材质对照可使用：
