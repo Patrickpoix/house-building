@@ -1,5 +1,12 @@
 # 进度与验收报告
 
+## 2026-11-28 · S003 家政与玄关
+
+- [根工程](house.blend)已装入 A116 滚筒洗衣机、A117 折叠台与吊柜、A118 家政高柜和 A119 玄关衣帽柜，重开解析 30 个相对路径资产库。家政三件底边均为 Z=0.010 m，与地砖顶面相齐。玄关柜在 Z=0.000 m 落地。洗衣机位于折叠台下，尺寸见 [资产索引](assets/README.md)。
+- 四件 GLB 分别回导 51、40、25、29 个有效网格，均有 UV 和三张内嵌 2K PBR 图。已查看 [家政台](renders/S003/utility-folding.png)、[洗衣机开门回导](renders/S003/utility-washer-glb-open.png)、[家政高柜内部](renders/S003/utility-storage-glb.png)、[玄关总览](renders/S003/entry-storage.png)、[随手格](renders/S003/entry-key-shelf.png)和[玄关衣帽柜内部](renders/S003/entry-storage-glb.png)。
+- 为腾出家政操作净空，门扇改向餐厨开启。四樘建筑门以 5° 步长检查墙体、框体、上述四件与换鞋凳，0–90° 网格表面未检出相交。连续角度、其他资产、家具操作空间及整屋通行待复核。
+- [A104 陶水壶](references/A104/)已走通内置浏览器双视图生成，实扣 35。回导及餐桌实景待验收。单图设置的 AI 增强开关开启，多视图表单隐藏该项，实际任务应用状态待复核。
+
 ## 2026-11-28 · S003 淋浴与坐便区
 
 - [A114 淋浴组](assets/A114/)和 [A115 坐便器](assets/A115/)已通过 B 级资产验收并替换原占位。[根工程](house.blend)重开解析 26 个相对路径资产库。两件底部与地砖面均为 Z=0.010 m，坐便器水箱后缘距北墙约 18 mm。见[卫浴总览](renders/S003/bathroom-complete.png)、[淋浴底盘](renders/S003/shower-base-detail.png)和[坐便器近景](renders/S003/bathroom-toilet-detail.png)。

@@ -37,12 +37,14 @@ def own_collection(asset, objects, origin, angle=0):
     collection = bpy.data.collections.new(asset)
     bpy.context.scene.collection.children.link(collection)
     inverse = (Matrix.Translation(origin) @ Matrix.Rotation(angle, 4, "Z")).inverted()
-    transforms = {obj: obj.matrix_world.copy() for obj in objects}
-    for obj, world in transforms.items():
+    roots = {obj: obj.matrix_world.copy() for obj in objects if obj.parent not in objects}
+    for obj in objects:
         for old in list(obj.users_collection):
             old.objects.unlink(obj)
         collection.objects.link(obj)
+    for obj, world in roots.items():
         obj.matrix_world = inverse @ world
+    bpy.context.view_layer.update()
     return collection
 
 
@@ -232,7 +234,7 @@ def cylinder(name, center, radius, height, mat, narrow=None, vertices=48):
 def place_new(asset, objects, origin, angle=0):
     transform = Matrix.Translation(origin) @ Matrix.Rotation(angle, 4, "Z")
     bpy.context.view_layer.update()
-    transforms = {obj: obj.matrix_world.copy() for obj in objects}
+    transforms = {obj: obj.matrix_world.copy() for obj in objects if obj.parent not in objects}
     for obj, world in transforms.items():
         obj.matrix_world = transform @ world
     bpy.context.view_layer.update()

@@ -168,6 +168,16 @@ S003 封顶日光试验（需要先生成地板试验工程，输出会覆盖 `s
 
 A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generated-shape.glb` 和 `A030-hunyuan-textured.glb`。连续袋身试验以 A030 的 `study-textured.blend` 为输入，单独保存，不覆盖原研究稿。纹理研究稿的图片路径为相对 `.blend` 文件的 `textures/`；移动时须一并保留。检查脚本只覆盖尺寸、指定槽口或贴图连接，不能代替视觉、碰撞及完整 PBR 验收。
 
+### S003 家政与玄关
+
+从卫浴阶段接续 A116 洗衣机、A117 折叠台及吊柜，再装配 A118 家政高柜、A119 玄关衣帽柜。各入口保存对应工程、实景和 GLB 回导图。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --python-exit-code 1 --python scripts/build_s003_utility.py
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --python-exit-code 1 --python scripts/build_s003_storage.py
+& .tools/blender-5.2.3-windows-x64/blender.exe -b stages/S003/utility-and-entry-storage/house.blend --python-exit-code 1 --python scripts/check_s001_door_sweep.py -- --assets A116 A117 A118 A119 entry-bench
+```
+
 ## 多视角渲染预览（可选，不影响正式画质）
 
 已有 Tripo GLB 的材质对照可使用：
