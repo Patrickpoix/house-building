@@ -234,6 +234,17 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 & .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/render_geometry_check.py -- assets/A150/A150.glb renders/library/A150.png --preserve-materials
 ```
 
+卫浴、清洁、室内小物、餐厨设施和首款门窗依次从玄关阶段接续。以下命令重建资产和各阶段的住宅工程，去掉 `--build-only` 同时重渲房间。冰箱和门窗可以从回导后的对应铰轴检查开合。
+
+```powershell
+$blender = '.tools/blender-5.2.3-windows-x64/blender.exe'
+foreach ($step in 'bathroom_basics', 'household_essentials', 'lived_in', 'major_daily_assets', 'reusable_openings') {
+    & $blender -b -t 10 --factory-startup --python-exit-code 1 --python "scripts/build_s003_$step.py" -- --build-only
+    if ($LASTEXITCODE -ne 0) { throw "生成 $step 失败" }
+}
+& $blender -b --factory-startup --python-exit-code 1 --python scripts/render_geometry_check.py -- assets/A171/A171.glb renders/library/A171-open.png --preserve-materials --rotate-z '冰箱_1号门左铰轴' -94 --rotate-z '冰箱_2号门左铰轴' -94
+```
+
 ## 多视角渲染预览（可选，不影响正式画质）
 
 已有 Tripo GLB 的材质对照可使用：

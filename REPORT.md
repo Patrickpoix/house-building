@@ -1,5 +1,13 @@
 # 进度与验收报告
 
+## 2026-11-28 · 可复用日用品与门窗首款
+
+- A156–A165 已装到卫浴、厨房、玄关和家政间。实景核对了 [牙刷和皂座](renders/S003/bathroom-wash-items.png)、[挂巾和卷纸](renders/S003/bathroom-drying-items.png)、[帆布篓](renders/S003/utility-laundry-hamper.png)、[脚踏桶](renders/S003/kitchen-pedal-bin.png)、[油瓶](renders/S003/kitchen-oil-and-sponge.png)、[海绵](renders/S003/kitchen-sponge-detail.png)、[挂放衣架](renders/S003/entry-hanger.png)及[家政台清洁刷](renders/S003/utility-scrub-brush.png)。帆布篓重新定位，曲管截面连续传递后消除了提把的局部折痕；A163 外缘离水槽钢盆包围边界约 22 mm。
+- A166–A169 分别为 [开跟毛毡鞋](renders/S003/entry-felt-slippers.png)、[精装书和亚麻靠垫](renders/S003/living-book-and-cushion.png)、[床头钟](renders/S003/bedroom-bedside-clock.png)。拖鞋校正了生成参考的过高侧影，保留鞋口内衬、双脚镜像、止滑底纹。靠垫第二轮消除中央径向折痕，缝边保留受力纹。
+- A170–A175 分别为 [鹅颈壶](renders/S003/kitchen-gooseneck.png)、[冰箱](renders/S003/kitchen-refrigerator.png)、[墙装插座](renders/library/A172.png)、[玄关开关](renders/S003/entry-wall-switch.png)、[主卧内门](renders/S003/bedroom-hinged-door.png)和[主卧外窗](renders/S003/bedroom-window-frame.png)。独立回导实际打开了[上下冰箱门](renders/library/A171-open.png)、关闭了[卧室门扇](renders/library/A174-closed.png)、开启了[左窗扇](renders/library/A175-open.png)。冰箱落在北墙无窗实墙段，整屋所有门窗的连续扫掠与全路线通行仍待最终复核。
+- A156–A175 共 20 款通过 Blender 5.2.3 独立追加 BLEND 和回导 GLB。两种格式轴向包围边界差均小于 0.01 mm，包含 UV、材质和内嵌图或明确的常量 PBR。重开 [house.blend](house.blend) 核对 86 个相对路径资产库和新增 20 件场景引用。本轮 Tripo 新增实扣 0。视频覆盖、143 模块和整屋终验仍待完成。
+- 全库复检发现 A030 的 BLEND 侧漏计曲线缝线。校验加入曲线实际求值后，两种格式均计入 21 个可见部件，边界差回到微米以下。A019 的 12 条边带有无效编辑选择标记，清理标记后原几何、UV、材质和原 GLB 保留。修复后索引中的 86 款均通过同一检查。
+
 ## 2026-11-28 · 玄关和纸品首款
 
 - A150–A155 交付三位挂钩、磁吸留言板、钥匙圈、入户垫、旅行手记及壁镜。实景已查看 [玄关](renders/S003/entry-arrival-interior.png)、[换鞋区](renders/S003/entry-bench-and-hooks.png)、[随手格](renders/S003/entry-drop-zone.png)、[落尘垫](renders/S003/entry-doormat.png)和[书架](renders/S003/entry-bookshelf-journal.png)。独立预览已核对 [挂钩](renders/library/A150.png)、[钥匙圈](renders/library/A152.png)及[手记](renders/library/A154.png)。

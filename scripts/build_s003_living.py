@@ -9,6 +9,7 @@ from mathutils import Matrix, Vector
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
+from build_a019_study import clear_unwrap_selection
 from build_s003_bookshelf_study import board
 from build_s001_whitebox import material
 
@@ -325,6 +326,9 @@ def stage_entry_and_kitchen(wood):
     hook = cylinder("东墙_围裙挂钩", (9.765, 8.86, 2.076), 0.010, 0.069, dark, 0.013)
     hook.rotation_euler.y = -pi / 2
     cooker = load_study("stages/S002/A019-study/study-textured.blend", "A019_")
+    for part in cooker:
+        if part.type == "MESH":
+            clear_unwrap_selection(part.data)
     place_new("A019", cooker, Vector((9.45, 7.78, 0.94)), -pi / 2)
 
     source = bpy.data.objects["STUDY_kitchen_base"]

@@ -99,6 +99,14 @@ def apply_outer_bevel(obj):
     bpy.ops.object.modifier_apply(modifier="edge_radius")
 
 
+def clear_unwrap_selection(mesh):
+    # 布尔切割和自动展开留下的编辑选择状态不属于交付几何。
+    for name in (".select_vert", ".select_edge", ".select_poly"):
+        attribute = mesh.attributes.get(name)
+        if attribute is not None:
+            mesh.attributes.remove(attribute)
+
+
 def unwrap_after_cuts(obj):
     # 倒角与布尔运算后的新面需要重新展开，避免沿用立方体的拉伸 UV。
     bpy.ops.object.select_all(action="DESELECT")
@@ -108,6 +116,7 @@ def unwrap_after_cuts(obj):
     bpy.ops.mesh.select_all(action="SELECT")
     bpy.ops.uv.smart_project(island_margin=0.015)
     bpy.ops.object.mode_set(mode="OBJECT")
+    clear_unwrap_selection(obj.data)
 
 
 def aim(obj, point):

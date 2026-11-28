@@ -15,14 +15,15 @@ BOUNDS_TOLERANCE_M = 0.0005
 
 def inspect_objects(objects):
     bpy.context.view_layer.update()
-    meshes = [obj for obj in objects if obj.type == "MESH"]
-    if not meshes:
+    geometry = [obj for obj in objects if obj.type in {"MESH", "CURVE"}]
+    if not geometry:
         raise ValueError("没有可用网格")
     depsgraph = bpy.context.evaluated_depsgraph_get()
     minimum, maximum = np.full(3, np.inf), np.full(3, -np.inf)
     images = set()
-    for obj in meshes:
+    for obj in geometry:
         evaluated = obj.evaluated_get(depsgraph)
+        # 缝线等曲线会由 GLB 烘成网格，应在两种格式中都计入。
         mesh = evaluated.to_mesh()
         try:
             if not mesh.polygons or not mesh.uv_layers or not mesh.materials:
@@ -49,7 +50,7 @@ def inspect_objects(objects):
             maximum = np.maximum(maximum, points.max(axis=0))
         finally:
             evaluated.to_mesh_clear()
-    return {"mesh_count": len(meshes), "bounds_m": [minimum.tolist(), maximum.tolist()],
+    return {"mesh_count": len(geometry), "bounds_m": [minimum.tolist(), maximum.tolist()],
             "size_m": (maximum - minimum).round(4).tolist(), "packed_images": sorted(images)}
 
 

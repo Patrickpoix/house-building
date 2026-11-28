@@ -1,5 +1,10 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-28 · 卫浴、清洁与住宅常用首款
+
+- A156–A175 采用 Blender 精细分件。A166 使用 [Codex 内置生图四视原件](../references/A166/)校对鞋楦和开口。按视频第 660、2340、2460 帧的可见轮廓与构造处理垃圾收纳、细嘴壶和窗框，整体设计自定。借鉴 Tripo 官方案例的用途去重和顶视校验，按空间实尺装配。[官方案例](https://developers.tripo3d.ai/en/cookbook/codex-blender-interior-scene)
+- 内置浏览器列出 Tripo 标签，附着仍超时。A104 旧任务原件待取，实时余额未核对。本批 Tripo 新增实扣 0。验收与实图见 [报告](../REPORT.md)。
+
 ## 2026-11-28 · 日用品类别优先
 
 - A137–A148 本批所列及 A104 正式款均本地制作、装配和回导。A104 沿用 Codex 生图原件，重建壶身与开孔握把。本批新增实扣 0。A104 原 Tripo 任务累计实扣 35。

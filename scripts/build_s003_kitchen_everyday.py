@@ -36,13 +36,19 @@ HOOK_X = (-0.217, -0.005, 0.216)
 def tube(name, points, radius, material, sides=12):
     centers = [Vector(point) for point in points]
     vertices = []
+    last_tangent = first = None
     for row, center in enumerate(centers):
         tangent = (centers[min(row + 1, len(centers) - 1)] - centers[max(0, row - 1)]).normalized()
-        reference = Vector((1, 0, 0)) if abs(tangent.x) < 0.92 else Vector((0, 0, 1))
-        first = tangent.cross(reference).normalized()
+        if last_tangent is None:
+            reference = Vector((1, 0, 0)) if abs(tangent.x) < 0.92 else Vector((0, 0, 1))
+            first = tangent.cross(reference).normalized()
+        else:
+            # 延续上一截面的方向，避免弯道突然切换参考轴产生折痕。
+            first = last_tangent.rotation_difference(tangent) @ first
         second = tangent.cross(first)
         vertices.extend(center + radius * (cos(tau * i / sides) * first + sin(tau * i / sides) * second)
                         for i in range(sides))
+        last_tangent = tangent
     faces = [tuple(reversed(range(sides)))]
     for row in range(len(centers) - 1):
         for i in range(sides):

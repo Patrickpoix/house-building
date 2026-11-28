@@ -1,0 +1,8 @@
+# A166 · 低跟毛毡室内鞋
+
+- [四视图原图](felt-slipper-four-views.png)由 Codex 内置 `image_gen.imagegen` 生成。接口未披露精确模型版本。图中为同款左脚鞋的侧、前、后及顶视，原图未经裁切。
+- 以 272 mm 鞋长、约 105 mm 最宽及约 65 mm 总高为建模约束。图中侧视的鞋面相对鞋长偏高，采用侧面的轮廓关系和俯视的脚楦轮廓，按设计高度在 Blender 校正。鞋口需要有内衬、低跟和前掌净空。双脚共用一个设计并保持左右轮廓互为镜像。图组未提交 Tripo。
+
+实际提示：
+
+> Create a tightly art-directed industrial design reference sheet for one original unbranded adult closed-toe indoor house slipper, SINGLE LEFT SHOE, four quadrants with ample gutters on pure white, strict product orthographic photography. TOP LEFT: exact lateral side profile, opening toward right, toe toward left. TOP RIGHT: exact front facing toe. BOTTOM LEFT: exact rear low heel viewed head-on, toe receding. BOTTOM RIGHT: exact overhead, toe points upward. Four views show the identical one object, identical scale, no crop, no labels, no second shoe, no gray divider lines. Scale design: 272 mm long, 108 mm max width, 65 mm overall max height, heel bed around 23 mm high, opening is 130 mm long and 82 mm wide. Shape has slightly asymmetrical grown-up foot last and roomy round tapered toe, compressed soft crown over foot, and a truly low open heel for easy slip-on. Warm tawny oat mottled dense wool felt upper with small understated cinnamon cotton binding around the entire throat and a real opening lined with subtly lighter wool felt. Thin graphite-gray rubber sole with shallow track grooves visible at edges and 2 mm molded edge step, lightly upturned toe, flat ground contact beneath the ball and heel. No separate heel piece, buckles or logos. Very soft bright neutral fill with nearly invisible contact shadows. One continuous plane per view and realistic construction. This is a multi-view modeling reference, not a lifestyle photograph.
