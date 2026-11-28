@@ -1,5 +1,11 @@
 # 进度与验收报告
 
+## 2026-11-28 · 餐厨和家政的独立日用品
+
+- A137–A145 分别交付厨具挂杆、汤勺、锅铲、漏勺、厨刀、搭布、抹布、调味罐和研磨器。已查看 [悬挂结构](renders/S003/kitchen-utensil-rail.png)、[台沿接触](renders/S003/kitchen-counter-linen.png)、[餐厨工位](renders/S003/kitchen-everyday.png)及[家政抹布](renders/S003/utility-cleaning-cloth.png)。搭布移离把手并降至接触台面。抹布从折叠柜内部移至可见的地砖，地面标高 Z = 0.010 m。
+- A104 水壶根据三向参考用 Blender 制作。与 A146 早餐盘、A147 压纹玻璃杯、A148 茶匙装入 [餐桌日用场景](renders/S003/dining-breakfast.png)。查看 [水壶与餐具近景](renders/S003/dining-ceramics.png)，核对捏嘴、内腔、圈足及压纹。先保留一款餐盘，同类浅盘候选未入库。玻璃使用独立壁厚、压纹几何和常量 PBR 透光参数。
+- 新批 13 件在干净场景分别追加 BLEND 集合、回导 GLB，核对轴心、包围盒、UV、材质节点与内嵌图。最大轴向包围边界差 1 μm。项目改为优先补齐日用品类别，再扩充变体。
+
 ## 2026-11-28 · 庭院、屋盖与餐区照明
 
 - [根工程](house.blend)重开解析 47 个相对路径资产库。保留 10 × 10 m 建筑平面，加入双坡立边金属屋盖、浅木入户饰面、勒脚、庭院及格栅。对照外景后调整曝光，并将踏板底标高移至 Z = −0.197 m，让板底与 Z = −0.196 m 的碎石面接触。已查看 [入户](renders/S003/garden-arrival.png)、[西北庭院](renders/S003/garden-northwest.png)、[厨房窗景](renders/S003/garden-from-kitchen.png)及[阅读角窗景](renders/S003/garden-from-reading-chair.png)。远景地平线与外墙细纹仍可改善。

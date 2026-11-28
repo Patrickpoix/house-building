@@ -1,5 +1,9 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-28 · 日用品类别优先
+
+- A137–A148 本批所列及 A104 正式款均本地制作、装配和回导。A104 沿用 Codex 生图原件，重建壶身与开孔握把。本批新增实扣 0。A104 原 Tripo 任务累计实扣 35。
+
 ## 2026-11-28 · 庭院与餐区
 
 - A131、A132 使用 Poly Haven CC0 模型，A133–A136 在 Blender 建模。版画画心由 Codex 内置生图工具制作。六件已装入场景并回导，详见 [报告](../REPORT.md)。本批 Tripo 实扣 0。

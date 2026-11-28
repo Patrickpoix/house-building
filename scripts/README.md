@@ -219,6 +219,14 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 
 地面使用 Poly Haven 的 CC0 2K 材质，三组目录名与资源名一致。颜色图使用 sRGB，粗糙度与 OpenGL 法线图使用非颜色数据。[草地](https://polyhaven.com/a/grass_ground)、[落叶碎石](https://polyhaven.com/a/leaf_scattered_gravel)、[磨面混凝土](https://polyhaven.com/a/concrete_floor_worn_001)。
 
+从餐区照明阶段接续制作墙挂厨具、布巾及餐桌器皿。正式资产验收脚本追加同名 BLEND 集合并在另一干净场景回导 GLB，输出实际尺寸、UV、打包图和两种格式的边界差。可选 `--house` 检查同批资产在住宅里实际链接，外观与使用仍按 [B 级标准](../assets/资产质量基准.md)查看渲染实图。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 10 --factory-startup --python-exit-code 1 --python scripts/build_s003_kitchen_everyday.py
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 10 --factory-startup --python-exit-code 1 --python scripts/build_s003_breakfast.py
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/check_asset_library.py -- --house stages/S003/breakfast/house.blend A104 A146 A147 A148
+```
+
 ## 多视角渲染预览（可选，不影响正式画质）
 
 已有 Tripo GLB 的材质对照可使用：
