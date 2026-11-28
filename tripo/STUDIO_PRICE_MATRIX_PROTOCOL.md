@@ -1,6 +1,6 @@
 # Tripo Studio已测报价矩阵口径
 
-2026-11-28 更新：本协议及 CSV 只描述 2026-11-07 H3.0/H3.1 历史矩阵，不是 H3.5 当前报价或生产限制。现行 H3.5 策略及同账户核价见 [生产流程](PRODUCTION_WORKFLOW.md) 和 [成本报告](STUDIO_PRICE_MATRIX_REPORT.md)。
+本协议仅对应 2026-11-07 历史矩阵；当前报价见 [成本报告](STUDIO_PRICE_MATRIX_REPORT.md)。
 
 实际调查结果见 STUDIO_PRICE_MATRIX.csv、STUDIO_PRICE_MATRIX_REPORT.md，截图及参数证据见 price-evidence/。
 

@@ -25,7 +25,7 @@
 ## 生产阶段用法
 当前64组理论配置已完成主要报价调查：32组有生成前按钮价、32组因模型内分部件与纹理互斥不适用。价格与截图证据见 STUDIO_PRICE_MATRIX_REPORT.md、STUDIO_PRICE_MATRIX.csv 和 price-evidence/。
 
-日常采用 H3.5。H3.5 Standard + 2K PBR 为常规起点；预计几何细节或材质会成为返工瓶颈时，首轮直接选 Ultra、4K 或两者组合。去光默认开启，AI 补全/增强在有益时开启；按资产结构与渲染距离确定面数，保留高精度原件，场景实例按需优化。 根据首轮质量与总制作成本选择，当前报价见 STUDIO_PRICE_MATRIX_REPORT.md；各项实际生成前核价。独立部件拆分、重拓扑、智能UV和纹理/PBR后处理只在相应资产确实需要时采用，并检验原UV和贴图的保留。
+生成配置见 [生产流程](PRODUCTION_WORKFLOW.md)。独立后处理仅在实际需要时使用，复核 UV 和贴图保留。
 
 已有A030生成及PBR/近景验证见 outputs/A030/QUALITY_REVIEW.md。后续优化参数应以真实资产质量和Blender返工成本为依据，结合现有积分与房间资产计划安排生产。
 
