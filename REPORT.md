@@ -1,7 +1,7 @@
 # 进度与验收报告
 
 ## 2026-11-28 · 生产策略
-H3.5 默认，取消旧单件上限；见 [生产流程](tripo/PRODUCTION_WORKFLOW.md) 和 [报价](tripo/STUDIO_PRICE_MATRIX_REPORT.md)。本轮无模型生成或验收。
+统一 H3.5 Standard + 2K PBR，取消旧单件上限；见 [生产流程](tripo/PRODUCTION_WORKFLOW.md) 和 [报价](tripo/STUDIO_PRICE_MATRIX_REPORT.md)。本轮无模型生成或验收。
 
 ## 2026-11-24 · S003 卫浴盥洗区
 

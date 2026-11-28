@@ -11,7 +11,7 @@
 | Ultra 2K | 45 | 50 | 推算，未直接核价 |
 | Ultra 4K | 55 | 60 | 界面实测 |
 
-现行选型见 [生产流程](PRODUCTION_WORKFLOW.md)；尚无 H3.5 成品质量 A/B 实测。
+现行统一 H3.5 Standard + 2K PBR（35 积分报价），其余为历史比较资料；见 [生产流程](PRODUCTION_WORKFLOW.md)；尚无 H3.5 成品质量 A/B 实测。
 
 以下为 2026-11-07 历史调查，原 CSV 和原始证据不改写。
 

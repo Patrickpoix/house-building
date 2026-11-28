@@ -1,6 +1,6 @@
 # house-building
 
-复杂资产采用 Images 2.6 → H3.5 → Blender；[生产流程](tripo/PRODUCTION_WORKFLOW.md)。
+复杂资产采用 Images 2.6 → H3.5 Standard + 2K PBR → Blender；[生产流程](tripo/PRODUCTION_WORKFLOW.md)。
 
 约100㎡原创超写实住宅工程。最终目标是完成建筑、家具家电、软装、真实PBR、房间布景及整屋渲染，不把白模或试验资产当作交付。现行执行规范见 [AGENTS.md](AGENTS.md)，进度与约束见 [HANDOFF.md](HANDOFF.md)，验收见 [goal.md](goal.md)。
 

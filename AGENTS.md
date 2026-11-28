@@ -45,7 +45,7 @@
 按 [B 级实用标准](assets/资产质量基准.md) 验收。资产在住宅观察距离下有自然轮廓、合理比例、可信结构和协调材质，2K PBR 可显示，BLEND/GLB 可用且无显眼穿模悬空，即正式入库、装配并结束该件打磨。保留整屋覆盖和随机近景验收要求。采用可重跑 Blender Python 脚本进行建筑、装配、材质、验证和 Cycles 渲染。
 
 ## Tripo Studio与积分使用
-- 默认 H3.5 Preview；H3.1 仅作有明确收益的回退。首轮按资产选 Standard/Ultra、2K/4K；复杂几何或重点近景直接采用合适高档配置。参数及报价见 [生产流程](tripo/PRODUCTION_WORKFLOW.md) 和 [成本报告](tripo/STUDIO_PRICE_MATRIX_REPORT.md)。
+- Tripo 统一 H3.5 Preview + Standard + 2K PBR（当前报价 35 积分）；不使用 Ultra、4K 或 8K 生成。H3.1 仅作有明确收益的回退，保持 Standard + 2K。参数及报价见 [生产流程](tripo/PRODUCTION_WORKFLOW.md) 和 [成本报告](tripo/STUDIO_PRICE_MATRIX_REPORT.md)。
 - 首轮质量优先，综合 Tripo 积分、Codex 额度和 Blender 返工时间。取消单件累计 40 积分上限；按资产及房间统计预估与实扣，包含历史费用、重试和后处理。优先使用临期积分，不擅自充值。
 - 记录实际配置、扣费、首次合格情况及精修耗时/轮次；Codex 用量可得则记录。复用合格资产，不因版本更新重做。
 

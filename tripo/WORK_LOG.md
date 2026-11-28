@@ -1,7 +1,11 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-28 · 统一生成配置
+- 用户确认全部使用 Standard + 2K PBR，取消 Ultra/4K/8K 升级建议。更新执行规范、目标、交接、生产流程、功能/报价报告、资产质量与 A104 说明及索引；完整清单见本次 Git diff。历史报价及原始贴图保留。
+- 文档一致性及 Git diff 检查；不改模型、脚本或账户，不运行 Blender 回归，不消费积分。H3.5 成品效果及新会话 IAB 工具仍待生产验证。接续见 AGENTS.md、HANDOFF.md。
+
 ## 2026-11-28 · H3.5 生产规范
-- 改用 H3.5 默认，取消旧 40 积分上限，按首轮质量与总成本选档；核价见 STUDIO_PRICE_MATRIX_REPORT.md。
+- 统一 H3.5 Standard + 2K PBR，取消旧 40 积分上限，按首轮质量控制总成本；核价见 STUDIO_PRICE_MATRIX_REPORT.md。
 - 首次修订 19 份文档（b616b88，GitHub 已核实）；本轮压缩重复规则、报价、说明和索引，变更清单见本次 Git diff。无文件删除或移动，历史证据保留。
 - 复核现行规范及 Git diff；无模型、脚本或场景变更，不跑 Blender 回归。未扣费、充值或发送 Codex 消息。新会话 IAB 工具及 H3.5 成品收益仍待验证。接手读 AGENTS.md、HANDOFF.md、PRODUCTION_WORKFLOW.md。
 

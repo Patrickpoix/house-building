@@ -7,7 +7,7 @@
 - [侧斜图](side-three-quarter.png)
 - [壶嘴正视](front.png)
 
-截至 2026-11-28 实扣 0；壶口空腔和贯通握孔是首轮结构重点，按 [生产流程](../../tripo/PRODUCTION_WORKFLOW.md) 选档。
+截至 2026-11-28 实扣 0；壶口空腔和贯通握孔是首轮结构重点，按 [生产流程](../../tripo/PRODUCTION_WORKFLOW.md) 使用 H3.5 Standard + 2K PBR。
 
 ## 实际提示
 
