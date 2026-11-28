@@ -238,13 +238,14 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 
 ```powershell
 $blender = '.tools/blender-5.2.3-windows-x64/blender.exe'
-foreach ($step in 'bathroom_basics', 'household_essentials', 'lived_in', 'major_daily_assets', 'reusable_openings', 'table_and_cleaning', 'counter_seating_and_doors') {
+foreach ($step in 'bathroom_basics', 'household_essentials', 'lived_in', 'major_daily_assets', 'reusable_openings', 'table_and_cleaning', 'counter_seating_and_doors', 'kitchen_modules', 'kitchen_small_appliances') {
     & $blender -b -t 10 --factory-startup --python-exit-code 1 --python "scripts/build_s003_$step.py" -- --build-only
     if ($LASTEXITCODE -ne 0) { throw "生成 $step 失败" }
 }
 & $blender -b --factory-startup --python-exit-code 1 --python scripts/render_geometry_check.py -- assets/A171/A171.glb renders/library/A171-open.png --preserve-materials --rotate-z '冰箱_1号门左铰轴' -94 --rotate-z '冰箱_2号门左铰轴' -94
 & $blender -b --factory-startup --python-exit-code 1 --python scripts/render_geometry_check.py -- assets/A184/A184.glb renders/library/A184-open.png --preserve-materials --rotate-z '入户门_内开铰轴' 90
 & $blender -b --factory-startup --python-exit-code 1 --python scripts/render_geometry_check.py -- assets/A185/A185.glb renders/library/A185-closed.png --preserve-materials --rotate-z '湿区门_外开铰轴' 90
+& $blender -b --factory-startup --python-exit-code 1 --python scripts/render_geometry_check.py -- assets/A189/A189.glb renders/library/A189-open.png --preserve-materials --rotate-z '微波炉_门左铰轴' -96
 ```
 
 ## 多视角渲染预览（可选，不影响正式画质）

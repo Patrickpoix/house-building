@@ -1,5 +1,11 @@
 # 进度与验收报告
 
+## 2026-11-28 · 餐厨模组、小家电及吸顶灯
+
+- A186–A188 交付 [嵌装水槽的独立石英台面](renders/S003/kitchen-quartz-and-sink.png)、[壁挂层架](renders/S003/kitchen-open-shelf.png)与[双耳洗滤篮](renders/S003/kitchen-colander.png)。保留原台面开孔与贴合线，重建实尺 UV 和 2K 材质。层架核对了撑件与墙面接触。滤篮的通孔、两侧耳和落地圈足在实景中可见。
+- A189–A191 交付 [微波炉与双槽烤面包机](renders/S003/kitchen-small-appliances.png)和[装在现有光位的吸顶灯](renders/S003/bathroom-ceiling-light.png)。用实际 GLB 查看了 [打开后的微波炉](renders/library/A189-open.png)及[面包机槽口](renders/library/A190.png)。
+- 六款通过 Blender 5.2.3 独立追加 BLEND、回导 GLB 和相对路径装配检查，包围边界差小于 1 μm。本批 Tripo 新增实扣 0。
+
 ## 2026-11-28 · 餐具、清洁、窗边坐席及三处门洞
 
 - A176–A181 的 [餐具接触](renders/S003/dining-fork-chopsticks.png)、[储粮罐](renders/S003/kitchen-pantry-jar.png)、[洗衣剂瓶](renders/S003/utility-detergent.png)和[长柄工具](renders/S003/utility-floor-care.png)已看实图。餐叉避开杯脚，两款长柄工具的底部落在家政地砖面，手柄靠北墙。
