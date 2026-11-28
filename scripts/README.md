@@ -227,6 +227,13 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 & .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/check_asset_library.py -- --house stages/S003/breakfast/house.blend A104 A146 A147 A148
 ```
 
+玄关及书架六件从餐桌阶段生成。独立 PBR 预览可用现有几何渲染入口保留材质。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b -t 10 --factory-startup --python-exit-code 1 --python scripts/build_s003_entry_details.py
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --factory-startup --python-exit-code 1 --python scripts/render_geometry_check.py -- assets/A150/A150.glb renders/library/A150.png --preserve-materials
+```
+
 ## 多视角渲染预览（可选，不影响正式画质）
 
 已有 Tripo GLB 的材质对照可使用：

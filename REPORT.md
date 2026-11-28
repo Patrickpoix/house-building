@@ -1,10 +1,15 @@
 # 进度与验收报告
 
+## 2026-11-28 · 玄关和纸品首款
+
+- A150–A155 交付三位挂钩、磁吸留言板、钥匙圈、入户垫、旅行手记及壁镜。实景已查看 [玄关](renders/S003/entry-arrival-interior.png)、[换鞋区](renders/S003/entry-bench-and-hooks.png)、[随手格](renders/S003/entry-drop-zone.png)、[落尘垫](renders/S003/entry-doormat.png)和[书架](renders/S003/entry-bookshelf-journal.png)。独立预览已核对 [挂钩](renders/library/A150.png)、[钥匙圈](renders/library/A152.png)及[手记](renders/library/A154.png)。
+- 两种交付格式在干净场景追加、回导通过，包围盒差小于 0.01 mm，贴图打包，零新增积分。六件均已链接进项目。
+
 ## 2026-11-28 · 餐厨和家政的独立日用品
 
 - A137–A145 分别交付厨具挂杆、汤勺、锅铲、漏勺、厨刀、搭布、抹布、调味罐和研磨器。已查看 [悬挂结构](renders/S003/kitchen-utensil-rail.png)、[台沿接触](renders/S003/kitchen-counter-linen.png)、[餐厨工位](renders/S003/kitchen-everyday.png)及[家政抹布](renders/S003/utility-cleaning-cloth.png)。搭布移离把手并降至接触台面。抹布从折叠柜内部移至可见的地砖，地面标高 Z = 0.010 m。
 - A104 水壶根据三向参考用 Blender 制作。与 A146 早餐盘、A147 压纹玻璃杯、A148 茶匙装入 [餐桌日用场景](renders/S003/dining-breakfast.png)。查看 [水壶与餐具近景](renders/S003/dining-ceramics.png)，核对捏嘴、内腔、圈足及压纹。先保留一款餐盘，同类浅盘候选未入库。玻璃使用独立壁厚、压纹几何和常量 PBR 透光参数。
-- 新批 13 件在干净场景分别追加 BLEND 集合、回导 GLB，核对轴心、包围盒、UV、材质节点与内嵌图。最大轴向包围边界差 1 μm。项目改为优先补齐日用品类别，再扩充变体。
+- 新批 13 件在干净场景分别追加 BLEND 集合、回导 GLB，核对轴心、包围盒、UV、材质节点与内嵌图。最大轴向包围边界差小于 0.01 mm。项目改为优先补齐日用品类别，再扩充变体。
 
 ## 2026-11-28 · 庭院、屋盖与餐区照明
 
