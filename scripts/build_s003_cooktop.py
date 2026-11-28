@@ -19,6 +19,7 @@ ASSET = "A105"
 WIDTH, DEPTH = 0.585, 0.355
 ZONE_CENTERS = (-0.144, 0.144)
 GLASS_Z = 0.056
+ZONE_CENTER_Y = 0.028
 
 
 def glass_material():
@@ -36,7 +37,7 @@ def glass_material():
         np.maximum(marks, coverage * opacity, out=marks)
 
     for center in ZONE_CENTERS:
-        dx, dy = x - center, y - 0.028
+        dx, dy = x - center, y - ZONE_CENTER_Y
         radius = np.hypot(dx, dy)
         angle = np.arctan2(dy, dx)
         pattern = 0.31 + 0.37 * (np.abs(np.sin(angle * 2)) > 0.19)

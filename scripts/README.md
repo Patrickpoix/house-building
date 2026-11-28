@@ -194,6 +194,14 @@ A019 和 A030 结构研究稿分别依赖 `stages/S002/experiments/A019-generate
 & .tools/blender-5.2.3-windows-x64/blender.exe -b --python-exit-code 1 --python scripts/build_s003_sink.py
 ```
 
+## S003 餐厨日用炊具
+
+从洗涤工位装配奶锅、砧板、沥水架和泵头瓶，输出阶段工程与三个实景镜头。
+
+```powershell
+& .tools/blender-5.2.3-windows-x64/blender.exe -b --python-exit-code 1 --python scripts/build_s003_kitchen_props.py
+```
+
 ## 多视角渲染预览（可选，不影响正式画质）
 
 已有 Tripo GLB 的材质对照可使用：
