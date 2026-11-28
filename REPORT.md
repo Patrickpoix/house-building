@@ -1,5 +1,12 @@
 # 进度与验收报告
 
+## 2026-11-28 · 餐具、清洁、窗边坐席及三处门洞
+
+- A176–A181 的 [餐具接触](renders/S003/dining-fork-chopsticks.png)、[储粮罐](renders/S003/kitchen-pantry-jar.png)、[洗衣剂瓶](renders/S003/utility-detergent.png)和[长柄工具](renders/S003/utility-floor-care.png)已看实图。餐叉避开杯脚，两款长柄工具的底部落在家政地砖面，手柄靠北墙。
+- A182–A183 已查看 [北窗实景](renders/S003/dining-window-counter.png)、[靠背与脚踏连接](renders/S003/dining-stool-joints.png)及[高脚椅回导另一侧](renders/library/A182-rear.png)。收椅状态与相对一侧餐椅的轴向净距约 866 mm，桌后沿离室内墙面约 8 mm。拉椅使用时的全路线通行待联合终验。
+- A184 入户门及 A185 卫浴、家政共用门已查看 [入户外侧](renders/S003/entry-door-exterior.png)、[入户内侧](renders/S003/entry-door-interior.png)和[卫浴外开状态](renders/S003/bathroom-wet-door.png)。从实际 GLB [打开入户门](renders/library/A184-open.png)和[关闭湿区门](renders/library/A185-closed.png)。三处安装按 5° 采样检查门底高度，入户门扇底为 18 mm，湿区门为 19 mm。入户垫最高约 11 mm，门扇扫过时有余量。整屋动态碰撞联检待做。
+- A176–A185 的 BLEND、GLB 均在干净场景独立追加、回导，实际两种格式边界一致至 1 µm，贴图自包含或使用明确的均匀 PBR 参数。新增件已链接至 [住宅工程](house.blend)，本批 Tripo 新增实扣 0。
+
 ## 2026-11-28 · 可复用日用品与门窗首款
 
 - A156–A165 已装到卫浴、厨房、玄关和家政间。实景核对了 [牙刷和皂座](renders/S003/bathroom-wash-items.png)、[挂巾和卷纸](renders/S003/bathroom-drying-items.png)、[帆布篓](renders/S003/utility-laundry-hamper.png)、[脚踏桶](renders/S003/kitchen-pedal-bin.png)、[油瓶](renders/S003/kitchen-oil-and-sponge.png)、[海绵](renders/S003/kitchen-sponge-detail.png)、[挂放衣架](renders/S003/entry-hanger.png)及[家政台清洁刷](renders/S003/utility-scrub-brush.png)。帆布篓重新定位，曲管截面连续传递后消除了提把的局部折痕；A163 外缘离水槽钢盆包围边界约 22 mm。

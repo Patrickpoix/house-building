@@ -2,9 +2,9 @@
 
 ## 2026-11-28 · 接续生产
 
-- 当前按常见物品功能生产，每类首轮只做一款。A156–A175 已入库，覆盖卫浴、清洁、餐厨、卧室日用品和首款门窗。[根工程](house.blend)主要用于核对尺度、接触和光照。接续重点见 [资产索引](assets/README.md)，阶段输入输出及重跑命令见 [脚本索引](scripts/README.md)。
+- 当前按常见物品功能生产，每类首轮只做一款。A176–A185 补齐餐具、洗衣清洁用品、窗边高脚坐席和门类。[根工程](house.blend)用于核对尺度、接触和光照。接续重点见 [资产索引](assets/README.md)，阶段输入输出及重跑命令见 [脚本索引](scripts/README.md)。
 - A104 正式款采用 [三向生成原图](references/A104/)在 Blender 制作。Tripo 原任务已生成，累计实扣 35，两次常规导出及资产页批量导出均无本地原件。现有候选取件后另作对照。
-- 继续从 [门窗阶段](stages/S003/reusable-openings/house.blend)接续。内置浏览器可发现 Tripo 资产页，标签附着超时。Blender 5.2.3 Cycles 实测 CUDA 可渲染，OptiX 内核加载报错，CPU 可回退。
+- 继续从 [窗边坐席与门阶段](stages/S003/counter-seating-and-doors/house.blend)接续。内置浏览器可发现 Tripo 资产页，标签附着超时。Blender 5.2.3 Cycles 实测 CUDA 可渲染，OptiX 内核加载报错，CPU 可回退。
 
 ## 2026-11-09 Codex 图生图与 Tripo 入口实测
 

@@ -1,5 +1,9 @@
 # Tripo Studio 工作记录（现位于 D:\Projects\house-building\tripo）
 
+## 2026-11-28 · 餐具、窗边坐席与门
+
+- A176–A185 在 Blender 完成。复看本地视频第 2280、2340 帧后，将细钢腿、脚踏和浅纵深台面的关系用于原创窗桌组，以实测坐席、桌底和通行尺寸确定比例。内置浏览器再次附着超时，A104 原任务下载仍待核对。新增实扣 0。[验收报告](../REPORT.md)
+
 ## 2026-11-28 · 卫浴、清洁与住宅常用首款
 
 - A156–A175 采用 Blender 精细分件。A166 使用 [Codex 内置生图四视原件](../references/A166/)校对鞋楦和开口。按视频第 660、2340、2460 帧的可见轮廓与构造处理垃圾收纳、细嘴壶和窗框，整体设计自定。借鉴 Tripo 官方案例的用途去重和顶视校验，按空间实尺装配。[官方案例](https://developers.tripo3d.ai/en/cookbook/codex-blender-interior-scene)
