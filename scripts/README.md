@@ -248,6 +248,16 @@ foreach ($step in 'bathroom_basics', 'household_essentials', 'lived_in', 'major_
 & $blender -b --factory-startup --python-exit-code 1 --python scripts/render_geometry_check.py -- assets/A189/A189.glb renders/library/A189-open.png --preserve-materials --rotate-z '微波炉_门左铰轴' -96
 ```
 
+窗桌盆栽、卫浴日用品和家政熨烫依次从小家电阶段接续。各脚本默认渲染对应安装实景，使用 `--build-only` 可仅更新模型及装配。壁挂熨衣板的默认工程为收拢态，展开图在渲染前临时追加资产并转动三个轴，工程重开后保留收拢状态。
+
+```powershell
+foreach ($step in 'window_plant', 'bathroom_accessories', 'utility_ironing') {
+    & $blender -b -t 10 --factory-startup --python-exit-code 1 --python "scripts/build_s003_$step.py" -- --build-only
+    if ($LASTEXITCODE -ne 0) { throw "生成 $step 失败" }
+}
+& $blender -b --factory-startup --python-exit-code 1 --python scripts/check_asset_library.py -- --house stages/S003/utility-ironing/house.blend A192 A193 A194 A195 A196 A197
+```
+
 ## 多视角渲染预览（可选，不影响正式画质）
 
 已有 Tripo GLB 的材质对照可使用：

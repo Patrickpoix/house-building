@@ -1,5 +1,12 @@
 # 进度与验收报告
 
+## 2026-11-29 · 窗边盆栽、卫浴用品与熨烫
+
+- [窗边豆瓣绿](renders/S003/dining-window-plant.png)托碟与窗桌均在 Z=0.906 m 接触。四向参考用于造型，叶柄与厚叶按同一组三根主茎在 Blender 重建。同机位对照后减弱不自然的明亮反光并收顺叶端。
+- 已查看 [毛圈浴垫](renders/S003/bathroom-cotton-mat.png)、[带杯马桶刷](renders/S003/bathroom-toilet-brush.png)和[带墙托刮水器](renders/S003/bathroom-squeegee.png)。浴垫改用自制 2K 棉圈凹凸及双道织边，外缘与淋浴底盘轴向相距约 38 mm。马桶刷座底与地砖贴合，距坐便器包围边界约 59 mm。刮水器安装面与西墙砖面 X=4.069 m 齐平。
+- [蒸汽熨斗](renders/S003/utility-steam-iron.png)按家政台面摆放，钢底板及插头同台承托。[熨衣板收拢](renders/S003/utility-ironing-board.png)和[展开实景](renders/S003/utility-ironing-board-open.png)复核安装位置。用独立 GLB 以 5° 采样 0–90° 扫掠，距洗衣机、扫帚和拖把的最小正轴向间隙分别约 104、85、48 mm。展开时两根斜撑实际对正墙座，板尖 X≈5.13 m，台面高约 0.89 m。
+- A192–A197 在 Blender 5.2.3 分别追加 BLEND 和回导 GLB，核对有效网格、UV、打包贴图或明确的常量 PBR，两种格式包围边界差均小于 1 μm。Tripo 新增实扣 0。
+
 ## 2026-11-28 · 餐厨模组、小家电及吸顶灯
 
 - A186–A188 交付 [嵌装水槽的独立石英台面](renders/S003/kitchen-quartz-and-sink.png)、[壁挂层架](renders/S003/kitchen-open-shelf.png)与[双耳洗滤篮](renders/S003/kitchen-colander.png)。保留原台面开孔与贴合线，重建实尺 UV 和 2K 材质。层架核对了撑件与墙面接触。滤篮的通孔、两侧耳和落地圈足在实景中可见。
